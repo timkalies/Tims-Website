@@ -1,5 +1,7 @@
-let b = document.getElementsByClassName("icon");
-b = document.addEventListener("click", MenuAnimated);
+document.addEventListener("DOMContentLoaded", function() {
+  let b = document.getElementById("icon");
+  b.addEventListener("click", MenuAnimated);
+});
 
 /* Öffnet und Schließt Menü */
 
@@ -12,9 +14,10 @@ function myFunction() {
   }
 }
 
-function MenuAnimated() {
+function MenuAnimated(event) {
 event.preventDefault();
-b.style.animationName = "rotate";
-b.style.animationDuration = "0.5s";
+event.target.style.animationName = "rotate"; /*Führt Anweisung 
+auf das Element aus, welches Funktion ruft*/
+event.target.style.animationDuration = "0.5s";
 }
 
