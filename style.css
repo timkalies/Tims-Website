@@ -38,7 +38,7 @@ hr {
 }
 
 /* Style the hamburger menu */
-.navigation a.icon {
+.navigation a#icon {
   background: black;
   display: block;
   position: absolute;

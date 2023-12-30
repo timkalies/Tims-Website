@@ -21,4 +21,5 @@ if (qparts.length > 1) {
 } else {
     // Behandlung für den Fall, dass keine Query-Parameter vorhanden sind.
     console.error('Keine Query-Parameter in der URL gefunden.');
+    return ['Kein Name eingegeben', '', ''];
 }

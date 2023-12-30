@@ -9,15 +9,16 @@
             "request": "launch",
             "reAttach": true,
             "name": "Launch index.html",
-            "file": "${workspaceFolder}/index.html"
+            "file": "c:\\Users\\User\\OneDrive\\Dokumente\\Tims Website\\index.html"
         },
 
 
         {
             "type": "firefox",
             "request": "launch",
-            "name": "Open projects.html",
-            "file": "c:\\Users\\User\\OneDrive\\Dokumente\\Tims Website\\projects.html"
+            "reAttach": true,
+            "name": "Launch kontakt.html",
+            "file": "c:\\Users\\User\\OneDrive\\Dokumente\\Tims Website\\kontakt.html"
         }
     ]
 }
