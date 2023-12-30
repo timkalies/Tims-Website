@@ -1,0 +1,26 @@
+#link1, #link2 {
+    color: black;
+    text-decoration: none;
+    border-style: outset; 
+    border-color: lightsteelblue lightsteelblue lightsteelblue ;  
+    border-width: 2px 4px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    padding: 1px 2px 2px 1px;
+
+    
+}
+#link1 {
+    margin-right: 20px;
+}
+#version1 {
+  display: inline-block;
+  -webkit-mask: linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 2.5s infinite;
+  font-size: 20px;
+  max-width:200px;
+}
+@keyframes shimmer {
+    100% {-webkit-mask-position:left}
+  }

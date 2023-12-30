@@ -1,0 +1,163 @@
+* {
+  /* Ändere auf eine neutrale Farbe */
+  font-family: 'Play';
+}
+
+body {
+  background-color: #F6F4E8;
+  position: relative;
+  z-index: 0;
+  /* Farbe für den Body beibehalten */
+}
+
+.background-change {
+  background-color: inherit;
+}
+
+/* Weitere Stile für den Header */
+h1 {
+  color: #EEF1F2;
+}
+hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+#div02_sp {
+  display:grid;
+  
+}
+#time {
+ justify-self: right;
+ border: 2.5px dotted #1A1A1A;
+ border-radius: 25% 10%
+}
+
+#h02_sp {
+text-shadow: 2px 0 #1A1A1A, -2px 0 #1A1A1A, 0 2px #1A1A1A, 0 -2px #1A1A1A,
+             1px 1px #1A1A1A, -1px -1px #1A1A1A, 1px -1px #1A1A1A, -1px 1px #1A1A1A;
+}
+
+/*----------------------------------------------------------*/
+
+/* Weitere Stile für das Formular */
+#input {
+  display: flex;
+  padding: 10px 20px 15px 10px;
+}
+#textfield, #textedit {
+  margin-right: 15px;
+  border: 1.8px solid #1A1A1A;
+  color: #1A1A1A;
+  border-radius: 41px 14px;
+}
+#timefield, #timeedit {
+  margin-right: 35px;
+  border: 1.5px solid #1A1A1A;
+  color: #1A1A1A;
+  padding-right: 20px;
+  background-color: white;
+  border-radius: 38px 15px;
+}
+#button01{ /* Haupt Button zum Hinzufügen */
+  position: right;
+  border: 1.6px solid #1A1A1A;
+  color: #1A1A1A;
+  background-color: white;
+  border-radius: 40px 15px;
+  margin-right: 150px;
+  }
+#button02, #button03, #button04, #button05, #button06 { /*Edit Button*/
+  border: 1.5px solid #1A1A1A;
+  color: #1A1A1A;
+  background-color: white;
+  border-radius: 35px 17px;
+}
+#button02 {
+  margin-bottom: 19px;
+}
+
+/*----------------------------------------------------------*/
+
+#text {
+ padding: 18px 0px 182px 0px; 
+  
+}
+label {
+  margin-right: 8px;
+}
+
+#h03 {
+  position: center;
+  text-shadow: 2px 0 #1A1A1A, -2px 0 #1A1A1A, 0 2px #1A1A1A, 0 -2px #1A1A1A,
+             1px 1px #1A1A1A, -1px -1px #1A1A1A, 1px -1px #1A1A1A, -1px 1px #1A1A1A;
+}
+
+#changediv {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background: rgb(198,199,166);;
+  background: linear-gradient(135deg, rgba(198,199,166,1) 0%, rgba(234,235,218,1) 35%, rgba(233,231,203,1) 100%);
+  height: 95%;
+  width: 95%;
+}
+#editsec {
+  display: flex;
+  justify-content: left;
+}
+
+#timeedit {
+  width: 40px;
+  height: 25px;
+}
+#textedit {
+  width: auto;
+  height: 20px;
+}
+#button03 {
+  width: auto;
+  height: 25px;
+}
+/*----------------------------------------------------------*/
+#tools, #tools_edit {
+  display: none; 
+}
+
+/*----------------------------------------------------------*/
+
+#bgchoice {
+  text-indent: 5px;
+  background-color: white;
+    border: 1.6px solid #1A1A1A;
+    color: #1A1A1A;
+    border-radius: 40px 15px;
+}
+
+/*----------------------------------------------------------*/
+
+/* Weitere Stile für den Footer */
+.footer {
+
+  color: #EEF1F2;
+  padding: 20px;
+}
+
+.footer a {
+  color: #EEF1F2;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  /* Ändere die Farbe bei Hover nach Bedarf */
+}
+
+.row01 {
+  color: #EEF1F2;
+  text-shadow: 0.75px 0 #1A1A1A, -0.75px 0 #1A1A1A, 0 0.75px #1A1A1A, 0 -0.75px #1A1A1A,
+             0.25px 0.25px #1A1A1A, -0.25px -0.25px #1A1A1A, 0.25px -0.25px #1A1A1A, -0.25px 0.25px #1A1A1A;
+}
+#insta {
+    box-shadow: 0.75px 0 #1A1A1A, -0.75px 0 #1A1A1A, 0 0.75px #1A1A1A, 0 -0.75px #1A1A1A,
+             0.25px 0.25px #1A1A1A, -0.25px -0.25px #1A1A1A, 0.25px -0.25px #1A1A1A, -0.25px 0.25px #1A1A1A;
+}

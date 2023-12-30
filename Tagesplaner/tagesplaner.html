@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de-DE">
+<head>
+<title>Tagesplaner </title>
+<!--Meta Einstellungen-->
+<meta charset="UTF-8">
+<meta name="keywords" content="1500m, Braunschweig, Tim Kalies, Laufen">
+<meta name="description" content="Tim Kalies Lauf Blog">
+<meta name="author" content="Tim Kalies">
+<meta http-equiv="refresh" content="90">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Links-->
+<link rel="stylesheet" href="daily.css">
+<script type="text/javascript" src="daily.js"></script>
+<!--FONT AWESOME-->
+<script src="https://kit.fontawesome.com/689fa75987.js" crossorigin="anonymous"></script>
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<article id="changediv"> 
+<form id="edit">
+<h1 id="h03"> Bearbeitungsfeld </h1>
+<hr>
+<br>
+<section id="editsec">
+<label for="textedit"> <i class="fa-regular fa-clipboard"></i>: </label>
+<input type="text" id="textedit" placeholder="..."> </input>
+<label for="timeedit"> <i class="fa-regular fa-clock"></i>: </label>
+<input type="time" id="timeedit"placeholder="--:--"> </input>
+<button id="button04" onclick="öffnen_edit()">Erweiterte Einstellungen</button>
+<br><br><br>
+<button id="button06" onclick="change2()">Bearbeiten beenden</button>
+</form>
+<br><br>
+<section id="tools_edit">
+  <button id="button05" onclick="isBold()"><b>Bold</b></button>
+</section>
+</section>
+</article>
+<main class="background-change">
+<div id="div02_sp">
+<span id="time"> </span>
+<h1 id="h02_sp">Tagesplaner</h2>
+<hr>
+<sub id="textinfo">
+</sub>
+</div>
+<form id="input">
+<label for="textfield"> <i class="fa-regular fa-clipboard"></i>: </label>
+<input type="text" id="textfield" placeholder="..."> </input>
+<label for="timefield"> <i class="fa-regular fa-clock"></i>: </label>
+<input type="time" id="timefield"placeholder="--:--"> </input>
+<button id="button01" onclick="create()">+</button>
+<button id="button03" onclick="öffnen()">Erweiterte Einstellungen</button>
+</form>
+
+<section id="tools">
+  <button id="button05" onclick="isBold()"><b>Bold</b></button>
+</section>
+<hr>
+<br>
+<section id="text">
+<ul id="notes"> </ul>
+</section>
+
+
+<br><br><br><hr>
+</main>
+</body>
+<footer>
+<select id="bgchoice" onchange="changeBackgroundColor()">
+    <option value="">--Farbe auswählen--- </option>
+    <option value="0">Gelb</option>
+    <option value="1">Rot</option>
+    <option value="2">Grün</option>
+    <option value="3">Blau</option>
+</select>
+
+
+
+
+<div class="footer">
+<div class="row">
+<a href="https://www.facebook.com/suchtverhalten.cr.5"><i class="fa fa-facebook"></i></a>
+<a href="instagram.com/tim.kalies"><i class="fa fa-instagram"></i></a>
+<a href="https://twitter.com/KaliesTim" id= ><i class="fa fa-twitter"></i></a>
+<a href="#"> <a>
+</div>
+
+<div class="row">
+
+
+<p class="row01">Copyright © 2023 Tim Kalies</p>
+</div>
+</div>
+</footer>
+</html>

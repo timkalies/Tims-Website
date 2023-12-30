@@ -1,0 +1,26 @@
+input {
+  border: 2px solid grey;
+  width: 80%;
+  padding: 5px;
+}
+label {
+  font-family:'Play', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+button[type='submit'] {
+  width: 55%;
+  border: 2px solid grey;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  background-color: grey;
+}
+textarea {
+  border: 2px solid grey;
+  width: 80%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
