@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  let b = document.getElementById("icon");
-  b.addEventListener("click", MenuAnimated);
+  let b = document.getElementById("icon").addEventListener("click", MenuAnimated);
 });
 
 /* Öffnet und Schließt Menü */
@@ -9,6 +8,7 @@ function myFunction() {
   let a = document.getElementById("myLinks");
   if (a.style.display == "block") {
     a.style.display = "none";
+    document.body.style.filter = "none";
   } else {
     a.style.display = "block";
   }
