@@ -8,8 +8,8 @@
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "name": "Launch index.html",
-            "file": "c:\\Users\\User\\OneDrive\\Dokumente\\Tims Website\\index.html"
+            "name": "Launch projects.html",
+            "file": "c:\\Users\\User\\OneDrive\\Dokumente\\Tims Website\\projects.html"
         },
 
 

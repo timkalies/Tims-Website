@@ -44,7 +44,13 @@ body {
   -webkit-box-shadow: 0 0 3px #363535;
    box-shadow: 0 0 3px #363535;
    backdrop-filter: blur(10px);
+   border-radius: 10px;
   }
   #close {
+    float: right;
     border: none;
+    background-color: #FAF9F6;
+  }
+  #close:hover {
+    font-weight: bold;
   }

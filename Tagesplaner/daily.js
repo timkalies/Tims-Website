@@ -2,7 +2,10 @@ let o, p, q, r, s, t, u, section, editsec;
 let clicked = false; //Variable zur abfrage ob Notiz hinzugefügt wurde
 let x = 0; //Abfrage um delete zu ermöglichen 
 let y = 0; //Abfrage um edit mehrfach zu ermöglichen
+let z = 0; //Abfrage um Bold zu deaktivieren
+let xy = 0; //Abfrage um Kursiv zu deaktivieren
 let bold = false;
+let cursive = false;
 
 
 //----------------------------------------------------------
@@ -64,7 +67,7 @@ var textb = document.createTextNode("Löschen");
 	bold = false; //setzt Bold auf false damit Text nicht dauerhaft Fett ist
 }
 }
-
+//funktioniert nicht
 function timeBasedSort(list) {
   while (i > 0) {
   let inputs = document.querySelectorAll("text02");
@@ -77,13 +80,13 @@ function timeBasedSort(list) {
 //----------------------------------------------------------
 
 
-function change1() {
+function change1(event) {
   	  event.preventDefault();
   	  editsec = document.getElementById("changediv");
   	  editsec.style.display = "block";
   
 }
-function change2(){
+function change2(event){
   event.preventDefault();
     	  t = document.getElementById("textedit").value; //nimmt wert text
     	  u = document.getElementById("timeedit").value;
@@ -141,12 +144,44 @@ function öffnen_edit() {
 
 
 function isBold() {
-  bold = true;
-  let subText = document.getElementById("textinfo");
-	subText = document.createElement("p").textContent = "Text is Bold!";
-	subText.style.fontWeight = "bold";
+ z++;
+ let subDiv = document.querySelector("#textinfo");
+ let subText = document.createElement("p");
+  if(z%2===1) {
+	bold = true;
+	  subText.textContent = "Der Text ist fettgedruckt!";
+	  subDiv.style.fontWeight = "bold";
+	  subDiv.appendChild(subText);
+	  console.log("Text ist fettgedruckt");
+  } else if (z%2 === 0) {
+	bold = false;
+	subDiv.removeChild(subDiv.firstElementChild);
+	console.log("Check");
+  }
+
 }
 
+//----------------------------------------------------------
+
+
+
+function isCursive() {
+	xy++;
+	let subDiv = document.querySelector("#textinfo");
+	let subText = document.createElement("p");
+	 if(xy%2===1) {
+	   cursive = true;
+		 subText.textContent = "Der Text ist kursiv!";
+		 subDiv.style.fontWeight = "italic";
+		 subDiv.appendChild(subText);
+		 console.log("Text ist kursiv");
+	 } else if (xy%2 === 0) {
+	   bold = false;
+	   subDiv.removeChild(subDiv.firstElementChild);
+	   console.log("Check");
+	 }
+   
+   }
 //----------------------------------------------------------
 document.addEventListener('DOMContentLoaded', function() {
 	startTime();
@@ -164,7 +199,7 @@ function startTime() {
   let hour = today.getHours();
   let min = today.getMinutes();
   let sec = today.getSeconds();
-  // add a zero in front of numbers<10
+  // Setzt eine Null vor Zahlen>10
   min = checkTime(min);
   sec = checkTime(sec);
   document.querySelector('#time').innerHTML = hour + ":" + min + ":" + sec;
@@ -172,3 +207,16 @@ function startTime() {
     startTime()
   }, 500);
 }
+//Close Button für Bearbeitungsdiv
+document.addEventListener('DOMContentLoaded', function () {
+	let c = document.getElementById("changesnotes");
+	
+	
+	let d = document.getElementById("close").addEventListener("click", function(){
+		c.style.display = "none";
+		});
+	  
+	  let e = document.getElementById("link2").addEventListener("click", function(){
+	  c.style.display = "block";
+	  });
+	});

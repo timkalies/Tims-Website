@@ -8,7 +8,6 @@ function myFunction() {
   let a = document.getElementById("myLinks");
   if (a.style.display == "block") {
     a.style.display = "none";
-    document.body.style.filter = "none";
   } else {
     a.style.display = "block";
   }
