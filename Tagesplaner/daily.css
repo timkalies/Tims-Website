@@ -67,7 +67,7 @@ text-shadow: 2px 0 #1A1A1A, -2px 0 #1A1A1A, 0 2px #1A1A1A, 0 -2px #1A1A1A,
   border-radius: 35px 33px;
   margin-right: 150px;
   }
-#button02, #button03, #button04, #button05, #button06 { /*Edit Button*/
+#button02, #button03, #button04, #boldButton, #cursiveButton, #button06 { /*Edit Button*/
   border: 1.5px solid #1A1A1A;
   color: #1A1A1A;
   background-color: white;
