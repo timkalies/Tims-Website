@@ -28,7 +28,21 @@ hr {
   from {transform: rotate(0deg);}
   to {transform: rotate(180deg);}
 }
-/* Style navigation menu links */
+@keyframes rotateBack {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-180deg);}
+}
+
+@keyframes sizeUp {
+  from {font-size: 1em;}
+  to {font-size: 1.1em;}
+}
+@keyframes sizeDown {
+  from {font-size: 1.1em;}
+  to {font-size: 1em;}
+}
+
+/* Menü Links */
 .navigation a {
   color: white;
   padding: 14px 16px;
@@ -36,8 +50,17 @@ hr {
   font-size: 17px;
   display: block;
 }
-
-/* Style the hamburger menu */
+#topnav, #downnav {
+  font-size: 1em;
+  transition: font-size 0.5s;
+  -moz-transition:font-size 0.5s; /* Firefox 4 */
+  -webkit-transition:font-size 0.5s; /* Safari and Chrome */
+  -o-transition:font-size 0.5s
+}
+#topnav:hover, #downnav:hover {
+  font-size: 1.1em
+}
+/* Das Icon des Menü */
 .navigation a#icon {
   background: black;
   display: block;
@@ -49,8 +72,7 @@ hr {
 /* Add a grey background color on mouse-over */
 .navigation a:hover {
   background-color: #ddd;
-  color: black;
-  
+  color: grey;
 }
 
 /* Hintergrundbild */
