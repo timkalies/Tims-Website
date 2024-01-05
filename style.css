@@ -109,10 +109,12 @@ margin: 0 auto;
 .backimg_01 a i{
   display: inline-flex;
   flex-direction: column;
-  font-size:3em;
+  font-size: 3em;
+  transition: font-size 0.5s;
 }
 .backimg_01 a:hover{
   color:#fff;
+  font-size: 1.1em;
 }
 
 
@@ -205,10 +207,13 @@ div.blogposts_2 a {
   text-decoration:none;
   color:gray;
   transition:0.5s;
+  font-size: 1em;
+  
 }
 
 #footer .row a:hover{
   color:#fff;
+
 }
 
 #footer .row ul{
@@ -239,6 +244,7 @@ div.blogposts_2 a {
 .row01 {
   font-size: 0.75em;
   text-align: left;
+  margin-left: 10px;
 }
 .sponsors_img1 {
   transform: scale(0.7);
