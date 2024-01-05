@@ -21,7 +21,7 @@
 <!-- Hinweis: Wenn du die Seite bereitstellen willst, ersetze "development.js" mit "production.min.js". -->
 <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 <!-- Unsere React Komponente laden. -->
-<script src="like_button.js"></script>
+<script src="react.js"></script>
 <!--GOOGLE FONTS-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
@@ -33,7 +33,7 @@
 <div class="navigation">
 <a href="#">Blogs </a>
 <div id="myLinks">
-    <a href="index.html" id="topnav"></a>>Startseite</a>
+    <a href="index.html" id="topnav">Startseite</a>
     <a href="#" id="topnav">Über Mich</a>
     <a href="projects.html" id="topnav">Projekte</a>
     <a href="kontakt.html" id="topnav">Kontakt</a>
@@ -49,16 +49,16 @@
 <br>
 <h2 id="h03_sp">ARTIKEL</h2>
 <div class="blogposts_1">
- <img src="C:\Users\User\OneDrive\Dokumente\Tims Website\Bilder\U20EM_front.jpg" alt="Titelbild">
+ <img src="Bilder\U20EM_front.jpg" id="frontimg" alt="Finale U20-EM">
 <div class="blogposts_2">
 <p>U20-EM Jerusalem 2023 - 7.Platz</p>
-<a href=blogpost1.html>Artikel lesen...</a>
+<a href=Blogs\blogpost1.html>Artikel lesen...</a>
 <p class="p01_sp">18.10.2023</p>
 </div>
 </div>
 <hr>
 <div class="blogposts_1">
- <img src="C:\Users\User\OneDrive\Dokumente\Tims Website\Bilder\U20DM2.jpg" alt="Titelbild">
+ <img src="Bilder\U20DM2.jpg" id="frontimg" alt="U20-DM Rostock">
 <div class="blogposts_2">
 <p>U20-DM Rostock 2022 - 2.Platz</p>
 <a href=blogpost2.html>Artikel lesen...</a>
@@ -69,25 +69,20 @@
 <br><br><br>
 </main>
 </body>
-<footer>
-<div class="footer">
-<div class="row">
-<a href="https://www.facebook.com/suchtverhalten.cr.5"><i class="fa fa-facebook"></i></a>
-<a href="instagram.com/tim.kalies"><i class="fa fa-instagram"></i></a>
-<a href="https://twitter.com/KaliesTim"><i class="fa fa-twitter"></i></a>
-<ul>
-<li><a href="index.html" id="downnav">Startseite</a></li>
-<li><a href="#" id="downnav">Blog</a></li>
-<li><a href="projects.html" id="downnav">Projekte</a></li>
-<li><a href="#" id="topnav">Über Mich</a></li>
-<li><a href="kontakt.html" id="downnav">Kontakt</a></li>
-<li><a href="impressum.html" id="downnav">Impressum</a></li>
-</ul>
-</div>
-
-<div class="row">
-Copyright © 2023 Tim Kalies 
-</div>
-</div>
+<footer id="footer">
+  <div class="row">
+  <a href="https://www.facebook.com/suchtverhalten.cr.5"><i class="fa fa-facebook"></i></a>
+  <a href="instagram.com/tim.kalies"><i class="fa fa-instagram"></i></a>
+  <a href="https://twitter.com/KaliesTim"><i class="fa fa-twitter"></i></a>
+  <ul>
+  <li><a href="index.html" id="downnav">Startseite</a></li>
+  <li><a href="blog.html" id="downnav">Blog</a></li>
+  <li><a href="#" id="downnav">Über Mich</a></li>
+  <li><a href="#" id="downnav">Sponsoren</a></li>
+  <li><a href="impressum.html" id="downnav">Impressum</a></li>
+  </ul>
+  <p class="row01">Copyright © 2023 Tim Kalies</p>
+  </div>
+  </div>
 </footer>
 </html>
