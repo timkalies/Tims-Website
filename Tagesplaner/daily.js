@@ -261,31 +261,8 @@ switch(fancy) {
 
 
 
-//----------------------------------------------------------
-document.addEventListener('DOMContentLoaded', function() {
-	startTime();
-  }); //Startet Uhrzeit sobald Website geladen wird
+//---------------------------------------------------------
 
-function checkTime(i) {
-  if (i < 10) {
-    i = "0" + i;
-  }
-  return i;
-}
-
-function startTime() {
-  let today = new Date();
-  let hour = today.getHours();
-  let min = today.getMinutes();
-  let sec = today.getSeconds();
-  // Setzt eine Null vor Zahlen>10
-  min = checkTime(min);
-  sec = checkTime(sec);
-  document.querySelector('#time').innerHTML = hour + ":" + min + ":" + sec;
-  time = setTimeout(function() {
-    startTime()
-  }, 500);
-}
 //Close Button für Bearbeitungsdiv
 document.addEventListener('DOMContentLoaded', function () {
 	let c = document.getElementById("editsec");
