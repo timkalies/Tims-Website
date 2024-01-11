@@ -2,6 +2,14 @@ let o, p, q, r, s, t, u, section, editsec;
 let clicked = false, case1 = false, case2 = false; //Variable zur abfrage ob Notiz hinzugefügt wurde
 let x = 0, y = 0, z = 0, xy = 0, fancy = 0, i = 0; // x = delete, y = edit mehrfach, z = bold, xy = kursiv, fancy = case 
 let bold = false, cursive = false;
+
+import React from "react";
+import ReactDOM from "react-dom"
+import Element from "Tagesplaner\react.js";
+//----------------------------------------------------------
+//React Test
+const rootElement = document.getElementById("time");
+ReactDOM.render(<Element />, rootElement);
 //----------------------------------------------------------
 document.addEventListener('DOMContentLoaded', function () {
 let subDiv = document.querySelector("#textinfo"); //Füg hinzu das bei entfernung eines Formats Text gelöscht wird
@@ -261,31 +269,8 @@ switch(fancy) {
 
 
 
-//----------------------------------------------------------
-document.addEventListener('DOMContentLoaded', function() {
-	startTime();
-  }); //Startet Uhrzeit sobald Website geladen wird
+//---------------------------------------------------------
 
-function checkTime(i) {
-  if (i < 10) {
-    i = "0" + i;
-  }
-  return i;
-}
-
-function startTime() {
-  let today = new Date();
-  let hour = today.getHours();
-  let min = today.getMinutes();
-  let sec = today.getSeconds();
-  // Setzt eine Null vor Zahlen>10
-  min = checkTime(min);
-  sec = checkTime(sec);
-  document.querySelector('#time').innerHTML = hour + ":" + min + ":" + sec;
-  time = setTimeout(function() {
-    startTime()
-  }, 500);
-}
 //Close Button für Bearbeitungsdiv
 document.addEventListener('DOMContentLoaded', function () {
 	let c = document.getElementById("editsec");

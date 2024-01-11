@@ -11,19 +11,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Links-->
 <link rel="stylesheet" href="daily.css">
-<script type="text/javascript" src="daily.js"></script>
+<script type="text/javascript" src="tims-website\public\Tagesplaner\daily.js"></script>
 <!--FONT AWESOME-->
 <script src="https://kit.fontawesome.com/689fa75987.js" crossorigin="anonymous"></script>
-<!-- REACT -->
-<!-- Hinweis: Wenn du die Seite bereitstellen willst, ersetze "development.js" mit "production.min.js". -->
-<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-<!-- Unsere React Komponente laden. -->
-<script src="like_button.js"></script>
 <!--GOOGLE FONTS-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
 </head>
 <body>
+
 <article id="changediv"> 
 <form id="edit">
 <button id="close">X</button>
@@ -48,7 +44,7 @@
 </article>
 <main class="background-change">
 <div id="div02_sp">
-<span id="time"> </span>
+<div id="time"> </div>
 <h1 id="h02_sp">Tagesplaner</h2>
 <hr>
 <div id="textinfo">
@@ -60,6 +56,7 @@
 <label for="timefield"> <i class="fa-regular fa-clock"></i>: </label>
 <input type="time" id="timefield"placeholder="--:--"> </input>
 <button id="button01" onclick="create()">+</button>
+<input type="reset" id="resetbutton"> </input>
 <button id="button03" onclick="öffnen()">Erweiterte Einstellungen</button>
 </form>
 
