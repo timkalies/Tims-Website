@@ -116,26 +116,7 @@ margin: 0 auto;
   color:#fff;
   font-size: 1.1em;
 }
-/*Slideshow bei Artikeln*/
-#nextslide, #lastslide {
-border-radius: 100px;
-background: rgb(0 0 0 / 40%);
-font-weight: bold;
-font-size: 1.3em;
-position: absolute;
-z-index: 1;
-}
-#lastslide {
-  float: left;
 
-}
-#nextslide {
-
-}
-#Slideshow { /*Container um Slide Buttons neben Bild zu platzieren */
-display: inline-flex;
-
-}
 
 /*Überschriften*/
 #h01_sp {
@@ -157,34 +138,77 @@ img {
 }
 
 /*Bild Startseite*/
-
+/* Verbesserte Stile für den Blogpost */
 div.blogposts_1 {
   width: 90%;
-  float: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  background-color: #f9f7f7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+div.blogposts_1 img {
+  width: 50%;
 }
 
 div.blogposts_2 {
   text-align: center;
-  padding: 10px 20px;
 }
 
+div.blogposts_2 p {
+  margin: 0;
+}
 
 div.blogposts_2 a {
-  align-content: center;
-  color: blue;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.blogposts_2 a:hover {
+  text-decoration: underline;
+}
+
+.p01_sp {
+  text-align: right;
+  color: grey;
+  font-size: 0.65em;
+  margin-bottom: 5px;
+  margin-top: 100%;
+}
+#blogdescription {
+  margin-bottom: 5px;
 }
 #frontimg {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 50%;
-  
 }
+/*Slideshow bei Artikeln*/
+#nextslide, #lastslide {
+  border-radius: 100px;
+  background: rgba(221, 216, 216, 0.07);
+  opacity: 0.7;
+  font-weight: bold;
+  font-size: 1.3em;
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  }
+  #lastslide {
+left: 300px; 
+transform: translate(-50%, 1300%);
+display: none; /*Entfernen wenn funktion ready ist */
+  }
+  #nextslide {
+right: 300px;
+transform: translate(50%, 1300%);
+display: none; /*Entfernen wenn funktion ready ist */
+  }
 
 /* Artikel Startseite */
 .p01_sp {
@@ -200,7 +224,7 @@ div.blogposts_2 a {
   flex-direction: row;
   flex-wrap: nowrap; /*Ändern wenn es mehr Bilder
    werden, sorgt für keinen Zeilenumbruch*/
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .sponsors_img{
  padding: 5px;
