@@ -116,7 +116,26 @@ margin: 0 auto;
   color:#fff;
   font-size: 1.1em;
 }
+/*Slideshow bei Artikeln*/
+#nextslide, #lastslide {
+border-radius: 100px;
+background: rgb(0 0 0 / 40%);
+font-weight: bold;
+font-size: 1.3em;
+position: absolute;
+z-index: 1;
+}
+#lastslide {
+  float: left;
 
+}
+#nextslide {
+
+}
+#Slideshow { /*Container um Slide Buttons neben Bild zu platzieren */
+display: inline-flex;
+
+}
 
 /*Überschriften*/
 #h01_sp {
