@@ -1,10 +1,12 @@
 let x = 0, y = 0;
+let links = ["blogpost1.html", "blogpost2.html"];
 document.addEventListener("DOMContentLoaded", function() {
   let b = document.getElementById("icon").addEventListener("click", MenuAnimated);
+   /*Öffnet Link bei Klick auf Blogpost*/
+  let c = document.getElementById("blogposts").addEventListener("click", function() {
+    window.open(links[0]); /*Funktion Hinzufügen, dass Link nach Artikel gewählt wird*/
   });
-
-
-
+  });
 
 /* Öffnet und Schließt Menü */
 
