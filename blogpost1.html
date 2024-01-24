@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="style.css">
 <!--Nur bei Blogposts mitübernehmen-->
 <link rel="stylesheet" href="blog.css">
-<script type="text/javascript" src="C:\Users\User\OneDrive\Dokumente\Tims Website\tims-website\src\index.js"></script>
+<script type="text/javascript" src="index.js"></script>
 <!--Bindet JQuery ein-->
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <!--FONT AWESOME-->
@@ -26,7 +26,7 @@
 <header>
 <!--Links noch ändern-->
 <!-- Navigation -->
-<div class="navigation">
+<nav class="navigation">
 <a href="#">Artikel - 18.10.2023 </a>
   <div id="myLinks">
     <a href="index.html">Startseite</a>
@@ -39,28 +39,33 @@
   <a href="javascript:void(0);" id="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-</div>
+</nav>
 </header>
 <main>
-<div class="blogposts_1">
+<div class="blogpost_1">
 <h2 class="h01_bp1">U20-Europameisterschaft Jerusalem <br>7-9.8.2023 </h2>
- <img src="Bilder\U20EM_front.jpg" id="frontimg" alt="Bild aus der Kurve während dem Finale">
-<div class="blogposts_2">
-<p style="text-align: left;"><b>7. Platz bei der U20-EM in Jerusalem über 1500m</b></p>
+ <img src="Bilder\U20EM_front.jpg" id="startbild" alt="Bild aus der Kurve während dem Finale">
+ <br>
+<div class="blogpost_2">
+<p style="text-align: left;" id="blogtext"><b>7. Platz bei der U20-EM in Jerusalem über 1500m</b></p>
 <br>
-<p style="text-align: left;">Super zufrieden mit meiner Performance! 
-Als 17. Platz der Meldeliste angereist und etwas Unruhe in den letzten zwei Wochen davor gehabt.
+<p style="text-align: left;" id="blogtext"><p>Super zufrieden mit meiner Performance!<br> Als 17. Platz der Meldeliste angereist und etwas Unruhe in den letzten zwei Wochen davor gehabt.<br>
 Der Finaleinzug war nicht selbstverständlich und ein harter Kampf, da das 1500m Feld extrem gut besetzt war.
 <br>
-Schlussendlich gelang es extrem knapp als sechster meines Vorlaufs. Im Finale habe ich dann alles versucht und konnte näher an der Spitze bleiben als ich gedacht hätte, die letzten 800m in 1:47 konnte ich jedoch nichtmehr mitgehen 
+Schlussendlich gelang es extrem knapp als sechster meines Vorlaufs.<br> Im Finale habe ich dann alles versucht und konnte näher an der Spitze bleiben als ich gedacht hätte, die letzten 800m in 1:47 konnte ich jedoch nicht mehr mitgehen.
 <br>
-Insgesamt bin ich sehr zufrieden mit der Meisterschaft, jetzt geht‘s erstmal in die Saisonpause um im Anschluss die nächste Saison mit den Deutschen Meisterschaften in meiner Heimatstadt Braunschweig vorzubereiten </p>
+Insgesamt bin ich sehr zufrieden mit der Meisterschaft. <br>Jetzt geht‘s erstmal in die Saisonpause um im Anschluss die nächste Saison mit den Deutschen Meisterschaften in meiner Heimatstadt Braunschweig vorzubereiten.
+ </p>
 
-<div id="galerie"></div>
-<p class="p01_sp">Veröffentlicht: 18.10.2023</p>
+<p class="p01_bp">Veröffentlicht: 18.10.2023</p>
 </div>
 </div>
-
+<div id="galerie">
+  <h2 id="h5_galerie">Bildergalerie:</h2>
+  <button id="left"><</button>
+  <img src="Bilder\U20EM_front.jpg" id="galeriebild" alt="Tim während des U20-EM Finale">
+  <button id="right">></button>
+  </div>
 </main>
 </body>
 <footer id="footer">
