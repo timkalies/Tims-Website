@@ -29,7 +29,7 @@
   <div id="myLinks">
       <a href="blogs.html" id="topnav">Blog</a>
       <a href="#" id="topnav">Über mich</a>
-      <a href="projects.html" id="topnav">Projekte</a>
+      <a href="#" id="topnav" style="display: none">Projekte</a>
       <a href="kontakt.html" id="topnav">Kontakt</a>
       <a href="sponsors.html" id="topnav">Sponsoren</a>
       <a href="impressum.html" id="topnav">Impressum</a>
@@ -53,61 +53,71 @@
 </header> <main>
 
     <h1 id="h03_sp"><a href="#">ÜBER MICH</a></h1> 
-<article class="aboutme_sp">
-  <p class="aboutme_p01">Test </p>
+<article class="aboutme">
+  <div class="aboutme_sp">
 <figure>
  <img src="Bilder\WK_Mannheim 2022.jpg" id="profileimg" alt="Tim, beim Wettkampf in Mannheim">
  <figcaption id="profpicdesc">Tim Kalies bei der Juniorengala in Mannheim 2022</figcaption></figure>
+ <hr>
+ <p class="aboutme_p01"></p>
+</div>
+<div class="aboutme_sp">
+  <figure>
+   <img src="Bilder\WK_Mannheim 2022.jpg" id="profileimg" alt="Tim, beim Wettkampf in Mannheim">
+   <figcaption id="profpicdesc">Tim Kalies bei der Juniorengala in Mannheim 2022</figcaption></figure>
+   <hr>
+   <p class="aboutme_p01"></p>
+  </div>
 </article>
 
 <hr id="break01">
 <h1 id="h03_sp"><a href="blogs.html">NEUSTE BLOGS</a></h1>
 <article class="blogposts">
- <div class="blogposts_2">
-  <img src="Bilder\U20EM_front.jpg" id="frontimg" alt="Finale U20-EM">
- <p id="blogtitle">U20-EM Jerusalem 2023 - 7.Platz</p>
- <hr>
- <p id="blogdescription">Ein unfassbares Erlebnis mit großartigem Resultat. Als 17. angereist konnte ich meine eigenen Erwartungen im Vorlauf direkt übertreffen...</p>
- <!--<a href=blogpost1.html>Artikel lesen...</a>-->
- <sub class="postfooter">
- <p class="p01_bpsp">Ca. 2min Lesezeit</p>
- <p class="p02_bpsp">18.10.2023</p>
-</sub>
- </div>
+  <table class="blogposts_2">
+   <tr><td> <img src="Bilder\Chemnitz 3000m.jpg" id="frontimg1" alt="Finale U20-EM"></td>
+   </tr>
+   <tr><td><p id="blogtitle">3000m Hallenmeeting Chemnitz</p></td>
+   </tr>  <tr><td><hr></td></tr>
+   <td><p id="blogdescription">Der erste 3000m Lauf seit 5 Jahren, mit der damaligen PB von 11:16 stand eine Verbesserung als Zielsetzung außer Frage...</p></td>
+  </tr><!--<a href=blogpost1.html>Artikel lesen...</a>-->
+   <tr class="postfooter">
+    <td><p class="p01_bpsp">Ca. 2min Lesezeit</p></td>
+      <td><p class="p02_bpsp">27.01.2024</p></td>
+   </tr>
+</table>
 
-  <div class="blogposts_2">
-   <img src="Bilder\U20EM_front.jpg" id="frontimg" alt="Finale U20-EM">
-  <p id="blogtitle">U20-EM Jerusalem 2023 - 7.Platz</p>
-  <hr>
-  <p id="blogdescription">Ein unfassbares Erlebnis mit großartigem Resultat. Als 17. angereist konnte ich meine eigenen Erwartungen im Vorlauf direkt übertreffen...</p>
-  <!--<a href=blogpost1.html>Artikel lesen...</a>-->
-  <sub class="postfooter">
-  <p class="p01_bpsp">Ca. 2min Lesezeit</p>
-  <p class="p02_bpsp">18.10.2023</p>
- </sub>
-  </div>
-  <div class="blogposts_2">
-    <img src="Bilder\U20EM_front.jpg" id="frontimg" alt="Finale U20-EM">
-   <p id="blogtitle">U20-EM Jerusalem 2023 - 7.Platz</p>
-   <hr>
-   <p id="blogdescription">Ein unfassbares Erlebnis mit großartigem Resultat. Als 17. angereist konnte ich meine eigenen Erwartungen im Vorlauf direkt übertreffen...</p>
-   <!--<a href=blogpost1.html>Artikel lesen...</a>-->
-   <sub class="postfooter">
-   <p class="p01_bpsp">Ca. 2min Lesezeit</p>
-   <p class="p02_bpsp">18.10.2023</p>
-  </sub>
-   </div>
-   <div class="blogposts_2">
-    <img src="Bilder\U20EM_front.jpg" id="frontimg" alt="Finale U20-EM">
-   <p id="blogtitle">U20-EM Jerusalem 2023 - 7.Platz</p>
-   <hr>
-   <p id="blogdescription">Ein unfassbares Erlebnis mit großartigem Resultat. Als 17. angereist konnte ich meine eigenen Erwartungen im Vorlauf direkt übertreffen...</p>
-   <!--<a href=blogpost1.html>Artikel lesen...</a>-->
-   <sub class="postfooter">
-   <p class="p01_bpsp">Ca. 2min Lesezeit</p>
-   <p class="p02_bpsp">18.10.2023</p>
-  </sub>
-   </div>
+ <table class="blogposts_2">
+  <tr>
+   <td> <img src="Bilder\U20EM_front.jpg" id="frontimg2" alt="Finale U20-EM"></td>
+  </tr>
+ <tr>
+  <td><p id="blogtitle">U20-EM Jerusalem 2023 - 7.Platz</p></td>
+</tr>
+<tr><td><hr></td></tr>
+<tr><td> <p id="blogdescription">Ein unfassbares Erlebnis mit großartigem Resultat. Als 17. angereist konnte ich meine eigenen Erwartungen im Vorlauf direkt übertreffen...</p></td>
+</tr><!--<a href=blogpost1.html>Artikel lesen...</a>-->
+ <tr class="postfooter">
+ <td><p class="p01_bpsp">Ca. 2min Lesezeit</p></td>
+ <td><p class="p02_bpsp">18.10.2023</p></td>
+ </tr>
+</table>
+
+  <table class="blogposts_2">
+   <tr>
+    <td><img src="Bilder\U20DM2.jpg" id="frontimg3" alt="Deutsche U20 Meisterschaften"></td>
+  </tr>
+<tr>
+   <td><p id="blogtitle">Packendes Finale bei Deutschen Jugendmeisterschaften</p></td>
+  </tr><tr><td><hr></td></tr>
+<tr>
+  <td><p id="blogdescription">Auf den letzten 100m entschied sich ein packendes Finale um den Deutschen-u20-Meistertitel über 1500m...</p></td>
+</tr><!--<a href=blogpost1.html>Artikel lesen...</a>-->
+  <tr class="postfooter">
+  <td><p class="p01_bpsp">Ca. 2min Lesezeit</p></td>
+  <td><p class="p02_bpsp">18.10.2023</p></td>
+  </tr>
+</table>
+
  </article><br id="break01"><hr>
 
 <div class="div02_sp">
@@ -134,7 +144,7 @@
 <h4 id="h02_sp" style="text-align: center">SPONSOREN</h2>
 <article class="sponsors">
 <a href="https://www.braunschweiger-laufclub.com/"><img src="Bilder\BLC.jpg" alt="Braunschweiger Laufclub" class="sponsors_img1"></a>
-<a href="https://sporttalente.vwfs.com/"><img src="Bilder\VWFS.jpg" class="sponsors_img2">
+<a href="https://sporttalente.vwfs.com/"><img src="Bilder\VWFS.jpg" alt="Volkswagen Financial Services" class="sponsors_img2"></a>
 </article><hr><br>
 <!--Instagram Einbettung-->
 </main></body>

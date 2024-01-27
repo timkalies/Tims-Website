@@ -32,12 +32,12 @@
 <div class="navigation">
 <a href="#">Kontakt </a>
 <div id="myLinks">
-    <a href="index.html">Startseite</a>
-    <a href="blogs.html">Blog</a>
-    <a href="#">Über Mich</a>
-    <a href="projects.html">Projekte</a>
-    <a href="sponsors.html">Sponsoren</a>
-    <a href="impressum.html">Impressum</a>
+    <a href="index.html" id="topnav">Startseite</a>
+    <a href="blogs.html" id="topnav">Blog</a>
+    <a href="#" id="topnav">Über Mich</a>
+    <a href="#" id="topnav" style="display: none">Projekte</a>
+    <a href="sponsors.html" id="topnav">Sponsoren</a>
+    <a href="impressum.html" id="topnav">Impressum</a>
   </div>
   <a href="javascript:void(0);" id="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -45,6 +45,7 @@
 </div>
 </header>
 <main>
+  <noscript>Bitte aktiviere Javascript um diese Seite nutzen zu können</noscript>
 <h2 class="h03_sp">KONTAKTFORMULAR</h2>
 <form id="kontakt" action="kontakt.html" method="get">
 <fieldset>
@@ -64,9 +65,9 @@
 <button type="submit" value="Submit" >Absenden</button>
 <input type="reset" id="resetbutton" value="Zurücksetzen">
 </div><br>
-<fieldset>
 </form>
-<br><br><br>
+<p id="info">Sollte die Kontaktaufnahme über das Formular unerfolgreich sein, oder die Anfrage umfassender, senden sie bitte an <a href="mailto:kontakt@timkalies.de">kontakt@timkalies.de</a> eine E-Mail.</p>
+<fieldset><br><br><br>
 <h2 class="h03_sp">Deine Eingaben:</h2>
 <p>Name: <i><script>document.write(select[0]);</script></i></p>
 <p>E-Mail Adresse: <i><script>document.write(select[1]);</script></i></p>
@@ -79,12 +80,12 @@
 <a href="instagram.com/tim.kalies"><i class="fa fa-instagram"></i></a>
 <a href="https://twitter.com/KaliesTim"><i class="fa fa-twitter"></i></a>
 <ul>
-<li><a href="index.html">Startseite</a></li>
-<li><a href="blog.html">Blog</a></li>
-<li><a href="#">Über Mich</a></li>
-<li><a href="projects.html">Projekte</a></li>
-<li><a href="sponsors.html">Sponsoren</a></li>
-<li><a href="impressum.html">Impressum</a></li>
+<li><a href="index.html" id="downnav">Startseite</a></li>
+<li><a href="blog.html" id="downnav">Blog</a></li>
+<li><a href="#" id="downnav">Über Mich</a></li>
+<li> <a href="#" id="downnav" style="display: none">Projekte</a></li>
+<li><a href="sponsors.html" id="downnav">Sponsoren</a></li>
+<li><a href="impressum.html" id="downnav">Impressum</a></li>
 </ul>
 <p class="row01">Copyright © 2023 Tim Kalies</p>
 </div>
