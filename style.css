@@ -165,6 +165,7 @@ ALLE DESIGNS
   padding: 1.4vw 1.6vw;
   text-decoration: none;
   display: block;
+  font-size: 1.5em;
 }
 #topnav, #downnav {
   font-size: 1em;
@@ -259,6 +260,7 @@ img {
   justify-content: space-evenly;
   align-items: stretch;
   overflow-x: auto;
+  scroll-snap-type: x proximity;
 }
 .aboutme_sp {
   border: none;
@@ -327,6 +329,8 @@ article.blogposts {
   justify-content: flex-start;
   align-items: stretch;
   overflow-x: auto;
+  scroll-snap-type: x proximity;
+  
 }
 table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
   border: none;
