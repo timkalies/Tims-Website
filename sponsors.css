@@ -4,10 +4,11 @@
     mask: linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%; /*Bessere Kompatibilität für Browser ohne Webkit*/
     background-repeat: no-repeat;
     animation: shimmer 2.5s infinite;
-    font-size: 3em;
+    font-size: 2em;
+    border-radius:4%;
     max-width:200px;
     color: rgb(223, 218, 218);
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.06);
 }
  @keyframes shimmer {
     100% {-webkit-mask-position:left}
@@ -17,10 +18,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  column-gap: 2vw;
 
 }
 #sponsors_text1 {
-  margin: 4% 25% 10% 25%;
+  margin: 4vw 20vw 10vw 20vw;
   background-color: rgba(0, 0, 0, 0.45);
   color: #fff;
   border: 3px solid #ffffff;
@@ -30,8 +32,7 @@
 
 }
 .sponsors_img1_sponsors, .sponsors_img2_sponsors {
-  max-width: 506px;
-  max-height: 254px;
-  width: 80%;
-  height: auto;
+  max-width: 80%;
+  max-height: auto;
+  
 }
