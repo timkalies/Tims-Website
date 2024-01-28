@@ -1,66 +1,128 @@
-
 * {
   font-family: 'Play', sans-serif;
   scroll-behavior: smooth;
-  
 }
+
 body {
   background-color: rgb(233, 235, 239);
 }
+
 hr {
-     height: 6px;
-    background-image: linear-gradient(90deg, grey, transparent);
-    border: 0;
-    height: 1px;
+  height: 6px;
+  background-image: linear-gradient(90deg, grey, transparent);
+  border: 0;
+  height: 1px;
 }
-main{
+
+main {
   background-color: rgb(233, 235, 249);
   margin-left: 8vw;
   margin-right: 7vw;
   padding-left: 2vw;
-  padding-right:2vw;
+  padding-right: 2vw;
   border-left: none 1px #1f1e1e;
   border-right: none 1px #1f1e1e;
   border-top: solid 0.1px #fff9f9;
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57,57,57,0); 
-  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57,57,57,0);
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57, 57, 57, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57, 57, 57, 0);
 }
-/*
-***********************************
-Handy Styles 
-***********************************
-*/ 
-/* Designs für Handy*/
-@media (max-width:720px){
-  #footer{
-    text-align:left;
-    padding:5vw;
+
+/* Handy Styles */
+@media screen and (max-width: 720px) {
+  main {
+    overflow: hidden;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    border-top: solid 0.1px #fff9f9;
   }
-  .aboutme{
-  overflow-x: auto;
+
+  #footer {
+    text-align: left;
+    padding: 5vw;
   }
-  article.blogposts { 
+
+  .aboutme {
+    overflow-x: auto;
+  }
+
+  article.blogposts {
     align-items: baseline;
     overflow-x: auto;
   }
+
   .navigation {
     border-radius: 1vw;
     padding: 9px 3px;
   }
+
   .navigation a#icon {
     padding: 16px 16px;
   }
-  table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
-    width: 50%; 
-  }
-  #profileimg {
 
+  table.blogposts_2,
+  div.blogposts_2,
+  .aboutme {
+    width: 80vw;
   }
-  #profpicdesc {
+
+  .instagram-media {
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  #profpicdesc,
+  #profpicdesc2 {
     display: none;
   }
+
+  #profileimg,
+  #profileimg2 {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    object-fit: cover;
   }
 
+  #erfolge {
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  #erfolge p {
+    margin: 0 auto;
+  }
+
+  .div02_sp h1 {
+    text-align: center;
+  }
+
+  #ulPageIcons {
+    font-size: 2em;
+  }
+
+  #liIcons1,
+  #liIcons2,
+  #liIcons3 {
+    font-size: 1.5em;
+  }
+
+  #h01_sp {
+    margin-top: 200px;
+  }
+}
+
+
+/**********************
+ALLE DESIGNS
+**********************/
 
 
 
@@ -154,11 +216,10 @@ justify-content: space-evenly;
 font-size: 3em;
 transition: font-size 0.5s;
 transition-timing-function: ease-in-out;
-
+list-style: none;
 }
 #liIcons1, #liIcons2, #liIcons3{
   text-align: center;
-  display: inline-block;
   margin-bottom: 250px;
   font-size: 2em;
   }
@@ -215,18 +276,17 @@ margin-left: 25%;
 margin-right: 25%;
 border: none;
 border-radius: 4%;
-width: auto;
-height: auto;
+max-height: 250px;
+max-width: 100%; 
+object-fit: contain;
 }
 #profileimg2 {
-margin-left: 25%;
-margin-right: 25%;
+align-self: center;
 border: none;
 border-radius: 4%;
-width: auto;
-height: auto;
-max-width: 275px;
 max-height: 183px;
+max-width: 100%; 
+object-fit: contain;
 }
 .aboutme_p01{
   margin-top: 3vw;
@@ -249,11 +309,22 @@ max-height: 183px;
 .div02_sp h1 {
 margin-left: 1%;
 }
+#extrainfos {
+  margin-left: 8%;
+}
+.aboutme #profilelinks {
+  text-decoration: none;
+  border: 2px solid #9b9393;
+  color: #000000;
+  margin: auto 0;
+  padding: 1% 2% 1% 2%;
+  font-weight: bold;
+}
 /*Stile für den Blogpost */
 article.blogposts {
   display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
   flex-flow: row nowrap; 
-  justify-content: center;
+  justify-content: flex-start;
   align-items: stretch;
   overflow-x: auto;
 }
@@ -261,14 +332,16 @@ table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
   border: none;
   border-radius: 6%;
   margin-right: 1vw;
-  margin-left: 5vw;
   overflow: hidden;
   width: 50vw; 
   -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
   box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
   background-color: rgb(233, 235, 321); /*Ändern*/
 }
-
+.blogposts a {
+  text-decoration: none;
+  color: #000000;
+}
 .blogposts:hover > :not(:hover){
   transition: .3s;
   opacity: .4;
@@ -307,6 +380,7 @@ table.blogposts_2 a:hover, div.blogposts_2 a:hover {
   margin-bottom: 1.5vw;
   font-weight: bold;
   text-align: center;
+  font-size: 1.3em;
   color: rgb(30, 58, 138);
 }
 #blogdescription {
@@ -315,21 +389,20 @@ table.blogposts_2 a:hover, div.blogposts_2 a:hover {
   padding-right: 1vw;
   font-size: 0.9em;
 }
-#frontimg1, #frontimg2,#frontimg3, #frontimg4 {
-  border-radius: 4%;
+#frontimg1, #frontimg2,#frontimg3 {
+  border-radius: 4px;
   height: 50%;
   width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2vw;
-  max-width: 250px;
-  max-height: 170px;
+  /*Unten stehendes Kopieren und Anpassen je nachdem ob du Bilder nach width oder height ausrichten willst*/
+  max-height: 250px;
+  max-width: 100%; 
+  object-fit: contain;
 }
-#frontimg1 {
-  max-height: 170px;
-  max-width: 170px; 
-}
+
 
 /* Artikel Startseite */
 .p01_sp {
@@ -349,9 +422,10 @@ article#instagram {
   flex-direction: row;
   flex-wrap: nowrap; /*Ändern wenn es mehr Bilder
    werden, sorgt für keinen Zeilenumbruch*/
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 0.5vw;
-  height: 80%;
+  height: 60%;
+  
   aspect-ratio: inherit;
 }
 
@@ -416,8 +490,4 @@ article#instagram {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-#instagram {
-  max-width: 80%;
-  max-height: 80%;
 }
