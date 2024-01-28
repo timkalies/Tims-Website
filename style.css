@@ -1,3 +1,4 @@
+
 * {
   font-family: 'Play', sans-serif;
   scroll-behavior: smooth;
@@ -23,7 +24,47 @@ main{
   border-top: solid 0.1px #fff9f9;
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57,57,57,0); 
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57,57,57,0);
-} 
+}
+/*
+***********************************
+Handy Styles 
+***********************************
+*/ 
+/* Designs für Handy*/
+@media (max-width:720px){
+  #footer{
+    text-align:left;
+    padding:5vw;
+  }
+  .aboutme{
+  overflow-x: auto;
+  }
+  article.blogposts { 
+    align-items: baseline;
+    overflow-x: auto;
+  }
+  .navigation {
+    border-radius: 1vw;
+    padding: 9px 3px;
+  }
+  .navigation a#icon {
+    padding: 16px 16px;
+  }
+  table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
+    width: 50%; 
+  }
+  #profileimg {
+
+  }
+  #profpicdesc {
+    display: none;
+  }
+  }
+
+
+
+
+
 /*Navigation*/
 /* Versteckt die Links im Navigationsmenü */
 .navigation {
@@ -31,7 +72,7 @@ main{
   background-color: rgba(135, 145, 158, .3);
   position: relative;
   border: none;
-  border-radius: 15vw;
+  
 }
 
 .navigation #myLinks {
@@ -83,6 +124,7 @@ main{
   top: 0;
   font-size: 1em;
   text-shadow: 2px 2px black;
+
 }
 
 /* Add a grey background color on mouse-over */
@@ -103,7 +145,6 @@ main{
 
   
 }
-/*Positioniert Frontartikelfoto zentriert */
 
 /*Zur Positionierung der Icons*/
 #ulPageIcons {
@@ -118,7 +159,7 @@ transition-timing-function: ease-in-out;
 #liIcons1, #liIcons2, #liIcons3{
   text-align: center;
   display: inline-block;
-  margin-bottom: 26vw;
+  margin-bottom: 250px;
   font-size: 2em;
   }
 .backimg_01 #ulPageIcons a, #h01_sp a {
@@ -156,6 +197,7 @@ img {
   flex-flow: row nowrap; 
   justify-content: space-evenly;
   align-items: stretch;
+  overflow-x: auto;
 }
 .aboutme_sp {
   border: none;
@@ -169,11 +211,22 @@ img {
   background-color: rgb(233, 235, 321); /*Ändern*/
 }
 #profileimg {
-margin-left: 25vw;
-margin-right: 25vw;
+margin-left: 25%;
+margin-right: 25%;
 border: none;
 border-radius: 4%;
-
+width: auto;
+height: auto;
+}
+#profileimg2 {
+margin-left: 25%;
+margin-right: 25%;
+border: none;
+border-radius: 4%;
+width: auto;
+height: auto;
+max-width: 275px;
+max-height: 183px;
 }
 .aboutme_p01{
   margin-top: 3vw;
@@ -181,27 +234,36 @@ border-radius: 4%;
 #break01 {
   clear: left; /*Damit nächste Seitenabschnitte nicht neben Bild sind*/
 }
-#profpicdesc {
+#profpicdesc, #profpicdesc2 {
   color: #818080;
   font-size: 0.6em;
-  margin-left: 31.5vw;
-  margin-right: 25vw;
+  margin-right: 20%;
 }
-
+#profpicdesc {
+  margin-left: 31.5%;
+}
+#profpicdesc2 {
+  margin-left: 35%;
+}
+/* Über Mich Erfolge */
+.div02_sp h1 {
+margin-left: 1%;
+}
 /*Stile für den Blogpost */
 article.blogposts {
   display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
   flex-flow: row nowrap; 
   justify-content: center;
   align-items: stretch;
+  overflow-x: auto;
 }
 table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
   border: none;
-  border-radius: 6vw;
+  border-radius: 6%;
   margin-right: 1vw;
   margin-left: 5vw;
   overflow: hidden;
-  width: 24vw; 
+  width: 50vw; 
   -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
   box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
   background-color: rgb(233, 235, 321); /*Ändern*/
@@ -222,7 +284,8 @@ table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
 }
 .p01_bpsp {
   text-align: left;
-  margin-left: 9vw;
+  margin-left: 6vw;
+  margin-right: 2vw;
   margin-bottom: 1vw;
   color: grey;
   font-size: 0.8em;
@@ -338,16 +401,7 @@ article#instagram {
   font-size:2em;
   margin:0vw 1vw;
 }
-/* Designs für Handy*/
-@media (max-width:720px){
-#footer{
-  text-align:left;
-  padding:5vw;
-}
-article.blogposts {
-  flex-flow: row wrap; 
-}
-}
+
 #footer .row ul li{
   display:block;
   margin:1vw 0vw;
