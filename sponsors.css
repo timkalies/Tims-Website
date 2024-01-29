@@ -1,4 +1,16 @@
+@media screen and (max-width: 720px)  {
+  .sponsors_img2_sponsors {
+    margin-bottom: 7%;
+  }
+  #sponsors_text1 {
+    margin-left: 16vw;
+    margin-right: 16vw;
+  }
+}
+
+
 #h02_sponsors {
+  text-align: center;
     display: inline-block;
     -webkit-mask: linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
     mask: linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%; /*Bessere Kompatibilität für Browser ohne Webkit*/
@@ -7,7 +19,8 @@
     font-size: 2em;
     border-radius:4%;
     max-width:200px;
-    color: rgb(223, 218, 218);
+    padding-right: 10px;
+    color: rgb(255, 254, 254);
     background-color: rgba(0, 0, 0, 0.06);
 }
  @keyframes shimmer {
@@ -16,10 +29,9 @@
 .sponsors_sponsors{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: baseline;
   column-gap: 2vw;
-
 }
 #sponsors_text1 {
   margin: 4vw 20vw 10vw 20vw;
@@ -29,10 +41,9 @@
   border-radius: 20px;
   font-size: 1.1em;
   padding: 1.2vw 1.8vw 1.2vw 1.8vw;
-
 }
+
 .sponsors_img1_sponsors, .sponsors_img2_sponsors {
   max-width: 80%;
-  max-height: auto;
-  
+  max-height: auto; 
 }
