@@ -52,16 +52,18 @@
   background-color: rgb(233, 235, 321); /*Ändern*/
 }
 .blogs_oktober a:hover, .blogs_januar a:hover{
+ transition: 0.3s;
   font-size: 1.05em;
 }
+.blogs_oktober a:not(:hover), .blogs_januar a:not(:hover){
+  transition: 0.3s;
+   font-size: 1em;
+ }
 .blogs_oktober a, .blogs_januar a {
   text-decoration: none;
   color: #000000;
 }
-.blogs_januar:hover > :not(:hover), .blogs_oktober:hover > :not(:hover) {
-  transition: .3s;
-  opacity: .4;
-}
+
 
 .blogs_oktober:hover, .blogs_januar:hover {
   cursor: pointer;

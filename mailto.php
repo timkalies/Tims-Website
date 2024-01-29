@@ -8,9 +8,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Daten aus dem Formular
   $name = $_POST["name"];
-  $email = $_POST["email"];
-  $name = $_POST["betreff"];
-  $email = $_POST["text"];
+  $email .= $_POST["email"];
+  $betreff .= $_POST["betreff"];
+  $text .= $_POST["text"];
 
   // Weitere Formulardaten hier einfügen
 
