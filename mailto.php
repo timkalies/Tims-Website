@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // E-Mail-Inhalt
   $nachricht = "Name: $name\n";
   $nachricht .= "E-Mail: $email\n";
-  $nachricht = "Betreff: $info\n";
+  $nachricht .= "Betreff: $info\n";
   $nachricht .= "Text: $text\n";
 
   // Weitere Formulardaten hier einfügen
