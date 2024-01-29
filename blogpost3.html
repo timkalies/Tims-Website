@@ -9,23 +9,21 @@
 <meta name="author" content="Tim Kalies">
 <meta http-equiv="refresh" content="90">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Links-->
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="kontakt.css">
-<script type="text/javascript" src="index.js"></script>
-<script type="text/javascript" src="kontakt.js"></script>
 <!--Favicon-->
 <link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon\favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon\favicon-16x16.png">
 <link rel="manifest" href="favicon\site.webmanifest">
+
+<!--Links-->
+<link rel="stylesheet" href="style.css">
+<!--Nur bei Blogposts mitübernehmen-->
+<link rel="stylesheet" href="blog.css">
+<script type="text/javascript" src="index.js"></script>
+<!--Bindet JQuery ein-->
+<script src="https://code.jquery.com/jquery-latest.js"></script>
 <!--FONT AWESOME-->
 <script src="https://kit.fontawesome.com/689fa75987.js" crossorigin="anonymous"></script>
-<!-- REACT -->
-<!-- Hinweis: Wenn du die Seite bereitstellen willst, ersetze "development.js" mit "production.min.js". -->
-<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-<!-- Unsere React Komponente laden. -->
-<script src="react.js"></script>
 <!--GOOGLE FONTS-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
@@ -46,12 +44,13 @@
 <!--Links noch ändern-->
 <!-- Navigation -->
 <div class="navigation">
-<a href="#">Kontakt </a>
-<div id="myLinks">
+<a href="#">Artikel - 3000m Hallenmeeting Chemnitz </a>
+  <div id="myLinks">
     <a href="index.html" id="topnav">Startseite</a>
     <a href="blogs.html" id="topnav">Blog</a>
-    <a href="#" id="topnav">Über Mich</a>
+    <a href="#" id="topnav">Über mich</a>
     <a href="#" id="topnav" style="display: none">Projekte</a>
+    <a href="kontakt.html" id="topnav">Kontakt</a>
     <a href="sponsors.html" id="topnav">Sponsoren</a>
     <a href="impressum.html" id="topnav">Impressum</a>
   </div>
@@ -62,53 +61,42 @@
 </header>
 <main>
   <noscript>Bitte aktiviere Javascript um diese Seite nutzen zu können</noscript>
-<h2 class="h03_sp">KONTAKTFORMULAR</h2>
-<form id="kontakt" action="mailto.php" method="post">
-<fieldset>
- <label for="name">Name: </label>
+<div class="blogposts_1">
+<h2 class="h01_bp1">Hallenmeetin Chemnitz 3000m <br>14.01.2024 </h2>
+ <img src="Bilder\Chemnitz 3000m.jpg" id="frontimg" alt="Start bei den Deutschen U20-Europameisterschaften">
+<div class="blogposts_2">
+<p style="text-align: left;"><b>Deutscher Vizemeistertitel über 1500m nach knappem Endspurt</b></p>
 <br>
- <input type="text" name="name" placeholder="Vorname, Nachname" required>
-<br><br>
- <label for="email">Email-Adresse: </label>
+<p style="text-align: left;">Nach langer Reise und überstandenem Vorlauf stand am 31.07.2023 mein Finale über die 1500m der U20 an. Es war meine letzte Nationale Meisterschaft innerhalb dieser Altersklasse. Dementsprechend hatte ich nach einer bis dahin starken Saison hohe Ambitionen im Titelkampf. 
 <br>
- <input type="email" name="email" placeholder="name@domain.com" required>
- <br><br>
- <label for="email">Betreff</label>
+Das Rennen startete nach etwas Verzögerung mit einem gemächlichen, jedoch Meisterschafts-üblichen, Angang. Aus diesem folgte viel Rangelei und taktische Umpositionierung innerhalb des Läuferfeldes. 400m vorm Ziel ging es in den Schlussspurt, bis 100m vor Ziel war es mir jedoch nicht möglich genug Abstand zu meiner Konkurrenz aufzubauen, wodurch ich schlussendlich kurz vor Ziel von meinem großen Konkurrenten Jan Dillemuth überspurtet wurde. 
 <br>
- <input type="text" name="betreff" placeholder="" required>
- <br><br>
-<label for="text">Text: </label>
-<br>
-<textarea type="text" name="text" placeholder="..." required></textarea>
-<br><br>
-<div id="options">
-<button type="submit" value="Submit" >Absenden</button>
-<input type="reset" id="resetbutton" value="Zurücksetzen">
-</div><br>
-</form>
-<p id="info">Sollte die Kontaktaufnahme über das Formular nicht möglich sein, oder die Anfrage umfassender, bitte per Mail an <a href="mailto:kontakt@timkalies.de">kontakt@timkalies.de</a>.</p>
-<fieldset style="visibility: hidden;"><br><br><br>
-<h2 class="h03_sp">Deine Eingaben:</h2>
-<p>Name: <i><script>document.write(select[0]);</script></i></p>
-<p>E-Mail Adresse: <i><script>document.write(select[1]);</script></i></p>
-<p>Text: <i><script>document.write(select[2]);</script></i></p>
-</fieldset></main>
+Somit konnte ich mir den zweiten Platz in einem breitflächig sehr gut besetzten Feld sichern und nahm wichtige Lektionen für mein anstehendes, erstes internationales Rennen, den U20-Europameisterschaften, mit. </p>
+
+<div id="root"></div>
+<p class="p01_sp">Veröffentlicht: 18.10.2023</p>
+</div>
+</div>
+
+</main>
 </body>
 <footer id="footer">
 <div class="row">
 <a href="https://www.facebook.com/suchtverhalten.cr.5"><i class="fa fa-facebook"></i></a>
 <a href="instagram.com/tim.kalies"><i class="fa fa-instagram"></i></a>
 <a href="https://twitter.com/KaliesTim"><i class="fa fa-twitter"></i></a>
+<a href="#"> <a>
 <ul>
-<li><a href="index.html" id="downnav">Startseite</a></li>
-<li><a href="blog.html" id="downnav">Blog</a></li>
+<li><a href="index.html"  id="downnav">Startseite</a></li>
+<li><a href="blogs.html" id="downnav">Blog</a></li>
+<li><a href="#" id="topnav" style="display: none">Projekte</a></li>
 <li><a href="#" id="downnav">Über Mich</a></li>
-<li> <a href="#" id="downnav" style="display: none">Projekte</a></li>
 <li><a href="sponsors.html" id="downnav">Sponsoren</a></li>
+<li><a href="kontakt.html" id="downnav">Kontakt</a></li>
 <li><a href="impressum.html" id="downnav">Impressum</a></li>
 </ul>
-<p class="row01">Copyright © 2023 Tim Kalies</p>
-</div>
 
+<p>Copyright © 2023 Tim Kalies</p> 
+</div>
 </footer>
 </html>
