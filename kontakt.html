@@ -29,6 +29,17 @@
 <!--GOOGLE FONTS-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+<!-- Google tag (gtag.js) + AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3294355863342611"
+     crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-75R8GKTYXK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-75R8GKTYXK');
+</script>
 </head>
 <body>
 <header>
@@ -52,26 +63,30 @@
 <main>
   <noscript>Bitte aktiviere Javascript um diese Seite nutzen zu können</noscript>
 <h2 class="h03_sp">KONTAKTFORMULAR</h2>
-<form id="kontakt" action="kontakt.html" method="get">
+<form id="kontakt" action="mailto.php" method="post">
 <fieldset>
  <label for="name">Name: </label>
 <br>
- <input type="text" name="name" placeholder="Vorname, Nachname">
+ <input type="text" name="name" placeholder="Vorname, Nachname" required>
 <br><br>
  <label for="email">Email-Adresse: </label>
 <br>
- <input type="email" name="email" placeholder="name@domain.com">
-<br><br>
+ <input type="email" name="email" placeholder="name@domain.com" required>
+ <br><br>
+ <label for="email">Betreff</label>
+<br>
+ <input type="text" name="betreff" placeholder="" required>
+ <br><br>
 <label for="text">Text: </label>
 <br>
-<textarea type="text" name="text" placeholder="..."></textarea>
+<textarea type="text" name="text" placeholder="..." required></textarea>
 <br><br>
 <div id="options">
 <button type="submit" value="Submit" >Absenden</button>
 <input type="reset" id="resetbutton" value="Zurücksetzen">
 </div><br>
 </form>
-<p id="info">Sollte die Kontaktaufnahme über das Formular unerfolgreich sein, oder die Anfrage umfassender, senden sie bitte an <a href="mailto:kontakt@timkalies.de">kontakt@timkalies.de</a> eine E-Mail.</p>
+<p id="info">Sollte die Kontaktaufnahme über das Formular nicht möglich sein, oder die Anfrage umfassender, bitte per Mail an <a href="mailto:kontakt@timkalies.de">kontakt@timkalies.de</a>.</p>
 <fieldset><br><br><br>
 <h2 class="h03_sp">Deine Eingaben:</h2>
 <p>Name: <i><script>document.write(select[0]);</script></i></p>
