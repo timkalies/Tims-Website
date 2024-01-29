@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // E-Mail senden
   mail($empfaenger, $betreff, $nachricht);
-
+  header("Location: kontakt.html");
   exit();
 }
 ?>
