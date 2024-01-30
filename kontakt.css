@@ -9,7 +9,7 @@ label {
   color: black;
 }
 button[type='submit'], input[type="reset"] {
-  width: 10%;
+  max-width: 120px;
   border: 2px solid grey;
   color: white;
   font-weight: bold;
@@ -18,11 +18,11 @@ button[type='submit'], input[type="reset"] {
   opacity: 0.8;
   font-size: 1em;
   transition: font-size 1s;
-  border-right: #ffff solid 1px;
-  margin-right: 5px;
+  border-radius: 4%;
+  margin-right: 10px;
 }
 button[type='submit']:hover, input[type="reset"]:hover {
-font-size: 1.1em
+cursor: pointer;
 }
 #options {
   display: flex;
