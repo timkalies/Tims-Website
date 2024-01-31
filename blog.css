@@ -1,3 +1,16 @@
+@media screen and (max-width: 720px) {
+  .blogs_oktober, .blogs_januar {
+    align-items: baseline;
+    overflow-x: auto;
+  }
+  .blogposts_2_blogs {
+    width: 80vw;
+    height: auto;
+  }
+}
+body {
+  background-image: url(Bilder/U20DM.png);
+}
 .h01_bp1 {
   text-align: left;
   padding-top: 15px;
@@ -30,6 +43,7 @@
   height: auto;
   margin-bottom: 15px;
 }
+
 #h03_sp {
   color: rgb(30, 58, 138);
 }
@@ -37,8 +51,9 @@
   display: flex;
   flex-flow: row nowrap; 
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: stretch;
   overflow-x: auto;
+  scroll-snap-type: x proximity;
 }
 
 .blogposts_2_blogs {
@@ -46,7 +61,10 @@
   border-radius: 6%;
   margin-right: 1vw;
   overflow: hidden;
-  width: 30vw; 
+  width: 50vw; 
+  height: 50vh;
+  font-size: 1em;
+  min-height: 50vh;
   -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
   box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
   background-color: rgb(233, 235, 321); /*Ändern*/
@@ -54,6 +72,7 @@
 .blogs_oktober a:hover, .blogs_januar a:hover{
  transition: 0.3s;
   font-size: 1.05em;
+  cursor: pointer;
 }
 .blogs_oktober a:not(:hover), .blogs_januar a:not(:hover){
   transition: 0.3s;
@@ -62,11 +81,6 @@
 .blogs_oktober a, .blogs_januar a {
   text-decoration: none;
   color: #000000;
-}
-
-
-.blogs_oktober:hover, .blogs_januar:hover {
-  cursor: pointer;
 }
 #blogbutton {
 color: #dfebf1;
