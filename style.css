@@ -26,100 +26,12 @@ main {
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57, 57, 57, 0);
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57, 57, 57, 0);
 }
-
-/* Handy Styles */
-@media screen and (max-width: 720px) {
-  main {
-    overflow: hidden;
-    margin-left: 0vw;
-    margin-right: 0vw;
-    padding-left: 0vw;
-    padding-right: 0vw;
-    border-top: solid 0.1px #fff9f9;
-  }
-
-  #footer {
-    text-align: left;
-    padding: 5vw;
-  }
-
-  .aboutme {
-    overflow-x: auto;
-  }
-
-  article.blogposts {
-    align-items: baseline;
-    overflow-x: auto;
-  }
-
-  .navigation {
-    border-radius: 1vw;
-    padding: 9px 3px;
-  }
-
-  .navigation a#icon {
-    padding: 16px 16px;
-  }
-
-  table.blogposts_2,
-  div.blogposts_2,
-  .aboutme_sp {
-    width: 80vw;
-  }
-#extrainfos, #profilelinks {
-  visibility: hidden;
+small {
+  font-style: italic;
+  font-size: 0.5em;
 }
-  .instagram-media {
-    max-width: 100%;
-    margin: 0 auto;
-    object-fit: contain;
-  }
 
-  #profpicdesc,
-  #profpicdesc2 {
-    display: none;
-  }
 
-  #profileimg,
-  #profileimg2 {
-    width: 100%;
-    height: 60px;
-    margin-left: 0%;
-    margin-right: 0%;
-    object-fit: fill;
-  }
-
-  #erfolge {
-    padding: 0;
-    margin: 0;
-    max-height: 200px;
-    overflow-y: auto;
-    -webkit-box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.28); 
-box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.28);
-  }
-
-  #erfolge p {
-    margin: 0 auto;
-  }
-
-  .div02_sp h1 {
-    text-align: center;
-  }
-
-  #ulPageIcons {
-    font-size: 2em;
-  }
-
-  #liIcons1,
-  #liIcons2,
-  #liIcons3 {
-    font-size: 1.5em;
-  }
-
-  #h01_sp {
-    margin-top: 200px;
-  }
-}
 
 
 /**********************
@@ -276,14 +188,15 @@ img {
   box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
   background-color: rgb(233, 235, 321); /*Ändern*/
 }
-#profileimg {
-margin: auto;
-border: none;
-border-radius: 4%;
-max-height: 250px;
-max-width: 100%; 
-object-fit: contain;
+#profileimg, #profileimg2 {
+  margin: auto;
+  border: none;
+  border-radius: 4%;
+ min-height: 250px;
+  max-width: 100%; 
+  object-fit: contain;
 }
+
 #profileimg2 {
 align-self: center;
 border: none;
@@ -320,6 +233,7 @@ margin-left: 1%;
   padding: 1% 2% 1% 2%;
   font-weight: bold;
 }
+
 /*Stile für den Blogpost */
 article.blogposts {
   display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
@@ -331,16 +245,24 @@ article.blogposts {
   
 }
 table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
-  flex-grow: 1; /* Hinzugefügte Zeile, um die gleiche Größe für alle divs zu gewährleisten */
   border: none;
   border-radius: 6%;
   margin-right: 1vw;
   overflow: hidden;
-  width: 50vw; 
+  width: 30vw; 
   font-size: 1em;
   -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
   box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
   background-color: rgb(233, 235, 321); /*Ändern*/
+}
+.blogposts_2 tbody {
+  height: 6vh;
+}
+.blogposts_2 tfoot {
+  height: 2vh;
+}
+.blogposts_2 #blogdesc {
+  height: 5vh;
 }
 .blogposts a {
   text-decoration: none;
@@ -389,23 +311,25 @@ table.blogposts_2 a:not(:hover), div.blogposts_2 a:not(:hover) {
   margin-bottom: 1.5vw;
   font-weight: bold;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: rgb(30, 58, 138);
 }
 #blogdescription {
   opacity: 0.8;
   padding-left: 1vw;
   padding-right: 1vw;
-  font-size: 0.9em;
+  font-size: 1em;
+  min-height: 30vh;
 }
-#frontimg1, #frontimg2,#frontimg3 {
+#frontimg1, #frontimg2,#frontimg3,#frontimg4 {
   border-radius: 4px;
-  height: 50%;
-  width: 80%;
   display: block;
+  height: 50vh;
+  width: 80%;
+  min-width: 50vw;
+  margin-top: 2vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2vw;
   /*Unten stehendes Kopieren und Anpassen je nachdem ob du Bilder nach width oder height ausrichten willst*/
   max-height: 250px;
   max-width: 100%; 
@@ -434,7 +358,6 @@ article#instagram {
   justify-content: space-evenly;
   padding: 0.5vw;
   height: 60%;
-
   aspect-ratio: inherit;
 }
 
@@ -499,4 +422,450 @@ article#instagram {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+
+
+/* Handy Styles */
+@media screen and (max-width: 767px) {
+
+  * {
+    font-family: 'Play', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: rgb(233, 235, 239);
+  }
+  
+  hr {
+    height: 6px;
+    background-image: linear-gradient(90deg, grey, transparent);
+    border: 0;
+    height: 1px;
+  }
+  
+  main {
+    overflow: hidden;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    border-top: solid 0.1px #fff9f9;
+    background-color: rgb(233, 235, 249);
+    border-left: none 1px #1f1e1e;
+    border-right: none 1px #1f1e1e;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57, 57, 57, 0);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57, 57, 57, 0);
+  }
+  small {
+    font-style: italic;
+    font-size: 0.5em;
+  }
+  
+  
+  
+  
+  /**********************
+  ALLE DESIGNS
+  **********************/
+  
+  
+  
+  
+  /*Navigation*/
+  /* Versteckt die Links im Navigationsmenü */
+  .navigation {
+    overflow: hidden;
+    background-color: rgba(135, 145, 158, .3);
+    position: relative;
+    border: none;
+ 
+    padding: 9px 3px;
+  }
+  
+  .navigation #myLinks {
+    display: none;
+  }
+  
+  @keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+  }
+  @keyframes rotateBack {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-180deg);}
+  }
+  
+  @keyframes sizeUp {
+    from {font-size: 1em;}
+    to {font-size: 1.05em;}
+  }
+  @keyframes sizeDown {
+    from {font-size: 1.05em;}
+    to {font-size: 1em;}
+  }
+  
+  /* Menü Links */
+  .navigation a {
+    color: white;
+    padding: 1.4vw 1.6vw;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+  }
+  #topnav, #downnav {
+    font-size: 1em;
+    transition: font-size 0.5s;
+    -moz-transition:font-size 0.5s; /* Firefox 4 */
+    -webkit-transition:font-size 0.5s; /* Safari and Chrome */
+    -o-transition:font-size 0.5s
+  }
+  #topnav:hover, #downnav:hover {
+    font-size: 1.05em
+  }
+  
+  /* Das Icon des Menü */
+  .navigation a#icon {
+    background: rgb(112, 112, 120, .3);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1em;
+    padding: 16px 16px;
+    text-shadow: 2px 2px black;
+  
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .navigation a:hover {
+    background-color: #8DA7BE;
+  }
+  
+  /* Hintergrundbild */
+  .backimg_01 {
+  /* Das hinzufügen hiervon hat den Error gefixt */
+    background-image: url('Bilder/Mannheim_finish-blur.jpg');
+    background-position-x: 15%;
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+   
+  }
+  .backimg_01::backdrop {
+    backdrop-filter: blur(6px);
+  }
+  /*Zur Positionierung der Icons*/
+  #ulPageIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2em;
+  transition: font-size 0.5s;
+  transition-timing-function: ease-in-out;
+  list-style: none;
+  }
+  #liIcons1, #liIcons2, #liIcons3{
+    text-align: center;
+    margin-bottom: 250px;
+    font-size: 2em;
+    }
+  .backimg_01 #ulPageIcons a, #h01_sp a {
+    text-decoration:none;
+    color:white;
+    transition:0.5s;
+    text-shadow: 2px 2px black;
+  }
+  .backimg_01 a:hover{
+    color:#fff;
+    font-size: 1.1em;
+  }
+  /*Überschriften*/
+  #h01_sp {
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 3em;
+    color: white;
+    margin-top: 20vh;
+    text-shadow: 2px 2px black;
+  }
+  #h03_sp a, #h02_sp a { 
+    text-decoration: none;
+    color: rgb(30, 58, 138);
+  }  
+  
+  /*Bilder allgemein*/
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  /*Über Mich Startseite*/
+  .aboutme {
+    display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
+    flex-flow: row nowrap; 
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+  }
+  .aboutme_sp {
+    border: none;
+    border-radius: 3%;
+    margin-right: 0.1vw;
+    margin-left: 0.5vw;
+    overflow: hidden;
+    min-width: 80vw;
+    -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
+    box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
+    background-color: rgb(233, 235, 321); /*Ändern*/
+  }
+  #profileimg, #profileimg2 {
+    margin: auto;
+    border: none;
+    border-radius: 4%;
+    min-height: 20vh;
+    max-height: 20vh;
+    max-width: 100%; 
+    object-fit: cover;
+  }
+  
+  .aboutme_p01{
+    margin-top: 3vw;
+  }
+  #break01 {
+    clear: left; /*Damit nächste Seitenabschnitte nicht neben Bild sind*/
+  }
+  #profpicdesc, #profpicdesc2 {
+    color: #818080;
+    font-size: 0.6em;
+    margin-right: 20%;
+    float: left;
+    display: none;
+  }
+  /* Über Mich Erfolge */
+  .div02_sp h1 {
+  margin-left: 1%;
+  text-align: center;
+  }
+  #extrainfos {
+    margin-left: 8%;
+    display: none;
+  }
+  #profilelinks {
+    text-decoration: none;
+    border: 2.5px solid rgb(30, 58, 168);
+    border-radius: 2vw;
+    color: #000000;
+    margin-left: 3%;
+    padding: 1% 2% 1% 2%;
+    font-weight: bold;
+    display: none;
+  }
+  #erfolge {
+    padding: 0;
+    margin: 0;
+    min-height: 30vh;
+    max-height: 30vh;
+    overflow-y: auto;
+    -webkit-box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.28); 
+    box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.28);
+  }
+  
+  #erfolge p {
+    margin: 0 auto;
+  }
+  /*Stile für den Blogpost */
+  article.blogposts {
+    display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
+    flex-flow: row nowrap; 
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    
+  }
+  table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
+    border: none;
+    border-radius: 6%;
+    margin-right: 1vw;
+    overflow: hidden;
+    width: 80vw; 
+    font-size: 1em;
+    -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
+    box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
+    background-color: rgb(233, 235, 321); /*Ändern*/
+  }
+  .blogposts_2 tbody {
+    height: 30vh;
+  }
+  .blogposts_2 tfoot {
+    height: 10vh;
+  }
+  .blogposts_2 #blogdesc {
+    height: 30vh;
+  }
+  .blogposts a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .blogposts:hover > :not(:hover){
+    transition: .3s;
+    opacity: .4;
+  }
+  
+  .blogposts:hover{
+    cursor: pointer;
+  }
+  .postfooter {
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+  }
+  .p01_bpsp {
+    text-align: left;
+    margin-left: 6vw;
+    margin-right: 2vw;
+    margin-bottom: 1vw;
+    color: grey;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 1;
+  }
+  .p02_bpsp {
+    text-align: right;
+    color: grey;
+    font-size: 0.65em;
+    margin-bottom: 0.2vw;
+    margin-right: 0.7vw;
+    bottom: 1;
+  }
+  table.blogposts_2 a:hover, div.blogposts_2 a:hover {
+   transition: .3s;
+    font-size: 1.05em;
+  }
+  table.blogposts_2 a:not(:hover), div.blogposts_2 a:not(:hover) {
+    transition: .3s;
+    font-size: 1em;
+  }
+  #blogtitle {
+    margin-bottom: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3em;
+    color: rgb(30, 58, 138);
+  }
+  #blogdescription {
+    opacity: 0.8;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 0.9em;
+    min-height: 30vh;
+  }
+  #frontimg1, #frontimg2,#frontimg3,#frontimg4 {
+    border-radius: 4px;
+    display: block;
+    height: 50vh;
+    min-width: 50vw;
+    margin-top: 2vw;
+    /*Unten stehendes Kopieren und Anpassen je nachdem ob du Bilder nach width oder height ausrichten willst*/
+    max-height: 250px;
+    max-width: 100%; 
+    object-fit: cover;
+  }
+  
+  
+  /* Artikel Startseite */
+  .p01_sp {
+    text-align: right;
+    color: grey;
+    font-size: 0.65em;
+  }
+  /* Instagram*/
+  article#instagram {
+    display: flex;
+    justify-content: center;
+  }
+  .instagram-media {
+    max-width: 40%;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  /* Sponsoren Startseite */
+  .sponsors{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /*Ändern wenn es mehr Bilder
+     werden, sorgt für keinen Zeilenumbruch*/
+    justify-content: space-evenly;
+    padding: 0.5vw;
+    height: 60%;
+    aspect-ratio: inherit;
+  }
+  
+  .sponsors:hover > :not(:hover){
+    transition: .2s;
+    opacity: .4;
+  }
+  /* Footer */
+  #footer{
+    background:#000;
+    padding:3vw 0vw;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+  }
+  
+  #footer .row{
+    width:100%;
+    margin:1vw 0vw;
+    padding:0.6vw 0vw;
+    color:gray;
+    font-size:0.8em;
+  }
+  
+  #footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    font-size: 1em;
+    
+  }
+  
+  #footer .row a:hover{
+    color:#fff;
+  
+  }
+  
+  #footer .row ul{
+    width:100%;
+  }
+  
+  #footer .row ul li{
+    display:inline-block;
+    margin:0vw 3vw;
+  }
+  
+  #footer .row a i{
+    font-size:2em;
+    margin:0vw 1vw;
+  }
+  
+  #footer .row ul li{
+    display:block;
+    margin:1vw 0vw;
+    text-align:left;
+  }
+  .row01 {
+    font-size: 0.75em;
+    text-align: left;
+    margin-left: 1vw;
+  }
+  .sponsors_img1, .sponsors_img2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
