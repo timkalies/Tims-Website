@@ -7,7 +7,9 @@
     margin-right: 16vw;
   }
 }
-
+body {
+  background-image: url(Bilder/U20DM.png);
+}
 
 #h02_sponsors {
   text-align: center;
