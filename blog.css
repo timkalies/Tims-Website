@@ -5,6 +5,7 @@ body {
   text-align: left;
   padding-top: 15px;
   padding-bottom: 5px;
+  color: rgb(30, 58, 138);
 }
 .startbild {
   float: left;
@@ -12,8 +13,7 @@ body {
 #blogtext {
   padding-left: 10px;
 }
-.blogpost_1{
-  padding-bottom: 10px;
+.blogpost_1 {
   margin-bottom: 90px;
 }
 .p01_bp {
@@ -79,16 +79,53 @@ body {
   text-decoration: none;
   color: #000000;
 }
+#startbild {
+  max-height: 20vw;
+ border-radius: 4%;
+}
+#blogtext_article {
+  margin-right: 22%;
+  font-size: 1.1em;
+  line-height: 25px;
+}
+#blogtext_title {
+  font-size: 1.4em;
+  color:rgb(30, 58, 168);
+}
 
+.scroll-container {
+  display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
+  flex-flow: row nowrap; 
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  background-color: rgba(135, 145, 158, .3);
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 10px;
+  max-height: 40vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 3px;
+  border: none;
+}
+
+.scroll-container img {
+  padding: 10px;
+  max-height: 40vh;
+  width: auto;
+}
 
 @media screen and (max-width: 720px) {
   body {
-    background-image: url(Bilder/U20DM.png);
+    background-image: url(Bilder/U20DM.webp);
   }
   .h01_bp1 {
     text-align: left;
     padding-top: 15px;
     padding-bottom: 5px;
+    color: rgb(30, 58, 138);
   }
   .startbild {
     float: left;
@@ -163,5 +200,17 @@ body {
     text-decoration: none;
     color: #000000;
   }
+  div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    border-radius: 2%;
+    border: none;
+  }
   
+  div.scroll-container img {
+    padding: 10px;
+  }
 }
