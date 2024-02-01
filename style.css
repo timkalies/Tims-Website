@@ -112,7 +112,7 @@ ALLE DESIGNS
 /* Hintergrundbild */
 .backimg_01 {
 /* Das hinzufügen hiervon hat den Error gefixt */
-  background-image: url('Bilder/Mannheim_finish-blur.jpg');
+  background-image: url('Bilder/Mannheim_finish-blur.webp');
   background-position-x: 15%;
   background-color: #000000;
   background-position: center;
@@ -547,7 +547,7 @@ article#instagram {
   /* Hintergrundbild */
   .backimg_01 {
   /* Das hinzufügen hiervon hat den Error gefixt */
-    background-image: url('Bilder/Mannheim_finish-blur.jpg');
+    background-image: url('Bilder/Mannheim_finish-blur.webp');
     background-position-x: 15%;
     background-color: #000000;
     background-position: center;
