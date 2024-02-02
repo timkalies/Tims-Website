@@ -1,3 +1,8 @@
+<?php
+ $pageId = 'blogpost1';// Setze die pageId für diese Seite
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 <!doctype html>
 <html lang="de-DE">
 <head>
@@ -19,8 +24,9 @@
 <!--Nur bei Blogposts mitübernehmen-->
 <link rel="stylesheet" href="blog.css">
 <script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="blog.js"></script>
 <!--Bindet JQuery ein-->
-<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <!--FONT AWESOME-->
 <script src="https://kit.fontawesome.com/689fa75987.js" crossorigin="anonymous"></script>
 <!--GOOGLE FONTS-->
@@ -65,16 +71,17 @@
 <div class="blogpost_2">
 <p style="text-align: left;" id="blogtext_title"><b>7. Platz bei der U20-EM in Jerusalem über 1500m</b></p>
 <br><hr>
-<p style="text-align: left;" id="blogtext_article">Super zufrieden mit meiner Performance!<br> Als 17. Platz der Meldeliste angereist und etwas Unruhe in den letzten zwei Wochen davor gehabt.<br>
-Der Finaleinzug war nicht selbstverständlich und ein harter Kampf, da das 1500m Feld extrem gut besetzt war.
+<p style="text-align: left;" id="blogtext_article">Wenige Tage vor meinem 19. Geburtstag stand die Anreise nach Jerusalem an. Gemeinsam als Nationalteam ging es aus Frankfurt mit dem Flugzeug auf die Reise. Angekommen blieben uns 3 Tage Zeit um sich an die klimatischen Bedingungen zu gewöhnen und auf die Wettkämpfe vorzubereiten. Innerhalb dieser Zeit besichtigten wird das Stadion und absoliverten unsere letzten Trainingseinheiten.<strong> Am 07.08.2024 stand endlich mein erstes Rennen an!</strong> In meinem ersten Internationalen Rennen galt mein Ziel den Vorlauf zu überstehen und zu den schnellsten sechs Läufern in meinem Vorlauf zu gehören, um mir einen Finalplatz zu sichern.<br> <strong>Nach einem packenden Schlussspurt und einer langen Wartezeit konnte ich mir knapp einen der super umkpämpften Finalplätze sichern!</strong><br> Ich war zu diesem Zeitpunkt bereits unfassbar zufrieden mit meiner Performance!<br> Ich war als 17. Platz der Meldeliste angereist und hatte Gesundheitlich etwas Unruhe in vorherigen zwei Wochen gehabt.<br>
+Der Finaleinzug war also nicht selbstverständlich und ein harter Kampf.
 <br><br>
-Schlussendlich gelang es extrem knapp als sechster meines Vorlaufs.<br> Im Finale habe ich dann alles versucht und konnte näher an der Spitze bleiben als ich gedacht hätte, die letzten 800m in 1:47 konnte ich jedoch nicht mehr mitgehen.
+<br> Im Finale angekommen war mein Ziel möglichst lange mit der Spitze mithalten zu können. Mit direktem Anschluss an die Führenden bis 600m vor Ziel gelang mir dies auch einigermaßen. Damit konnte ich näher an der Spitze bleiben als ich gedacht hätte, die letzten 800m in 1:47 konnte ich jedoch nicht mehr mitgehen.
 <br>
-Insgesamt bin ich sehr zufrieden mit der Meisterschaft. <br>Jetzt geht‘s erstmal in die Saisonpause um im Anschluss die nächste Saison mit den Deutschen Meisterschaften in meiner Heimatstadt Braunschweig vorzubereiten.
+Insgesamt bin ich sehr zufrieden mit der Meisterschaft. <br>Im Anschluss ging es erstmal in die Saisonpause um im Anschluss die kommende Saison mit den Deutschen Meisterschaften in meiner Heimatstadt Braunschweig als Highlight vorzubereiten.
 </p>
 <hr>
 </div>
 </div>
+<h2 id="h03_sp">Bildergalerie</h2>
 <div class="scroll-container">
   <img src="Bilder\Blog\Blogpost123\TeamfotoEM.webp" alt="Team Niedersachsen - U20-EM">
   <img src="Bilder\Blog\Blogpost123\FinaleEM1.webp" alt="Finallauf 1500m EM">
@@ -83,6 +90,21 @@ Insgesamt bin ich sehr zufrieden mit der Meisterschaft. <br>Jetzt geht‘s erstm
   <img src="Bilder\Blog\Blogpost123\ZielgeradeEM.webp" alt="Zielgerade Vorlauf">
 </div> 
 <p class="p01_bp">Veröffentlicht: 18.10.2023</p>
+<br><hr><br>
+<h2>Alle Kommentare</h2>
+<?php
+include('comments_function.php');
+displayComments($pageId);
+?>
+
+<h2>Kommentar hinterlassen</h2>
+<form action="submit_comment.php" method="post">
+<input type="hidden" name="pageId" value="<?php echo $pageId; ?>">
+    Name: <input type="text" name="name" required><br>
+    Email: <input type="email" name="email" required><br>
+    Kommentar: <textarea name="comment" required></textarea><br>
+    <input type="submit" value="Kommentar abschicken">
+</form>
 </main>
 </body>
 <footer id="footer">
