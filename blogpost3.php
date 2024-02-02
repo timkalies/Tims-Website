@@ -1,3 +1,6 @@
+<?php
+$pageId = 'blogpost3'; // Setze die pageId für diese Seite
+?>
 <!doctype html>
 <html lang="de-DE">
 <head>
@@ -42,7 +45,7 @@
 <!--Links noch ändern-->
 <!-- Navigation -->
 <div class="navigation">
-<a href="#">Artikel - 18.10.2023 </a>
+<a href="#">Artikel - 3000m Hallenmeeting Chemnitz </a>
   <div id="myLinks">
     <a href="index.html" id="topnav">Startseite</a>
     <a href="blogs.html" id="topnav">Blog</a>
@@ -60,36 +63,48 @@
 <main>
   <noscript>Bitte aktiviere Javascript um diese Seite nutzen zu können</noscript>
 <div class="blogpost_1">
-<h2 class="h01_bp1">Deutsche U20 Meisterschaft in Rostock <br>7-9.8.2023 </h2>
- <img src="Bilder\U20DM2.webp" id="frontimg" alt="Start bei den Deutschen U20-Europameisterschaften">
+<h2 class="h01_bp1">Hallenmeeting Chemnitz 3000m <br>14.01.2024 </h2>
+ <img src="Bilder\Chemnitz 3000m.webp" id="startbild" alt="Start bei den Deutschen U20-Europameisterschaften">
 <div class="blogpost_2">
-<p style="text-align: left;" id="blogtext_title"><b>Deutscher Vizemeistertitel über 1500m nach knappem Endspurt</b></p>
+<p style="text-align: left;" id="blogtext_title"><strong>Erstes 3000m Rennen seit 5 Jahren</strong></p>
 <br>
-<p style="text-align: left;" id="blogtext_article">Bereits einen Tag vor dem Vorlauf angereist ging es zurück nach Rostock, in die Stadt, in welcher ich vor zwei Jahren meine erste < style="color: gold">Goldmedaille</em> über die 1500m gewinnen konnte- und überstandenem Vorlauf stand am 31.07.2023 mein Finale über die 1500m der U20 an. Es war meine letzte Nationale Meisterschaft innerhalb dieser Altersklasse. Dementsprechend hatte ich nach einer bis dahin starken Saison hohe Ambitionen im Titelkampf. 
+<p style="text-align: left;" id="blogtext_article">Die 3000m-Distanz anzutesten stand bereits seit langer Zeit auf dem Plan, da die Trainingsresultate bereits vor einiger Zeit positive Resultate vermuten ließen. <strong>Bereits vor zwei Jahren</strong>, im Juni 2022, plante ich innerhalb meiner alten Trainingsumgebung in Hannover diese Distanz anzutesten. Damals kam diesen Plänen jedoch eine unerwartete Covid-Infektion in den Weg.
 <br>
-Das Rennen startete nach etwas Verzögerung mit einem gemächlichen, jedoch Meisterschafts-üblichen, Angang. Aus diesem folgte viel Rangelei und taktische Umpositionierung innerhalb des Läuferfeldes. 400m vorm Ziel ging es in den Schlussspurt, bis 100m vor Ziel war es mir jedoch nicht möglich genug Abstand zu meiner Konkurrenz aufzubauen, wodurch ich schlussendlich kurz vor Ziel von meinem großen Konkurrenten Jan Dillemuth überspurtet wurde. 
+Nachdem diese Idee über die kommenden 2 Jahre immer wieder aufgeworfen wurde, jedoch meisten aufgrund von Komplikationen mit anderen Terminen nie umgesetzt wurde, war es diesen Winter endlich möglich im Rahmen eines Hallenmeetings in Chemnitz Mitte Januar an einem Wettkampf über diese Distanz teilzunehmen.
 <br>
-Somit konnte ich mir den zweiten Platz in einem breitflächig sehr gut besetzten Feld sichern und nahm wichtige Lektionen für mein anstehendes, erstes internationales Rennen, den U20-Europameisterschaften, mit. </p>
-
-<div id="root"></div>
-<p class="p01_sp">Veröffentlicht: 18.10.2023</p>
+<strong>15 lange Runden über die 200m lange Hallenbahn standen bevor.</strong> Nach zwei unruhigen ersten Runden kam langsam Ruhe in das Rennen. Bis 1000m vor Ziel war es mir möglich mit dem führenden mitzuhalten, von da an bestritt ich das Rennen alleine. Nach einem etwas langsameren, letzten Kilometer konnte ich in <strong>8:22min</strong> die Ziellinie überqueren und meine 5 Jahre alte Bestzeit von 11:12min deutlich unterbieten!</p>
 </div>
 </div>
 <h2 id="h03_sp">Bildergalerie</h2>
 <div class="scroll-container">
-  <img src="Bilder\Blog\Blogpost123\StartlinieRostock.webp" alt="Die Athleten für den Finalen 1500m Lauf stehen an der Startlinie">
-  <img src="Bilder\Blog\Blogpost123\StartRostock.webp" alt="Kurz nach dem Start des Finallaufs">
-  <img src="Bilder\Blog\Blogpost123\RostockJanTobias.webp" alt="Die U20-DM Medaillisten beim gemeinsamen Foto">
-  <img src="Bilder\Blog\Blogpost123\BLCRostock.webp" alt="Die BLC-Athleten nach den geschehenen Wettkämpfen">
-  <img src="Bilder\Blog\Blogpost123\U20DM-Race.webp" alt="Das Rennen läuft auf Hochtouren">
+  <img src="Bilder\Blog\Blogpost123\ChemnitzHalle.webp" alt="Die Halle in Chemnitz, welche am 14.01 den 3000m Wettkmapf veranstaltete">
+  <img src="Bilder\Blog\Blogpost123\ChemnitzWarmup.webp" alt="Anspannung, kurz vorm Start des Rennens">
+  <img src="Bilder\Chemnitz 3000m.webp" alt="Die anschließende Siegerehrung der schnellsten drei Läufer">
+  <img src="Bilder\Blog\Blogpost123\ErgebnisseChemnitz.webp" alt="Die finalen Resultate- 3000m in 8:22min">
 </div> 
+<p class="p01_bp">Veröffentlicht: 18.10.2023</p>
 </main>
+<h2>Alle Kommentare</h2>
+<?php
+include('comments_function.php');
+displayComments('blogpost3');
+?>
+
+<h2>Kommentar hinterlassen</h2>
+<form action="submit_comment.php" method="post">
+<input type="hidden" name="pageId" value="<?php echo $pageId; ?>">
+    Name: <input type="text" name="name" required><br>
+    Email: <input type="email" name="email" required><br>
+    Kommentar: <textarea name="comment" required></textarea><br>
+    <input type="submit" value="Kommentar abschicken">
+</form>
 </body>
 <footer id="footer">
 <div class="row">
 <a href="https://www.facebook.com/suchtverhalten.cr.5"><i class="fa fa-facebook"></i></a>
 <a href="instagram.com/tim.kalies"><i class="fa fa-instagram"></i></a>
 <a href="https://www.strava.com/athletes/45004825"><i class="fab fa-strava"></i></a>
+
 <ul>
 <li><a href="index.html"  id="downnav">Startseite</a></li>
 <li><a href="blogs.html" id="downnav">Blog</a></li>
