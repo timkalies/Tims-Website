@@ -84,6 +84,7 @@ ALLE DESIGNS
 
 /* Menü Links */
 .navigation a {
+  text-align: center;
   color: white;
   text-decoration: none;
   display: block;
@@ -240,7 +241,10 @@ margin-left: 1%;
   padding: 1% 2% 1% 2%;
   font-weight: bold;
 }
-
+.erfolge h4 {
+  margin-top: 5vh;
+  margin: 0 auto;
+}
 /*Stile für den Blogpost */
 article.blogposts {
   display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
@@ -488,8 +492,8 @@ article#instagram {
     background-color: rgba(135, 145, 158, .3);
     position: relative;
     border: none;
- 
     padding: 9px 3px;
+
   }
   
   .navigation #myLinks {
@@ -529,8 +533,8 @@ article#instagram {
     -webkit-transition:font-size 0.5s; /* Safari and Chrome */
     -o-transition:font-size 0.5s
   }
-  .topnav:hover, .downnav:hover {
-    font-size: 1.05em
+  .topnav {
+    text-align: center;
   }
   
   /* Das Icon des Menü */
@@ -544,6 +548,15 @@ article#instagram {
     padding: 16px 16px;
     text-shadow: 2px 2px black;
   
+  }
+  nav div a {
+    margin-bottom: 3vh;
+  }
+  nav div a:first-child {
+    margin-top: 3vh;
+  }
+  nav div a:last-child {
+    margin-bottom: 1vh;
   }
   
   /* Add a grey background color on mouse-over */
@@ -672,7 +685,7 @@ article#instagram {
     font-weight: bold;
     display: none;
   }
-  #erfolge {
+  .erfolge {
     padding: 0;
     margin: 0;
     min-height: 30vh;
@@ -682,7 +695,7 @@ article#instagram {
     box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.28);
   }
   
-  #erfolge p {
+  .erfolge h4 {
     margin: 0 auto;
   }
   /*Stile für den Blogpost */

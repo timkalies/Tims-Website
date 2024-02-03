@@ -18,10 +18,11 @@ header('Content-Type: text/html; charset=UTF-8');
 <!--Links-->
 <link rel="stylesheet" href="style.css">
 <!--Favicon-->
-<link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon\favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon\favicon-16x16.png">
-<link rel="manifest" href="favicon\site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+   <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+   <link rel="manifest" href="favicon/site.webmanifest">
 <!--Nur bei Blogposts mitübernehmen-->
 <link rel="stylesheet" href="blog.css">
 <script type="text/javascript" src="index.js"></script>
@@ -50,7 +51,7 @@ header('Content-Type: text/html; charset=UTF-8');
 <nav class="navigation">
 <a href="#" class="topnav">Artikel - U20-Europameisterschaft </a>
   <div id="myLinks">
-  <li><a href="#" class="downnav">Startseite</a></li>
+  <li><a href="index.html" class="downnav">Startseite</a></li>
 <li><a href="blogs.html" class="downnav">Blog</a></li>
 <li><a href="#" class="downnav">Über Mich</a></li>
 <li><a href="sponsors.html" class="downnav">Sponsoren</a></li>
@@ -95,17 +96,17 @@ Insgesamt bin ich sehr zufrieden mit der Meisterschaft. <br>Im Anschluss ging es
 <h2 id="h03_sp">Alle Kommentare</h2>
 <article id="show_comments">
 <?php
-include('comments_function.php');
+include('comments-function.php');
 displayComments($pageId);
 ?>
 </article>
 
 <h2 id="h03_sp">Kommentar hinterlassen</h2>
-<form action="submit_comment.php" method="post" id="post_comment" accept-charset="UTF-8">
+<form action="submit-comment.php" method="post" id="post_comment" accept-charset="UTF-8">
 <input type="hidden" name="pageId" value="<?php echo $pageId; ?>">
    <label for="text">Name:</label><br> <input type="text" name="name" required><br>
    <label for="email">E-Mail:</label><br> <input type="email" name="email" required><br>
-   <label for="text">Kommentar:</label><br><textarea type="text> name="comment" required></textarea><br>
+   <label for="text">Kommentar:</label><br><textarea type="text" name="comment" required></textarea><br>
     <input type="submit" value="Kommentar abschicken">
 </form>
 </main>

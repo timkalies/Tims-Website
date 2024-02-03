@@ -14,10 +14,11 @@ header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese
 <meta http-equiv="refresh" content="90">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Favicon-->
-<link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon\favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon\favicon-16x16.png">
-<link rel="manifest" href="favicon\site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+   <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+   <link rel="manifest" href="favicon/site.webmanifest">
 
 <!--Links-->
 <link rel="stylesheet" href="style.css">
@@ -87,17 +88,17 @@ Nachdem diese Idee über die kommenden 2 Jahre immer wieder aufgeworfen wurde, j
 <h2 id="h03_sp">Alle Kommentare</h2>
 <article id="show_comments">
 <?php
-include('comments_function.php');
+include('comments-function.php');
 displayComments('blogpost3');
 ?>
 </article>
 
 <h2 id="h03_sp">Kommentar hinterlassen</h2>
-<form action="submit_comment.php" method="post" id="post_comment" accept-charset="UTF-8">
+<form action="submit-comment.php" method="post" id="post_comment" accept-charset="UTF-8">
 <input type="hidden" name="pageId" value="<?php echo $pageId; ?>">
    <label for="text">Name:</label><br> <input type="text" name="name" required><br>
    <label for="email">E-Mail:</label><br> <input type="email" name="email" required><br>
-   <label for="text">Kommentar:</label><br> <textarea type="text> name="comment" required></textarea><br>
+   <label for="text">Kommentar:</label><br> <textarea type="text" name="comment" required></textarea><br>
     <input type="submit" value="Kommentar abschicken">
 </form>
 </main>
