@@ -1,5 +1,6 @@
 <?php
-$pageId = 'blogpost2'; // Setze die pageId für diese Seite
+$pageId = 'blogpost2';
+header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese Seite
 ?>
 <!doctype html>
 <html lang="de-DE">
@@ -13,10 +14,11 @@ $pageId = 'blogpost2'; // Setze die pageId für diese Seite
 <meta http-equiv="refresh" content="90">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Favicon-->
-<link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon\favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon\favicon-16x16.png">
-<link rel="manifest" href="favicon\site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+   <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+   <link rel="manifest" href="favicon/site.webmanifest">
 
 <!--Links-->
 <link rel="stylesheet" href="style.css">
@@ -40,20 +42,19 @@ $pageId = 'blogpost2'; // Setze die pageId für diese Seite
   gtag('config', 'G-75R8GKTYXK');
 </script>
 </head>
-<body>
+<body style="background-image: url(Bilder/U20DM.jpg)">
 <header>
 <!--Links noch ändern-->
 <!-- Navigation -->
 <div class="navigation">
-<a href="#">Artikel - 18.10.2023 </a>
+<a href="#" class="topnav">Artikel - U20-Deutsche Meisterschaft </a>
   <div id="myLinks">
     <a href="index.html" id="topnav">Startseite</a>
-    <a href="blogs.html" id="topnav">Blog</a>
-    <a href="#" id="topnav">Über mich</a>
-    <a href="#" id="topnav" style="display: none">Projekte</a>
-    <a href="kontakt.html" id="topnav">Kontakt</a>
-    <a href="sponsors.html" id="topnav">Sponsoren</a>
-    <a href="impressum.html" id="topnav">Impressum</a>
+    <a href="blogs.html" class="topnav">Blog</a>
+    <a href="#" class="topnav">Über mich</a>
+    <a href="kontakt.html" class="topnav">Kontakt</a>
+    <a href="sponsors.html" class="topnav">Sponsoren</a>
+    <a href="impressum.html" class="topnav">Impressum</a>
   </div>
   <a href="javascript:void(0);" id="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -64,7 +65,7 @@ $pageId = 'blogpost2'; // Setze die pageId für diese Seite
   <noscript>Bitte aktiviere Javascript um diese Seite nutzen zu können</noscript>
 <div class="blogpost_1">
 <h2 class="h01_bp1">Deutsche U20 Meisterschaft in Rostock <br>7-9.8.2023 </h2>
- <img src="Bilder\U20DM2.webp" id="startbild" alt="Start bei den Deutschen U20-Europameisterschaften">
+ <img src="Bilder\U20DM2.jpg" id="startbild" alt="Start bei den Deutschen U20-Europameisterschaften">
 <div class="blogpost_2">
 <p style="text-align: left;" id="blogtext_title"><b>Deutscher Vizemeistertitel über 1500m nach knappem Endspurt</b></p>
 <br>
@@ -84,21 +85,23 @@ Somit konnte ich mir den <strong style="color: silver">zweiten Platz</strong> in
   <img src="Bilder\Blog\Blogpost123\U20DM-Race.webp" alt="Das Rennen läuft auf Hochtouren">
 </div> 
 <p class="p01_bp">Veröffentlicht: 18.10.2023</p>
-</main>
-<h2>Alle Kommentare</h2>
+<h2 id="h03_sp">Alle Kommentare</h2>
+<article id="show_comments">
 <?php
-include('comments_function.php');
+include('comments-function.php');
 displayComments('blogpost2');
 ?>
+</article>
 
-<h2>Kommentar hinterlassen</h2>
-<form action="submit_comment.php" method="post">
+<h2 id="h03_sp">Kommentar hinterlassen</h2>
+<form action="submit-comment.php" method="post" id="post_comment" accept-charset="UTF-8">
 <input type="hidden" name="pageId" value="<?php echo $pageId; ?>">
-    Name: <input type="text" name="name" required><br>
-    Email: <input type="email" name="email" required><br>
-    Kommentar: <textarea name="comment" required></textarea><br>
+   <label for="text">Name:</label><br> <input type="text" name="name" required><br>
+   <label for="email">E-Mail:</label><br> <input type="email" name="email" required><br>
+   <label for="text">Kommentar:</label><br> <textarea type="text" name="comment" required></textarea><br>
     <input type="submit" value="Kommentar abschicken">
 </form>
+</main>
 </body>
 <footer id="footer">
 <div class="row">
@@ -106,13 +109,12 @@ displayComments('blogpost2');
 <a href="instagram.com/tim.kalies"><i class="fa fa-instagram"></i></a>
 <a href="https://www.strava.com/athletes/45004825"><i class="fab fa-strava"></i></a>
 <ul>
-<li><a href="index.html"  id="downnav">Startseite</a></li>
-<li><a href="blogs.html" id="downnav">Blog</a></li>
-<li><a href="#" id="topnav" style="display: none">Projekte</a></li>
-<li><a href="#" id="downnav">Über Mich</a></li>
-<li><a href="sponsors.html" id="downnav">Sponsoren</a></li>
-<li><a href="kontakt.html" id="downnav">Kontakt</a></li>
-<li><a href="impressum.html" id="downnav">Impressum</a></li>
+<li><a href="#" class="downnav">Startseite</a></li>
+<li><a href="blogs.html" class="downnav">Blog</a></li>
+<li><a href="#" class="downnav">Über Mich</a></li>
+<li><a href="sponsors.html" class="downnav">Sponsoren</a></li>
+<li><a href="kontakt.html" class="downnav">Kontakt</a></li>
+<li><a href="impressum.html" class="downnav">Impressum</a></li>
 </ul>
 
 <p>Copyright © 2023 Tim Kalies</p> 
