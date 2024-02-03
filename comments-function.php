@@ -1,7 +1,7 @@
 <?php
 function displayComments($pageId)
 {
-    include('db_connection.php');
+    include('db-connection.php');
 
     $sql = "SELECT * FROM comments WHERE page_id = '$pageId' ORDER BY created_at DESC";
     $result = $conn->query($sql);

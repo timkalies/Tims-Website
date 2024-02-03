@@ -30,7 +30,16 @@ small {
   font-style: italic;
   font-size: 0.5em;
 }
-
+h1 {
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  font-size: 2.8em;
+  color: white !important;
+  text-shadow: 2px 2px black;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  transition: .3s;
+}
 
 
 
@@ -76,25 +85,25 @@ ALLE DESIGNS
 /* Menü Links */
 .navigation a {
   color: white;
-  padding: 1.4vw 1.6vw;
   text-decoration: none;
   display: block;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  padding: 3.5vh 1.6vw
 }
-#topnav, #downnav {
+.topnav, .downnav {
   font-size: 1em;
-  transition: font-size 0.5s;
-  -moz-transition:font-size 0.5s; /* Firefox 4 */
-  -webkit-transition:font-size 0.5s; /* Safari and Chrome */
-  -o-transition:font-size 0.5s
+  transition: font-size 0.3s;
+  -moz-transition:font-size 0.3s; /* Firefox 4 */
+  -webkit-transition:font-size 0.3s; /* Safari and Chrome */
+  -o-transition:font-size 0.3s
 }
-#topnav:hover, #downnav:hover {
+.topnav:hover, .downnav:hover {
   font-size: 1.05em
 }
 
 /* Das Icon des Menü */
 .navigation a#icon {
-  background: rgb(112, 112, 120, .3);
+  background: rgb(112, 112, 120, .4);
   display: block;
   position: absolute;
   right: 0;
@@ -112,7 +121,7 @@ ALLE DESIGNS
 /* Hintergrundbild */
 .backimg_01 {
 /* Das hinzufügen hiervon hat den Error gefixt */
-  background-image: url('Bilder/Mannheim_finish-blur.webp');
+  background-image: url('Bilder/Mannheim-finish-blur.jpg');
   background-position-x: 15%;
   background-color: #000000;
   background-position: center;
@@ -133,13 +142,14 @@ font-size: 3em;
 transition: font-size 0.5s;
 transition-timing-function: ease-in-out;
 list-style: none;
+padding-left: 0px;
 }
 #liIcons1, #liIcons2, #liIcons3{
   text-align: center;
-  margin-bottom: 250px;
+  margin-bottom: 40vh;
   font-size: 2em;
   }
-.backimg_01 #ulPageIcons a, #h01_sp a {
+.backimg_01 #ulPageIcons a {
   text-decoration:none;
   color:white;
   transition:0.5s;
@@ -149,15 +159,12 @@ list-style: none;
   color:#fff;
   font-size: 1.1em;
 }
-/*Überschriften*/
-#h01_sp {
-  text-align: center;
-  font-family: 'Play', sans-serif;
-  font-size: 3em;
-  color: white;
-  text-shadow: 2px 2px black;
-  margin-top: 10vw;
+.backimg_01 h1:hover {
+  font-size: 2.9em;
+  
 }
+/*Überschriften*/
+
 #h03_sp a, #h02_sp a { 
   text-decoration: none;
   color: rgb(30, 58, 138);
@@ -510,19 +517,19 @@ article#instagram {
   /* Menü Links */
   .navigation a {
     color: white;
-    padding: 1.4vw 1.6vw;
+    padding: 1.2vw 1.4vw;
     text-decoration: none;
     display: block;
-    font-size: 1.5em;
+    font-size: 1em;
   }
-  #topnav, #downnav {
+  .topnav, .downnav {
     font-size: 1em;
     transition: font-size 0.5s;
     -moz-transition:font-size 0.5s; /* Firefox 4 */
     -webkit-transition:font-size 0.5s; /* Safari and Chrome */
     -o-transition:font-size 0.5s
   }
-  #topnav:hover, #downnav:hover {
+  .topnav:hover, .downnav:hover {
     font-size: 1.05em
   }
   
@@ -547,7 +554,7 @@ article#instagram {
   /* Hintergrundbild */
   .backimg_01 {
   /* Das hinzufügen hiervon hat den Error gefixt */
-    background-image: url('Bilder/Mannheim_finish-blur.webp');
+    background-image: url('Bilder/Mannheim-finish-blur.jpg');
     background-position-x: 15%;
     background-color: #000000;
     background-position: center;
@@ -585,7 +592,7 @@ article#instagram {
     font-size: 1.1em;
   }
   /*Überschriften*/
-  #h01_sp {
+  h1 {
     text-align: center;
     font-family: 'Play', sans-serif;
     font-size: 3em;
@@ -683,7 +690,7 @@ article#instagram {
     display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
     flex-flow: row nowrap; 
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: baseline;
     overflow-x: auto;
     scroll-snap-type: x proximity;
     
@@ -693,14 +700,14 @@ article#instagram {
     border-radius: 6%;
     margin-right: 1vw;
     overflow: hidden;
-    width: 80vw; 
+    width: 60vw; 
     font-size: 1em;
     -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
     box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
     background-color: rgb(233, 235, 321); /*Ändern*/
   }
   .blogposts_2 tbody {
-    height: 30vh;
+    height: 20vh;
   }
   .blogposts_2 tfoot {
     height: 10vh;

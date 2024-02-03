@@ -1,11 +1,6 @@
 let x = 0, y = 0;
-let links = ["timkalies.de/blogpost1.html", "timkalies.de/blogpost2.html"];
 document.addEventListener("DOMContentLoaded", function() {
   let b = document.getElementById("icon").addEventListener("click", MenuAnimated);
-   /*Öffnet Link bei Klick auf Blogpost*/
-  let c = document.getElementsByClassName("blogposts_2").addEventListener("click", function() {
-    window.open(links[0]); /*Funktion Hinzufügen, dass Link nach Artikel gewählt wird*/
-  });
   });
 
 /* Öffnet und Schließt Menü */
