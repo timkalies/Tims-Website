@@ -12,6 +12,10 @@ hr {
   background-image: linear-gradient(90deg, grey, transparent);
   border: 0;
   height: 1px;
+  
+}
+br {
+  clear: left;
 }
 
 main {
@@ -52,7 +56,7 @@ ALLE DESIGNS
 
 /*Navigation*/
 /* Versteckt die Links im Navigationsmenü */
-.navigation {
+nav, .navigation {
   overflow: hidden;
   background-color: rgba(135, 145, 158, .3);
   position: relative;
@@ -60,7 +64,7 @@ ALLE DESIGNS
   
 }
 
-.navigation #myLinks {
+nav #myLinks, .navigation #myLinks {
   display: none;
 }
 
@@ -83,7 +87,7 @@ ALLE DESIGNS
 }
 
 /* Menü Links */
-.navigation a {
+nav a, .navigation a {
   text-align: center;
   color: white;
   text-decoration: none;
@@ -103,7 +107,7 @@ ALLE DESIGNS
 }
 
 /* Das Icon des Menü */
-.navigation a#icon {
+nav a#icon, .navigation a#icon {
   background: rgb(112, 112, 120, .4);
   display: block;
   position: absolute;
@@ -115,7 +119,7 @@ ALLE DESIGNS
 }
 
 /* Add a grey background color on mouse-over */
-.navigation a:hover {
+nav a:hover, .navigation a:hover {
   background-color: #8DA7BE;
 }
 
@@ -166,7 +170,7 @@ padding-left: 0px;
 }
 /*Überschriften*/
 
-#h03_sp a, #h02_sp a { 
+.h03_sp a, #h02_sp a, h2 { 
   text-decoration: none;
   color: rgb(30, 58, 138);
 }  
@@ -216,9 +220,7 @@ object-fit: contain;
 .aboutme_p01{
   margin-top: 3vw;
 }
-#break01 {
-  clear: left; /*Damit nächste Seitenabschnitte nicht neben Bild sind*/
-}
+
 #profpicdesc, #profpicdesc2 {
   color: #818080;
   font-size: 0.6em;
@@ -230,9 +232,10 @@ object-fit: contain;
 margin-left: 1%;
 }
 #extrainfos {
-  margin-left: 8%;
+  margin-left: 8vw;
+  display: block;
 }
-#profilelinks {
+.profilelinks {
   text-decoration: none;
   border: 2.5px solid rgb(30, 58, 168);
   border-radius: 2vw;
@@ -241,9 +244,12 @@ margin-left: 1%;
   padding: 1% 2% 1% 2%;
   font-weight: bold;
 }
-.erfolge h4 {
-  margin-top: 5vh;
-  margin: 0 auto;
+ul.erfolge > li > h4 {
+  margin-top: 6vh;
+}
+
+ul.erfolge li:has(h4) {
+  list-style-type: none;
 }
 /*Stile für den Blogpost */
 article.blogposts {
@@ -265,15 +271,7 @@ table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
   -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
   box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
   background-color: rgb(233, 235, 321); /*Ändern*/
-}
-.blogposts_2 tbody {
-  height: 6vh;
-}
-.blogposts_2 tfoot {
-  height: 2vh;
-}
-.blogposts_2 #blogdesc {
-  height: 5vh;
+
 }
 .blogposts a {
   text-decoration: none;
@@ -287,28 +285,28 @@ table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
 .blogposts:hover{
   cursor: pointer;
 }
-.postfooter {
+ tfoot {
   display: flex;
   flex-wrap: row;
   justify-content: space-between;
 }
 .p01_bpsp {
   text-align: left;
-  margin-left: 6vw;
+  margin-left: 2vw;
   margin-right: 2vw;
   margin-bottom: 1vw;
   color: grey;
-  font-size: 0.8em;
+  font-size: 0.9em;
   position: relative;
   bottom: 1;
 }
 .p02_bpsp {
   text-align: right;
   color: grey;
-  font-size: 0.65em;
-  margin-bottom: 0.2vw;
-  margin-right: 0.7vw;
+  font-size: 0.75em;
+  margin-right: 0.9vw;
   bottom: 1;
+  font-style: italic;
 }
 table.blogposts_2 a:hover, div.blogposts_2 a:hover {
  transition: .3s;
@@ -318,33 +316,34 @@ table.blogposts_2 a:not(:hover), div.blogposts_2 a:not(:hover) {
   transition: .3s;
   font-size: 1em;
 }
-#blogtitle {
-  margin-bottom: 1.5vw;
+.blogtitle {
+  height: 8vh;
   font-weight: bold;
   text-align: center;
   font-size: 1.4em;
   color: rgb(30, 58, 138);
 }
-#blogdescription {
+.blogdescription {
   opacity: 0.8;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  font-size: 1em;
-  min-height: 30vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 1.1em;
+  color: rgb(118, 118, 118);
+  height: 4vh;
+  font-weight: bold;
+}
+.blogdescription:hover {
+  color: rgb(73, 72, 72);
 }
 #frontimg1, #frontimg2,#frontimg3,#frontimg4 {
   border-radius: 4px;
   display: block;
-  height: 50vh;
-  width: 80%;
-  min-width: 50vw;
+  min-width: 10vw;
+  margin: 0 auto;
   margin-top: 2vw;
-  margin-left: auto;
-  margin-right: auto;
   /*Unten stehendes Kopieren und Anpassen je nachdem ob du Bilder nach width oder height ausrichten willst*/
-  max-height: 250px;
-  max-width: 100%; 
-  object-fit: contain;
+  max-height: 250px; 
+  object-fit: cover;
 }
 
 
@@ -377,14 +376,14 @@ article#instagram {
   opacity: .4;
 }
 /* Footer */
-#footer{
+footer{
   background:#000;
   padding:3vw 0vw;
   font-family: 'Play', sans-serif;
   text-align: center;
 }
 
-#footer .row{
+footer .row{
   width:100%;
   margin:1vw 0vw;
   padding:0.6vw 0vw;
@@ -392,7 +391,7 @@ article#instagram {
   font-size:0.8em;
 }
 
-#footer .row a{
+footer .row a{
   text-decoration:none;
   color:gray;
   transition:0.5s;
@@ -400,26 +399,26 @@ article#instagram {
   
 }
 
-#footer .row a:hover{
+footer .row a:hover{
   color:#fff;
 
 }
 
-#footer .row ul{
+footer .row ul{
   width:100%;
 }
 
-#footer .row ul li{
+footer .row ul li{
   display:inline-block;
   margin:0vw 3vw;
 }
 
-#footer .row a i{
+footer .row a i{
   font-size:2em;
   margin:0vw 1vw;
 }
 
-#footer .row ul li{
+footer .row ul li{
   display:block;
   margin:1vw 0vw;
   text-align:left;
@@ -487,7 +486,7 @@ article#instagram {
   
   /*Navigation*/
   /* Versteckt die Links im Navigationsmenü */
-  .navigation {
+  nav, .navigation {
     overflow: hidden;
     background-color: rgba(135, 145, 158, .3);
     position: relative;
@@ -496,7 +495,7 @@ article#instagram {
 
   }
   
-  .navigation #myLinks {
+  nav #myLinks, .navigation #myLinks {
     display: none;
   }
   
@@ -519,7 +518,7 @@ article#instagram {
   }
   
   /* Menü Links */
-  .navigation a {
+  nav a, .navigation a {
     color: white;
     padding: 1.2vw 1.4vw;
     text-decoration: none;
@@ -538,7 +537,7 @@ article#instagram {
   }
   
   /* Das Icon des Menü */
-  .navigation a#icon {
+  nav a#icon, .navigation a#icon {
     background: rgb(112, 112, 120, .3);
     display: block;
     position: absolute;
@@ -560,7 +559,7 @@ article#instagram {
   }
   
   /* Add a grey background color on mouse-over */
-  .navigation a:hover {
+  nav a:hover, .navigation a:hover {
     background-color: #8DA7BE;
   }
   
@@ -613,7 +612,7 @@ article#instagram {
     margin-top: 20vh;
     text-shadow: 2px 2px black;
   }
-  #h03_sp a, #h02_sp a { 
+  .h03_sp a, #h02_sp a, h2, h2 a { 
     text-decoration: none;
     color: rgb(30, 58, 138);
   }  
@@ -652,7 +651,9 @@ article#instagram {
     max-width: 100%; 
     object-fit: cover;
   }
-  
+  .blogposts_2_blogs .blogdesc{
+    max-height: 90vh;
+  }
   .aboutme_p01{
     margin-top: 3vw;
   }
@@ -671,11 +672,11 @@ article#instagram {
   margin-left: 1%;
   text-align: center;
   }
-  #extrainfos {
-    margin-left: 8%;
-    display: none;
-  }
-  #profilelinks {
+ .extrainfos {
+  display: none;
+  margin-left: 4vw;
+ }
+  .profilelinks {
     text-decoration: none;
     border: 2.5px solid rgb(30, 58, 168);
     border-radius: 2vw;
@@ -694,110 +695,119 @@ article#instagram {
     -webkit-box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.28); 
     box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.28);
   }
-  
-  .erfolge h4 {
-    margin: 0 auto;
+  .erfolge sub {
+    display: none;
   }
-  /*Stile für den Blogpost */
+  .erfolge li h4 {
+    
+    list-style-type: none;
+  }
+  .erfolge li h3, .erfolge li a {
+    display: none;
+  }
   article.blogposts {
     display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
     flex-flow: row nowrap; 
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: stretch;
     overflow-x: auto;
     scroll-snap-type: x proximity;
-    
   }
-  table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
+  table.blogposts_2, div.blogposts_2 {
     border: none;
-    border-radius: 6%;
-    margin-right: 1vw;
+    border-radius: 3%;
+    margin-right: 0.8vw;
+    margin-left: 0.5vw;
     overflow: hidden;
-    width: 60vw; 
-    font-size: 1em;
+    table-layout: fixed;
+    width: 80vw;
     -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
     box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
     background-color: rgb(233, 235, 321); /*Ändern*/
   }
-  .blogposts_2 tbody {
-    height: 20vh;
-  }
-  .blogposts_2 tfoot {
-    height: 10vh;
-  }
-  .blogposts_2 #blogdesc {
-    height: 30vh;
-  }
-  .blogposts a {
-    text-decoration: none;
-    color: #000000;
-  }
-  .blogposts:hover > :not(:hover){
-    transition: .3s;
-    opacity: .4;
-  }
-  
-  .blogposts:hover{
-    cursor: pointer;
-  }
-  .postfooter {
-    display: flex;
-    flex-wrap: row;
-    justify-content: space-between;
-  }
-  .p01_bpsp {
-    text-align: left;
-    margin-left: 6vw;
-    margin-right: 2vw;
-    margin-bottom: 1vw;
-    color: grey;
-    font-size: 0.8em;
-    position: relative;
-    bottom: 1;
-  }
-  .p02_bpsp {
-    text-align: right;
-    color: grey;
-    font-size: 0.65em;
-    margin-bottom: 0.2vw;
-    margin-right: 0.7vw;
-    bottom: 1;
-  }
-  table.blogposts_2 a:hover, div.blogposts_2 a:hover {
-   transition: .3s;
-    font-size: 1.05em;
-  }
-  table.blogposts_2 a:not(:hover), div.blogposts_2 a:not(:hover) {
-    transition: .3s;
-    font-size: 1em;
-  }
-  #blogtitle {
-    margin-bottom: 1.5vw;
+  .blogtitle {
+    height: 6vh;
     font-weight: bold;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: rgb(30, 58, 138);
   }
-  #blogdescription {
+  .blogdescription {
     opacity: 0.8;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    font-size: 0.9em;
-    min-height: 30vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 1.1em;
+    color: rgb(118, 118, 118);
+    height: 4vh;
+    font-weight: bold;
   }
-  #frontimg1, #frontimg2,#frontimg3,#frontimg4 {
-    border-radius: 4px;
-    display: block;
-    height: 50vh;
-    min-width: 50vw;
-    margin-top: 2vw;
-    /*Unten stehendes Kopieren und Anpassen je nachdem ob du Bilder nach width oder height ausrichten willst*/
-    max-height: 250px;
-    max-width: 100%; 
-    object-fit: cover;
+  .blogdescription:hover {
+    color: rgb(73, 72, 72);
   }
+    .blogposts a {
+      text-decoration: none;
+      color: #000000;
+    }
+    .blogposts:hover > :not(:hover){
+      transition: .3s;
+      opacity: .4;
+    }
+    
+    .blogposts:hover{
+      cursor: pointer;
+    }
+    .postfooter {
+      display: flex;
+      flex-wrap: row;
+      justify-content: space-between;
+    }
+    .p01_bpsp {
+      text-align: left;
+      margin-left: 6vw;
+      margin-right: 2vw;
+      margin-bottom: 1vw;
+      color: grey;
+      font-size: 0.8em;
+      position: relative;
+      bottom: 1;
+    }
+    .p02_bpsp {
+      text-align: right;
+      color: grey;
+      font-size: 0.65em;
+      margin-bottom: 0.2vw;
+      margin-right: 0.7vw;
+      bottom: 1;
+    }
+    table.blogposts_2 a:hover, div.blogposts_2 a:hover {
+     transition: .3s;
+      font-size: 1.05em;
+    }
+    table.blogposts_2 a:not(:hover), div.blogposts_2 a:not(:hover) {
+      transition: .3s;
+      font-size: 1em;
+    }
+    #blogtitle {
+      margin-bottom: 1.5vw;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.3em;
+      color: rgb(30, 58, 138);
+    }
   
-  
+    #frontimg1, #frontimg2,#frontimg3,#frontimg4 {
+      border-radius: 4px;
+      display: block;
+      height: 50vh;
+      min-width: 50vw;
+      margin-top: 2vw;
+      /*Unten stehendes Kopieren und Anpassen je nachdem ob du Bilder nach width oder height ausrichten willst*/
+      max-height: 250px;
+      max-width: 100%; 
+      object-fit: cover;
+    }
+    
+    
   /* Artikel Startseite */
   .p01_sp {
     text-align: right;
@@ -810,8 +820,8 @@ article#instagram {
     justify-content: center;
   }
   .instagram-media {
-    max-width: 40%;
-    margin: 0 auto;
+   height: 250px;
+    max-height: 80%;
     object-fit: contain;
   }
   /* Sponsoren Startseite */
@@ -831,14 +841,14 @@ article#instagram {
     opacity: .4;
   }
   /* Footer */
-  #footer{
+  footer{
     background:#000;
     padding:3vw 0vw;
     font-family: 'Play', sans-serif;
     text-align: center;
   }
   
-  #footer .row{
+  footer .row{
     width:100%;
     margin:1vw 0vw;
     padding:0.6vw 0vw;
@@ -846,7 +856,7 @@ article#instagram {
     font-size:0.8em;
   }
   
-  #footer .row a{
+  footer .row a{
     text-decoration:none;
     color:gray;
     transition:0.5s;
@@ -854,26 +864,26 @@ article#instagram {
     
   }
   
-  #footer .row a:hover{
+  footer .row a:hover{
     color:#fff;
   
   }
   
-  #footer .row ul{
+  footer .row ul{
     width:100%;
   }
   
-  #footer .row ul li{
+  footer .row ul li{
     display:inline-block;
     margin:0vw 3vw;
   }
   
-  #footer .row a i{
+  footer .row a i{
     font-size:2em;
     margin:0vw 1vw;
   }
   
-  #footer .row ul li{
+  footer .row ul li{
     display:block;
     margin:1vw 0vw;
     text-align:left;
