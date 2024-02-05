@@ -60,21 +60,13 @@ body {
   background-color: rgb(233, 235, 321); /*Ändern*/
 }
 .blogposts_2_blogs tbody {
-  height: 4vh;
+  height: 40vh;
 }
 .blogposts_2_blogs tfoot {
   height: 1vh;
 }
-.blogposts_2_blogs #blogdesc{
-  height: 3vh;
- 
-}
-#blogdescription {
-  margin-left: 3vw;
-  margin-right: 4vw;
-  line-height: 4vh;
-}
 
+ 
 .blogs_oktober a, .blogs_januar a {
   text-decoration: none;
   color: #000000;
@@ -174,6 +166,9 @@ GALERIE
 }
 
 @media screen and (max-width: 720px) {
+  main {
+    margin-right: 0px;
+  }
   body {
     background-image: url(Bilder/U20DM.jpg);
   }
@@ -183,8 +178,8 @@ GALERIE
     padding-bottom: 5px;
     color: rgb(30, 58, 138);
   }
-  .startbild {
-    float: left;
+  #startbild {
+    min-height: 50vh;
   }
   #blogtext {
     padding-left: 10px;
@@ -235,13 +230,22 @@ GALERIE
     background-color: rgb(233, 235, 321); /*Ändern*/
   }
   .blogposts_2_blogs tbody {
-    max-height: 10vh;
+    max-height: 50vh;
+    margin-bottom: 2vh;
   }
   .blogposts_2_blogs tfoot {
     height: 8vh;
   }
-  .blogposts_2_blogs #blogdesc{
-    max-height: 5vh;
+  .blogdesc{
+   height: 5vh;
+  }
+  #blogtext_article, #blogtext_title, #startbild, .h01_bp1 {
+    margin-left: 2vw;
+    padding-left: 1vw;
+
+  }
+  #blogtext_article {
+    margin-right: 8vw; /*Rest keine Margin-right, deswegen seperat*/
   }
   .blogs_oktober a:hover, .blogs_januar a:hover{
    transition: 0.3s;

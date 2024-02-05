@@ -82,7 +82,7 @@ Insgesamt bin ich sehr zufrieden mit der Meisterschaft. <br>Im Anschluss ging es
 <hr>
 </div>
 </div>
-<h2 id="h03_sp">Bildergalerie</h2>
+<h2 class="h03_sp">Bildergalerie</h2>
 <div class="scroll-container">
   <img src="Bilder\Blog\Blogpost123\TeamfotoEM.webp" alt="Team Niedersachsen - U20-EM">
   <img src="Bilder\Blog\Blogpost123\FinaleEM1.webp" alt="Finallauf 1500m EM">
@@ -101,7 +101,7 @@ displayComments($pageId);
 ?>
 </article>
 
-<h2 id="h03_sp">Kommentar hinterlassen</h2>
+<h2 class="h03_sp">Kommentar hinterlassen</h2>
 <form action="submit-comment.php" method="post" id="post_comment" accept-charset="UTF-8">
 <input type="hidden" name="pageId" value="<?php echo $pageId; ?>">
    <label for="text">Name:</label><br> <input type="text" name="name" required><br>

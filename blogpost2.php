@@ -76,7 +76,7 @@ Somit konnte ich mir den <strong style="color: silver">zweiten Platz</strong> in
 
 </div>
 </div>
-<h2 id="h03_sp">Bildergalerie</h2>
+<h2 class="h03_sp">Bildergalerie</h2>
 <div class="scroll-container">
   <img src="Bilder\Blog\Blogpost123\StartlinieRostock.webp" alt="Die Athleten für den Finalen 1500m Lauf stehen an der Startlinie">
   <img src="Bilder\Blog\Blogpost123\StartRostock.webp" alt="Kurz nach dem Start des Finallaufs">
@@ -85,7 +85,7 @@ Somit konnte ich mir den <strong style="color: silver">zweiten Platz</strong> in
   <img src="Bilder\Blog\Blogpost123\U20DM-Race.webp" alt="Das Rennen läuft auf Hochtouren">
 </div> 
 <p class="p01_bp">Veröffentlicht: 18.10.2023</p>
-<h2 id="h03_sp">Alle Kommentare</h2>
+<h2 class="h03_sp">Alle Kommentare</h2>
 <article id="show_comments">
 <?php
 include('comments-function.php');
@@ -93,7 +93,7 @@ displayComments('blogpost2');
 ?>
 </article>
 
-<h2 id="h03_sp">Kommentar hinterlassen</h2>
+<h2 class="h03_sp">Kommentar hinterlassen</h2>
 <form action="submit-comment.php" method="post" id="post_comment" accept-charset="UTF-8">
 <input type="hidden" name="pageId" value="<?php echo $pageId; ?>">
    <label for="text">Name:</label><br> <input type="text" name="name" required><br>

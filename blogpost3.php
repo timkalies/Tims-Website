@@ -47,7 +47,7 @@ header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese
 <!--Links noch ändern-->
 <!-- Navigation -->
 <div class="navigation">
-<a href="#" id="topnav">Artikel - 3000m Hallenmeeting Chemnitz </a>
+<a href="#" id="topnav">Artikel - 3000m Meeting Chemnitz </a>
   <div id="myLinks">
     <a href="index.html" id="topnav">Startseite</a>
     <a href="blogs.html" class="topnav">Blog</a>
@@ -65,7 +65,7 @@ header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese
   <noscript>Bitte aktiviere Javascript um diese Seite nutzen zu können</noscript>
 <div class="blogpost_1">
 <h2 class="h01_bp1">Hallenmeeting Chemnitz 3000m <br>14.01.2024 </h2>
- <img src="Bilder\Chemnitz 3000m.jpg" id="startbild" alt="Start bei den Deutschen U20-Europameisterschaften">
+ <img src="Bilder\Chemnitz-3000m.jpg" id="startbild" alt="Start bei den Deutschen U20-Europameisterschaften">
 <div class="blogpost_2">
 <p style="text-align: left;" id="blogtext_title"><strong>Erstes 3000m Rennen seit 5 Jahren</strong></p>
 <br>
@@ -76,16 +76,16 @@ Nachdem diese Idee über die kommenden 2 Jahre immer wieder aufgeworfen wurde, j
 <strong>15 lange Runden über die 200m lange Hallenbahn standen bevor.</strong> Nach zwei unruhigen ersten Runden kam langsam Ruhe in das Rennen. Bis 1000m vor Ziel war es mir möglich mit dem führenden mitzuhalten, von da an bestritt ich das Rennen alleine. Nach einem etwas langsameren, letzten Kilometer konnte ich in <strong>8:22min</strong> die Ziellinie überqueren und meine 5 Jahre alte Bestzeit von 11:12min deutlich unterbieten!</p>
 </div>
 </div>
-<h2 id="h03_sp">Bildergalerie</h2>
+<h2 class="h03_sp">Bildergalerie</h2>
 <div class="scroll-container">
   <img src="Bilder\Blog\Blogpost123\ChemnitzHalle.webp" alt="Die Halle in Chemnitz, welche am 14.01 den 3000m Wettkmapf veranstaltete">
   <img src="Bilder\Blog\Blogpost123\ChemnitzWarmup.webp" alt="Anspannung, kurz vorm Start des Rennens">
-  <img src="Bilder\Chemnitz 3000m.jpg" alt="Die anschließende Siegerehrung der schnellsten drei Läufer">
+  <img src="Bilder\Chemnitz-3000m.jpg" alt="Die anschließende Siegerehrung der schnellsten drei Läufer">
   <img src="Bilder\Blog\Blogpost123\ErgebnisseChemnitz.webp" alt="Die finalen Resultate- 3000m in 8:22min">
 </div> 
 <p class="p01_bp">Veröffentlicht: 18.10.2023</p>
 <hr>
-<h2 id="h03_sp">Alle Kommentare</h2>
+<h2 class="h03_sp">Alle Kommentare</h2>
 <article id="show_comments">
 <?php
 include('comments-function.php');
@@ -93,7 +93,7 @@ displayComments('blogpost3');
 ?>
 </article>
 
-<h2 id="h03_sp">Kommentar hinterlassen</h2>
+<h2 class="h03_sp">Kommentar hinterlassen</h2>
 <form action="submit-comment.php" method="post" id="post_comment" accept-charset="UTF-8">
 <input type="hidden" name="pageId" value="<?php echo $pageId; ?>">
    <label for="text">Name:</label><br> <input type="text" name="name" required><br>
