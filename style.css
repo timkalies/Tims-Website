@@ -1,5 +1,5 @@
 * {
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -12,7 +12,6 @@ hr {
   background-image: linear-gradient(90deg, grey, transparent);
   border: 0;
   height: 1px;
-  
 }
 br {
   clear: left;
@@ -27,8 +26,10 @@ main {
   border-left: none 1px #1f1e1e;
   border-right: none 1px #1f1e1e;
   border-top: solid 0.1px #fff9f9;
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57, 57, 57, 0);
-  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57, 57, 57, 0);
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    1px -2px 15px -24px rgba(57, 57, 57, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    1px -2px 15px -24px rgba(57, 57, 57, 0);
 }
 small {
   font-style: italic;
@@ -36,144 +37,163 @@ small {
 }
 h1 {
   text-align: center;
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
   font-size: 2.8em;
   color: white !important;
   text-shadow: 2px 2px black;
   margin-top: 20vh;
   margin-bottom: 20vh;
-  transition: .3s;
+  transition: 0.3s;
 }
-
-
 
 /**********************
 ALLE DESIGNS
 **********************/
 
-
-
-
 /*Navigation*/
 /* Versteckt die Links im Navigationsmenü */
-nav, .navigation {
+nav,
+.navigation {
   overflow: hidden;
-  background-color: rgba(135, 145, 158, .3);
+  background-color: rgba(135, 145, 158, 0.3);
   position: relative;
   border: none;
-  
 }
 
-nav #myLinks, .navigation #myLinks {
+nav #myLinks,
+.navigation #myLinks {
   display: none;
 }
 
 @keyframes rotate {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(180deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
 }
 @keyframes rotateBack {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(-180deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
 }
 
 @keyframes sizeUp {
-  from {font-size: 1em;}
-  to {font-size: 1.05em;}
+  from {
+    font-size: 1em;
+  }
+  to {
+    font-size: 1.05em;
+  }
 }
 @keyframes sizeDown {
-  from {font-size: 1.05em;}
-  to {font-size: 1em;}
+  from {
+    font-size: 1.05em;
+  }
+  to {
+    font-size: 1em;
+  }
 }
 
 /* Menü Links */
-nav a, .navigation a {
+nav a,
+.navigation a {
   text-align: center;
   color: white;
   text-decoration: none;
   display: block;
   font-size: 1.2em;
-  padding: 3.5vh 1.6vw
+  padding: 3.5vh 1.6vw;
 }
-.topnav, .downnav {
+.topnav,
+.downnav {
   font-size: 1em;
   transition: font-size 0.3s;
-  -moz-transition:font-size 0.3s; /* Firefox 4 */
-  -webkit-transition:font-size 0.3s; /* Safari and Chrome */
-  -o-transition:font-size 0.3s
+  -moz-transition: font-size 0.3s; /* Firefox 4 */
+  -webkit-transition: font-size 0.3s; /* Safari and Chrome */
+  -o-transition: font-size 0.3s;
 }
-.topnav:hover, .downnav:hover {
-  font-size: 1.05em
+.topnav:hover,
+.downnav:hover {
+  font-size: 1.05em;
 }
 
 /* Das Icon des Menü */
-nav a#icon, .navigation a#icon {
-  background: rgb(112, 112, 120, .4);
+nav a#icon,
+.navigation a#icon {
+  background: rgb(112, 112, 120, 0.4);
   display: block;
   position: absolute;
   right: 0;
   top: 0;
   font-size: 1em;
   text-shadow: 2px 2px black;
-
 }
 
 /* Add a grey background color on mouse-over */
-nav a:hover, .navigation a:hover {
-  background-color: #8DA7BE;
+nav a:hover,
+.navigation a:hover {
+  background-color: #8da7be;
 }
 
 /* Hintergrundbild */
 .backimg_01 {
-/* Das hinzufügen hiervon hat den Error gefixt */
-  background-image: url('Bilder/Mannheim-finish-blur.jpg');
+  /* Das hinzufügen hiervon hat den Error gefixt */
+  background-image: url("Bilder/Mannheim-finish-blur.jpg");
   background-position-x: 15%;
   background-color: #000000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
- 
 }
 .backimg_01::backdrop {
   backdrop-filter: blur(6px);
 }
 /*Zur Positionierung der Icons*/
 #ulPageIcons {
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-font-size: 3em;
-transition: font-size 0.5s;
-transition-timing-function: ease-in-out;
-list-style: none;
-padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 3em;
+  transition: font-size 0.5s;
+  transition-timing-function: ease-in-out;
+  list-style: none;
+  padding-left: 0px;
 }
-#liIcons1, #liIcons2, #liIcons3{
+#liIcons1,
+#liIcons2,
+#liIcons3 {
   text-align: center;
   margin-bottom: 40vh;
   font-size: 2em;
-  }
+}
 .backimg_01 #ulPageIcons a {
-  text-decoration:none;
-  color:white;
-  transition:0.5s;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
   text-shadow: 2px 2px black;
 }
-.backimg_01 a:hover{
-  color:#fff;
+.backimg_01 a:hover {
+  color: #fff;
   font-size: 1.1em;
 }
 .backimg_01 h1:hover {
   font-size: 2.9em;
-  
 }
 /*Überschriften*/
 
-.h03_sp a, #h02_sp a, h2 { 
+.h03_sp a,
+#h02_sp a,
+h2,
+h2 a {
   text-decoration: none;
   color: rgb(30, 58, 138);
-}  
+}
 
 /*Bilder allgemein*/
 img {
@@ -182,8 +202,12 @@ img {
 }
 /*Über Mich Startseite*/
 .aboutme {
-  display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
-  flex-flow: row nowrap; 
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: stretch;
   overflow-x: auto;
@@ -196,32 +220,34 @@ img {
   margin-left: 0.5vw;
   overflow: hidden;
   width: 50%;
-  -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
+  -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
   background-color: rgb(233, 235, 321); /*Ändern*/
 }
-#profileimg, #profileimg2 {
+#profileimg,
+#profileimg2 {
   margin: auto;
   border: none;
   border-radius: 4%;
- min-height: 250px;
-  max-width: 100%; 
+  min-height: 250px;
+  max-width: 100%;
   object-fit: contain;
 }
 
 #profileimg2 {
-align-self: center;
-border: none;
-border-radius: 4%;
-max-height: 183px;
-max-width: 100%; 
-object-fit: contain;
+  align-self: center;
+  border: none;
+  border-radius: 4%;
+  max-height: 183px;
+  max-width: 100%;
+  object-fit: contain;
 }
-.aboutme_p01{
+.aboutme_p01 {
   margin-top: 3vw;
 }
 
-#profpicdesc, #profpicdesc2 {
+#profpicdesc,
+#profpicdesc2 {
   color: #818080;
   font-size: 0.6em;
   margin-right: 20%;
@@ -229,11 +255,11 @@ object-fit: contain;
 }
 /* Über Mich Erfolge */
 .div02_sp h1 {
-margin-left: 1%;
+  margin-left: 1%;
 }
-#extrainfos {
-  margin-left: 8vw;
-  display: block;
+ul.erfolge li h3 {
+  padding-left: 20%;
+  list-style-type: none;
 }
 .profilelinks {
   text-decoration: none;
@@ -253,39 +279,43 @@ ul.erfolge li:has(h4) {
 }
 /*Stile für den Blogpost */
 article.blogposts {
-  display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
-  flex-flow: row nowrap; 
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
   overflow-x: auto;
   scroll-snap-type: x proximity;
-  
 }
-table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
+table.blogposts_2,
+div.blogposts_2 {
+  /*Für Hauptseite */
   border: none;
   border-radius: 6%;
   margin-right: 1vw;
   overflow: hidden;
-  width: 30vw; 
+  width: 30vw;
   font-size: 1em;
-  -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
+  -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
   background-color: rgb(233, 235, 321); /*Ändern*/
-
 }
 .blogposts a {
   text-decoration: none;
   color: #000000;
 }
-.blogposts:hover > :not(:hover){
-  transition: .3s;
-  opacity: .4;
+.blogposts:hover > :not(:hover) {
+  transition: 0.3s;
+  opacity: 0.4;
 }
 
-.blogposts:hover{
+.blogposts:hover {
   cursor: pointer;
 }
- tfoot {
+tfoot {
   display: flex;
   flex-wrap: row;
   justify-content: space-between;
@@ -308,12 +338,14 @@ table.blogposts_2, div.blogposts_2 { /*Für Hauptseite */
   bottom: 1;
   font-style: italic;
 }
-table.blogposts_2 a:hover, div.blogposts_2 a:hover {
- transition: .3s;
+table.blogposts_2 a:hover,
+div.blogposts_2 a:hover {
+  transition: 0.3s;
   font-size: 1.05em;
 }
-table.blogposts_2 a:not(:hover), div.blogposts_2 a:not(:hover) {
-  transition: .3s;
+table.blogposts_2 a:not(:hover),
+div.blogposts_2 a:not(:hover) {
+  transition: 0.3s;
   font-size: 1em;
 }
 .blogtitle {
@@ -335,17 +367,19 @@ table.blogposts_2 a:not(:hover), div.blogposts_2 a:not(:hover) {
 .blogdescription:hover {
   color: rgb(73, 72, 72);
 }
-#frontimg1, #frontimg2,#frontimg3,#frontimg4 {
+#frontimg1,
+#frontimg2,
+#frontimg3,
+#frontimg4 {
   border-radius: 4px;
   display: block;
   min-width: 10vw;
   margin: 0 auto;
   margin-top: 2vw;
   /*Unten stehendes Kopieren und Anpassen je nachdem ob du Bilder nach width oder height ausrichten willst*/
-  max-height: 250px; 
+  max-height: 250px;
   object-fit: cover;
 }
-
 
 /* Artikel Startseite */
 .p01_sp {
@@ -357,10 +391,9 @@ table.blogposts_2 a:not(:hover), div.blogposts_2 a:not(:hover) {
 article#instagram {
   display: flex;
   justify-content: center;
-
 }
 /* Sponsoren Startseite */
-.sponsors{
+.sponsors {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap; /*Ändern wenn es mehr Bilder
@@ -371,91 +404,86 @@ article#instagram {
   aspect-ratio: inherit;
 }
 
-.sponsors:hover > :not(:hover){
-  transition: .2s;
-  opacity: .4;
+.sponsors:hover > :not(:hover) {
+  transition: 0.2s;
+  opacity: 0.4;
 }
 /* Footer */
-footer{
-  background:#000;
-  padding:3vw 0vw;
-  font-family: 'Play', sans-serif;
+footer {
+  background: #000;
+  padding: 3vw 0vw;
+  font-family: "Play", sans-serif;
   text-align: center;
 }
 
-footer .row{
-  width:100%;
-  margin:1vw 0vw;
-  padding:0.6vw 0vw;
-  color:gray;
-  font-size:0.8em;
+footer .row {
+  width: 100%;
+  margin: 1vw 0vw;
+  padding: 0.6vw 0vw;
+  color: gray;
+  font-size: 0.8em;
 }
 
-footer .row a{
-  text-decoration:none;
-  color:gray;
-  transition:0.5s;
+footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
   font-size: 1em;
-  
 }
 
-footer .row a:hover{
-  color:#fff;
-
+footer .row a:hover {
+  color: #fff;
 }
 
-footer .row ul{
-  width:100%;
+footer .row ul {
+  width: 100%;
 }
 
-footer .row ul li{
-  display:inline-block;
-  margin:0vw 3vw;
+footer .row ul li {
+  display: inline-block;
+  margin: 0vw 3vw;
 }
 
-footer .row a i{
-  font-size:2em;
-  margin:0vw 1vw;
+footer .row a i {
+  font-size: 2em;
+  margin: 0vw 1vw;
 }
 
-footer .row ul li{
-  display:block;
-  margin:1vw 0vw;
-  text-align:left;
+footer .row ul li {
+  display: block;
+  margin: 1vw 0vw;
+  text-align: left;
 }
 .row01 {
   font-size: 0.75em;
   text-align: left;
   margin-left: 1vw;
 }
-.sponsors_img1, .sponsors_img2 {
+.sponsors_img1,
+.sponsors_img2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-
-
-
 /* Handy Styles */
 @media screen and (max-width: 767px) {
-
   * {
-    font-family: 'Play', sans-serif;
+    font-family: "Play", sans-serif;
     scroll-behavior: smooth;
   }
-  
+
   body {
     background-color: rgb(233, 235, 239);
   }
-  
+
   hr {
     height: 6px;
     background-image: linear-gradient(90deg, grey, transparent);
     border: 0;
     height: 1px;
   }
-  
+
   main {
     overflow: hidden;
     margin-left: 0vw;
@@ -466,79 +494,95 @@ footer .row ul li{
     background-color: rgb(233, 235, 249);
     border-left: none 1px #1f1e1e;
     border-right: none 1px #1f1e1e;
-    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57, 57, 57, 0);
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 1px -2px 15px -24px rgba(57, 57, 57, 0);
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+      1px -2px 15px -24px rgba(57, 57, 57, 0);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+      1px -2px 15px -24px rgba(57, 57, 57, 0);
   }
   small {
     font-style: italic;
     font-size: 0.5em;
   }
-  
-  
-  
-  
+
   /**********************
   ALLE DESIGNS
   **********************/
-  
-  
-  
-  
+
   /*Navigation*/
   /* Versteckt die Links im Navigationsmenü */
-  nav, .navigation {
+  nav,
+  .navigation {
     overflow: hidden;
-    background-color: rgba(135, 145, 158, .3);
+    background-color: rgba(135, 145, 158, 0.3);
     position: relative;
     border: none;
     padding: 9px 3px;
-
   }
-  
-  nav #myLinks, .navigation #myLinks {
+
+  nav #myLinks,
+  .navigation #myLinks {
     display: none;
   }
-  
+
   @keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(180deg);}
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
   }
   @keyframes rotateBack {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(-180deg);}
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-180deg);
+    }
   }
-  
+
   @keyframes sizeUp {
-    from {font-size: 1em;}
-    to {font-size: 1.05em;}
+    from {
+      font-size: 1em;
+    }
+    to {
+      font-size: 1.05em;
+    }
   }
   @keyframes sizeDown {
-    from {font-size: 1.05em;}
-    to {font-size: 1em;}
+    from {
+      font-size: 1.05em;
+    }
+    to {
+      font-size: 1em;
+    }
   }
-  
+
   /* Menü Links */
-  nav a, .navigation a {
+  nav a,
+  .navigation a {
     color: white;
     padding: 1.2vw 1.4vw;
     text-decoration: none;
     display: block;
     font-size: 1em;
   }
-  .topnav, .downnav {
+  .topnav,
+  .downnav {
     font-size: 1em;
     transition: font-size 0.5s;
-    -moz-transition:font-size 0.5s; /* Firefox 4 */
-    -webkit-transition:font-size 0.5s; /* Safari and Chrome */
-    -o-transition:font-size 0.5s
+    -moz-transition: font-size 0.5s; /* Firefox 4 */
+    -webkit-transition: font-size 0.5s; /* Safari and Chrome */
+    -o-transition: font-size 0.5s;
   }
   .topnav {
     text-align: center;
   }
-  
+
   /* Das Icon des Menü */
-  nav a#icon, .navigation a#icon {
-    background: rgb(112, 112, 120, .3);
+  nav a#icon,
+  .navigation a#icon {
+    background: rgb(112, 112, 120, 0.3);
     display: block;
     position: absolute;
     right: 0;
@@ -546,7 +590,6 @@ footer .row ul li{
     font-size: 1em;
     padding: 16px 16px;
     text-shadow: 2px 2px black;
-  
   }
   nav div a {
     margin-bottom: 3vh;
@@ -557,66 +600,72 @@ footer .row ul li{
   nav div a:last-child {
     margin-bottom: 1vh;
   }
-  
+
   /* Add a grey background color on mouse-over */
-  nav a:hover, .navigation a:hover {
-    background-color: #8DA7BE;
+  nav a:hover,
+  .navigation a:hover {
+    background-color: #8da7be;
   }
-  
+
   /* Hintergrundbild */
   .backimg_01 {
-  /* Das hinzufügen hiervon hat den Error gefixt */
-    background-image: url('Bilder/Mannheim-finish-blur.jpg');
+    /* Das hinzufügen hiervon hat den Error gefixt */
+    background-image: url("Bilder/Mannheim-finish-blur.jpg");
     background-position-x: 15%;
     background-color: #000000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-   
   }
   .backimg_01::backdrop {
     backdrop-filter: blur(6px);
   }
   /*Zur Positionierung der Icons*/
   #ulPageIcons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 2em;
-  transition: font-size 0.5s;
-  transition-timing-function: ease-in-out;
-  list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2em;
+    transition: font-size 0.5s;
+    transition-timing-function: ease-in-out;
+    list-style: none;
   }
-  #liIcons1, #liIcons2, #liIcons3{
+  #liIcons1,
+  #liIcons2,
+  #liIcons3 {
     text-align: center;
     margin-bottom: 250px;
     font-size: 2em;
-    }
-  .backimg_01 #ulPageIcons a, #h01_sp a {
-    text-decoration:none;
-    color:white;
-    transition:0.5s;
+  }
+  .backimg_01 #ulPageIcons a,
+  #h01_sp a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
     text-shadow: 2px 2px black;
   }
-  .backimg_01 a:hover{
-    color:#fff;
+  .backimg_01 a:hover {
+    color: #fff;
     font-size: 1.1em;
   }
   /*Überschriften*/
   h1 {
     text-align: center;
-    font-family: 'Play', sans-serif;
+    font-family: "Play", sans-serif;
     font-size: 3em;
     color: white;
     margin-top: 20vh;
     text-shadow: 2px 2px black;
   }
-  .h03_sp a, #h02_sp a, h2, h2 a { 
+  .h03_sp a,
+  #h02_sp a,
+  h2,
+  h2 a {
     text-decoration: none;
     color: rgb(30, 58, 138);
-  }  
-  
+  }
+
   /*Bilder allgemein*/
   img {
     max-width: 100%;
@@ -624,8 +673,12 @@ footer .row ul li{
   }
   /*Über Mich Startseite*/
   .aboutme {
-    display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
-    flex-flow: row nowrap; 
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: stretch;
     overflow-x: auto;
@@ -638,29 +691,28 @@ footer .row ul li{
     margin-left: 0.5vw;
     overflow: hidden;
     min-width: 80vw;
-    -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
+    -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
     background-color: rgb(233, 235, 321); /*Ändern*/
   }
-  #profileimg, #profileimg2 {
+  #profileimg,
+  #profileimg2 {
     margin: auto;
     border: none;
     border-radius: 4%;
     min-height: 20vh;
     max-height: 20vh;
-    max-width: 100%; 
+    max-width: 100%;
     object-fit: cover;
   }
-  .blogposts_2_blogs .blogdesc{
+  .blogposts_2_blogs .blogdesc {
     max-height: 90vh;
   }
-  .aboutme_p01{
+  .aboutme_p01 {
     margin-top: 3vw;
   }
-  #break01 {
-    clear: left; /*Damit nächste Seitenabschnitte nicht neben Bild sind*/
-  }
-  #profpicdesc, #profpicdesc2 {
+  #profpicdesc,
+  #profpicdesc2 {
     color: #818080;
     font-size: 0.6em;
     margin-right: 20%;
@@ -669,13 +721,13 @@ footer .row ul li{
   }
   /* Über Mich Erfolge */
   .div02_sp h1 {
-  margin-left: 1%;
-  text-align: center;
+    margin-left: 1%;
+    text-align: center;
   }
- .extrainfos {
-  display: none;
-  margin-left: 4vw;
- }
+  .extrainfos {
+    display: none;
+    margin-left: 4vw;
+  }
   .profilelinks {
     text-decoration: none;
     border: 2.5px solid rgb(30, 58, 168);
@@ -692,41 +744,51 @@ footer .row ul li{
     min-height: 30vh;
     max-height: 30vh;
     overflow-y: auto;
-    -webkit-box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.28); 
-    box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.28);
+    -webkit-box-shadow: inset 0px -7px 9px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: inset 0px -7px 9px 0px rgba(0, 0, 0, 0.28);
+  }
+  .lidisplay {
+    display: none;
   }
   .erfolge sub {
     display: none;
   }
   .erfolge li h4 {
-    
     list-style-type: none;
   }
-  .erfolge li h3, .erfolge li a {
+  .erfolge li h3,
+  .erfolge li a {
     display: none;
   }
+
+  /*BLOGPOSTS*/
   article.blogposts {
-    display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
-    flex-flow: row nowrap; 
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: stretch;
     overflow-x: auto;
     scroll-snap-type: x proximity;
   }
-  table.blogposts_2, div.blogposts_2 {
+  table.blogposts_2,
+  div.blogposts_2 {
     border: none;
     border-radius: 3%;
-    margin-right: 0.8vw;
+    margin-right: 1vw;
     margin-left: 0.5vw;
     overflow: hidden;
     table-layout: fixed;
     width: 80vw;
-    -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25); 
+    -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
     background-color: rgb(233, 235, 321); /*Ändern*/
   }
   .blogtitle {
-    height: 6vh;
+    height: 12vh;
     font-weight: bold;
     text-align: center;
     font-size: 1.4em;
@@ -744,70 +806,74 @@ footer .row ul li{
   .blogdescription:hover {
     color: rgb(73, 72, 72);
   }
-    .blogposts a {
-      text-decoration: none;
-      color: #000000;
-    }
-    .blogposts:hover > :not(:hover){
-      transition: .3s;
-      opacity: .4;
-    }
-    
-    .blogposts:hover{
-      cursor: pointer;
-    }
-    .postfooter {
-      display: flex;
-      flex-wrap: row;
-      justify-content: space-between;
-    }
-    .p01_bpsp {
-      text-align: left;
-      margin-left: 6vw;
-      margin-right: 2vw;
-      margin-bottom: 1vw;
-      color: grey;
-      font-size: 0.8em;
-      position: relative;
-      bottom: 1;
-    }
-    .p02_bpsp {
-      text-align: right;
-      color: grey;
-      font-size: 0.65em;
-      margin-bottom: 0.2vw;
-      margin-right: 0.7vw;
-      bottom: 1;
-    }
-    table.blogposts_2 a:hover, div.blogposts_2 a:hover {
-     transition: .3s;
-      font-size: 1.05em;
-    }
-    table.blogposts_2 a:not(:hover), div.blogposts_2 a:not(:hover) {
-      transition: .3s;
-      font-size: 1em;
-    }
-    #blogtitle {
-      margin-bottom: 1.5vw;
-      font-weight: bold;
-      text-align: center;
-      font-size: 1.3em;
-      color: rgb(30, 58, 138);
-    }
-  
-    #frontimg1, #frontimg2,#frontimg3,#frontimg4 {
-      border-radius: 4px;
-      display: block;
-      height: 50vh;
-      min-width: 50vw;
-      margin-top: 2vw;
-      /*Unten stehendes Kopieren und Anpassen je nachdem ob du Bilder nach width oder height ausrichten willst*/
-      max-height: 250px;
-      max-width: 100%; 
-      object-fit: cover;
-    }
-    
-    
+  .blogposts a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .blogposts:hover > :not(:hover) {
+    transition: 0.3s;
+    opacity: 0.4;
+  }
+
+  .blogposts:hover {
+    cursor: pointer;
+  }
+  .postfooter {
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+  }
+  .p01_bpsp {
+    text-align: left;
+    margin-left: 6vw;
+    margin-right: 2vw;
+    margin-bottom: 1vw;
+    color: grey;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 1;
+  }
+  .p02_bpsp {
+    text-align: right;
+    color: grey;
+    font-size: 0.65em;
+    margin-bottom: 0.2vw;
+    margin-right: 0.7vw;
+    bottom: 1;
+  }
+  table.blogposts_2 a:hover,
+  div.blogposts_2 a:hover {
+    transition: 0.3s;
+    font-size: 1.05em;
+  }
+  table.blogposts_2 a:not(:hover),
+  div.blogposts_2 a:not(:hover) {
+    transition: 0.3s;
+    font-size: 1em;
+  }
+  #blogtitle {
+    margin-bottom: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3em;
+    color: rgb(30, 58, 138);
+  }
+
+  #frontimg1,
+  #frontimg2,
+  #frontimg3,
+  #frontimg4 {
+    border-radius: 4px;
+    display: block;
+    height: 50vh;
+    min-width: 50vw;
+    margin-top: 2vw;
+    /*Unten stehendes Kopieren und Anpassen je nachdem ob du Bilder nach width oder height ausrichten willst*/
+    max-height: 250px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
   /* Artikel Startseite */
   .p01_sp {
     text-align: right;
@@ -820,12 +886,12 @@ footer .row ul li{
     justify-content: center;
   }
   .instagram-media {
-   height: 250px;
-    max-height: 80%;
+    height: 250px;
+    max-height: 100%;
     object-fit: contain;
   }
   /* Sponsoren Startseite */
-  .sponsors{
+  .sponsors {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; /*Ändern wenn es mehr Bilder
@@ -835,65 +901,64 @@ footer .row ul li{
     height: 60%;
     aspect-ratio: inherit;
   }
-  
-  .sponsors:hover > :not(:hover){
-    transition: .2s;
-    opacity: .4;
+
+  .sponsors:hover > :not(:hover) {
+    transition: 0.2s;
+    opacity: 0.4;
   }
   /* Footer */
-  footer{
-    background:#000;
-    padding:3vw 0vw;
-    font-family: 'Play', sans-serif;
+  footer {
+    background: #000;
+    padding: 3vw 0vw;
+    font-family: "Play", sans-serif;
     text-align: center;
   }
-  
-  footer .row{
-    width:100%;
-    margin:1vw 0vw;
-    padding:0.6vw 0vw;
-    color:gray;
-    font-size:0.8em;
+
+  footer .row {
+    width: 100%;
+    margin: 1vw 0vw;
+    padding: 0.6vw 0vw;
+    color: gray;
+    font-size: 0.8em;
   }
-  
-  footer .row a{
-    text-decoration:none;
-    color:gray;
-    transition:0.5s;
+
+  footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
     font-size: 1em;
-    
   }
-  
-  footer .row a:hover{
-    color:#fff;
-  
+
+  footer .row a:hover {
+    color: #fff;
   }
-  
-  footer .row ul{
-    width:100%;
+
+  footer .row ul {
+    width: 100%;
   }
-  
-  footer .row ul li{
-    display:inline-block;
-    margin:0vw 3vw;
+
+  footer .row ul li {
+    display: inline-block;
+    margin: 0vw 3vw;
   }
-  
-  footer .row a i{
-    font-size:2em;
-    margin:0vw 1vw;
+
+  footer .row a i {
+    font-size: 2em;
+    margin: 0vw 1vw;
   }
-  
-  footer .row ul li{
-    display:block;
-    margin:1vw 0vw;
-    text-align:left;
+
+  footer .row ul li {
+    display: block;
+    margin: 1vw 0vw;
+    text-align: left;
   }
   .row01 {
     font-size: 0.75em;
     text-align: left;
     margin-left: 1vw;
   }
-  .sponsors_img1, .sponsors_img2 {
+  .sponsors_img1,
+  .sponsors_img2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
