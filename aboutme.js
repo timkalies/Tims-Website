@@ -1,14 +1,8 @@
-const { useState } = React;
+import { createRoot } from 'react-dom/client';
 
-function MeinComponent() {
-  const [count, setCount] = useState(0);
+// Clear the existing HTML content
+document.body.innerHTML = '<div id="app"></div>';
 
-  return (
-    <div>
-      <p>Du hast {count} mal geklickt</p>
-      <button onClick={() => setCount(count + 1)}>Klick mich</button>
-    </div>
-  );
-}
-
-ReactDOM.render(<MeinComponent />, document.getElementById("root"));
+// Render your React component instead
+const root = createRoot(document.getElementById('app'));
+root.render(<h1>Hello, world</h1>);
