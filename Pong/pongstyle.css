@@ -10,25 +10,48 @@
 }
 #playfield {
   background-color: lightgrey;
-  margin-left: 36%;
+  position: fixed;
+  margin-bottom: 3%;
+  min-width: 50%; /* Prozentsatz der Bildschirmbreite */
+  max-width: 50vw;
+  min-height: 60%; /* Prozentsatz der Bildschirmhöhe */
+  max-height: 70vh;
+  top: 50%; /* Zentrierung vertikal */
+  left: 50%; /* Zentrierung horizontal */
+  transform: translate(-50%, -50%); /* Zentrierung */
   border-top-style: solid;
   border-left-style: solid;
-  border-right-style:  solid;
+  border-right-style: solid;
 }
-
-
+#myLinks {
+  display: none;
+  background-color: rgb(246, 248, 247);
+  border: 2px solid rgb(90, 89, 89);
+  border-right: none;
+  border-radius: 2%;
+}
+.topnav {
+  text-decoration: none;
+  color: rgb(52, 52, 52);
+  border-bottom: 2px dotted lightgreen;
+}
 #menu {
   margin-top: 2vh;
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 0; /* Am unteren Rand positionieren */
+  left: 50%; /* Zentrierung horizontal */
+  transform: translateX(-50%); /* Zentrierung horizontal */
 }
-button {
+button,
+#menubutton {
   background-color: rgb(87, 117, 107);
   color: whitesmoke;
   font-weight: bold;
   border: none;
   border-radius: 6px;
-  padding: 4px 4px 4px 5px;
+  padding: 1.5vh 2vw 1.5vh 2vw;
 }
 #highscore {
   margin-left: 8vw;

@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="de-DE">
   <head>
     <title>PONG - made by Tim Kalies</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width initial-scale=1, maximum-scale=1"/>
-    <link rel="stylesheet" href="pongstyle.css"/>
-    <script type="text/javascript" src="pongscript.js"></script>
+    <meta
+      name="viewport"
+      content="width=device-width initial-scale=1"
+    />
+    <link rel="stylesheet" href="pongstyle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="pong.js"></script>
   </head>
   <body>
     <h1 id="title">PONG</h1>
     <canvas id="playfield"></canvas>
     <div id="menu">
-    <button id="startbutton" onclick="start()">Spiel Starten</button>
-    <h3 id="highscore"></h3>
-    <button id="restartbutton" onclick="restart()">Neu starten</button>
-    </div>
+      <button id="startbutton">Spiel Starten</button>
+      <h3 id="highscore"></h3>
 
+      <div id="myLinks">
+        <a href="#" class="topnav">Leaderboard</a>
+        <a href="#" class="topnav">Profil</a>
+        <a href="index.html" class="topnav">Startseite</a>
+      </div>
+      <button id="menubutton" onclick="openMenu()">Menü</button>
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </body>
 </html>
