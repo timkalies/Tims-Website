@@ -163,6 +163,7 @@ nav a:hover,
   transition-timing-function: ease-in-out;
   list-style: none;
   padding-left: 0px;
+  overflow: hidden;
 }
 #liIcons1,
 #liIcons2,
@@ -170,6 +171,14 @@ nav a:hover,
   text-align: center;
   margin-bottom: 40vh;
   font-size: 2em;
+}
+.list01 {
+  background-color: #c0c4f3;
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 2vh;
+  margin-top: 1.5vh;
+  font-weight: bold;
 }
 .backimg_01 #ulPageIcons a {
   text-decoration: none;
@@ -295,7 +304,7 @@ div.blogposts_2 {
   border: none;
   border-radius: 6%;
   margin-right: 1vw;
-  overflow: hidden;
+  overflow: scroll;
   width: 30vw;
   font-size: 1em;
   -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
@@ -749,6 +758,13 @@ footer .row ul li {
   .lidisplay {
     display: none;
   }
+  .list01 {
+    background-color: #c0c4f3;
+    text-align: center;
+    list-style-type: none;
+    margin-bottom: 2vh;
+    margin-top: 1.5vh;
+  }
   .erfolge sub {
     display: none;
   }
@@ -779,7 +795,7 @@ footer .row ul li {
     border-radius: 3%;
     margin-right: 1vw;
     margin-left: 0.5vw;
-    overflow: hidden;
+    overflow-x: scroll;
     table-layout: fixed;
     width: 80vw;
     -webkit-box-shadow: inset 0px -2px 5px -1px rgba(0, 0, 0, 0.25);
