@@ -15,12 +15,12 @@ let tileSize,
   snakeDirection,
   score,
   gameLoopInterval,
-  highscore,
   gameSpeed,
   moveX,
   moveY,
   touchStartX;
 
+let highscore = 0;
 const Direction = {};
 //Variablen außerhalb deklariert für global scope
 
@@ -67,12 +67,12 @@ document.addEventListener("DOMContentLoaded", function () {
   /*********
    * Canvas - Variablen
    *********/
+  displayScore.innerHTML = "Highscore: " + highscore;
   canvas = document.getElementById("playfield");
   ctx = canvas.getContext("2d");
   /*Berechnet Canvas Größe*/
   ctx.canvas.width = nrOfTilesInX * tileSize;
   ctx.canvas.height = nrOfTilesInY * tileSize;
-  displayScore.innerHTML = "Highscore: " + highscore;
 });
 
 /*********************************************************/
@@ -145,9 +145,7 @@ function keyPressed(event) {
 
 //Website registriert jede Tastenaktion und führt dann steuerung aus
 /*********************************************************/
-
 function gameOver() {
-  //Beendet Loops bei Ausführung
   drawText(
     "Game over!",
     "60px Arial black",
@@ -155,20 +153,19 @@ function gameOver() {
     canvas.width / 2 - 200,
     canvas.height / 2
   );
-  //Lässt Buttons nach Tod wieder funktionieren
   document.removeEventListener("touchstart", onTouchStart, { passive: false });
-  //Reaktiviert Start Button
   startButton.addEventListener("click", restart);
   startButton.disabled = false;
   startButton.style.opacity = "1";
+  menuField.style.opacity = "1";
   startButton.innerHTML = "Neustarten";
   if (score >= highscore) {
+    //wird benötigt, um highscore grundlegend als zweite var zu updaten
     highscore = score;
-    displayScore.innerHTML = "Highscore: " + highscore;
+    updateHighscore(score);
   }
   clearInterval(gameLoopInterval);
 }
-
 function checkWallCollision() {
   //Wenn Schlange Wand in x-oder-y richtung berührt spielende
   if (foodY >= nrOfTilesInY) {
@@ -223,19 +220,27 @@ function gameLoop() {
 
 function start() {
   gameSpeed = 80;
+  //Added Listener, die auf Touch und Tasteneingaben achten
   document.addEventListener("keydown", keyPressed);
   document.addEventListener("touchstart", onTouchStart, { passive: false });
   gameLoopInterval = setInterval(gameLoop, gameSpeed);
+  //Deaktiviert Restart Button
   startButton.removeEventListener("click", start);
   startButton.disabled = true;
   startButton.style.opacity = "0.5";
+  menuField.style.opacity = "0.5";
+  //Schließt Menüfeld bei Spielbeginn, wenn offen
+  if (menuField.style.display == "block") {
+    menuField.style.display = "none";
+  }
 }
 function restart() {
   //Lässt auf Touch reagieren, deaktiviert menüflächen u. normale reaktion des bildschirms
   document.addEventListener("touchstart", onTouchStart, { passive: false });
   //Deaktiviert Startbutton
   startButton.disabled = false;
-  startButton.style.opacity = "1";
+  startButton.style.opacity = "0.5";
+  menuField.style.opacity = "0.5";
   //cleart Bildschirm
   fillTile(canvas.width / 2 - 200, canvas.height / 2, "lightgrey");
   clearCanvas();
@@ -252,4 +257,8 @@ function restart() {
   // Vor dem Starten eines neuen Intervalls das vorherige löschen
   clearInterval(gameLoopInterval);
   gameLoopInterval = setInterval(gameLoop, gameSpeed);
+  //Schließt Menüfeld bei Spielbeginn, wenn offen
+  if (menuField.style.display == "block") {
+    menuField.style.display = "none";
+  }
 }

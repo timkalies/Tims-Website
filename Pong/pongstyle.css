@@ -37,6 +37,8 @@
 }
 #menu {
   margin-top: 2vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -56,4 +58,12 @@ button,
 #highscore {
   margin-left: 8vw;
   margin-right: 8vw;
+}
+#submit_score {
+  opacity: 0.5;
+  background-color: rgb(87, 117, 107);
+  border: none;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 6px;
 }
