@@ -1,12 +1,12 @@
 <?php
 //Hier ändern!
-$pageId = 'blogpost5';
+$pageId = 'blogpost6';
 header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese Seite
 ?>
 <!doctype html>
 <html lang="de-DE">
 <head>
-<title>TIM KALIES - Schnelles 1500m Rennen in Pfungstadt</title>
+<title>TIM KALIES - Deutsche Meisterschaften in Braunschweig</title>
 <!--Meta Einstellungen-->
 <meta charset="UTF-8">
 <meta name="keywords" content="Radfahren, Braunschweig, Tim Kalies, Jasper Schröder, Hannover">
@@ -48,7 +48,7 @@ header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese
 <!--Links noch ändern-->
 <!-- Navigation -->
 <div class="navigation">
-<a href="#" id="topnav">Artikel - 1500m Lauf Pfungstadt </a>
+<a href="#" id="topnav">Artikel - Deutsche Meisterschaften Braunschweig </a>
   <div id="myLinks">
     <a href="index.html" id="topnav">Startseite</a>
     <a href="blogs.html" class="topnav">Blog</a>
@@ -65,46 +65,36 @@ header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese
 <main>
   <noscript>Bitte aktiviere Javascript um diese Seite nutzen zu können</noscript>
 <div class="blogpost_1">
-<h2 class="h01_bp1">Bestzeit über 1500m bei Laufgala in Pfungstadt</h2>
- <img src="Bilder/blogpost5/race1.jpg" id="startbild" alt="Bild während dem Rennen">
+<h2 class="h01_bp1">Deutsche Meisterschaften in Braunschweig</h2>
+ <img src="Bilder/blogpost6/race.jpg" id="startbild" alt="Bild während dem Rennen">
 <div class="blogpost_2">
-<p style="text-align: left;" id="blogtext_title"><strong>1500m Saisoneinstieg - Zahlt sich die lange Fahrt und schwierige Vorbereitungszeit aus? </strong></p>
+<p style="text-align: left;" id="blogtext_title"><strong>Deutsche Meisterschaften in Braunschweig - Schaffe ich den Finaleinzug </strong></p>
 <br>
-<p style="text-align: left;" id="blogtext_article">Nach langer Verletzungspause und einer zähen Vorbereitung in den Wintermonaten plante ich gemeinsam mit meinem Trainer <strong>Niklas Cervinka</strong> am 25. Mai in Pfungstadt über meine Hauptdistanz, die 1500m, in die Saison zu starten.
-<br>
-Pfungstadt ist bekannt als <i>"schnelles Pflaster"</i> innerhalb der Läuferszene. Viele stellen ihre Jahresbestleistung dort auf. Das war auch für mich das Ziel. Mit der A-Norm von 3:46,00, die für die Deutschen Meisterschaften in meiner Heimatstadt Braunschweig benötigt wird, als Motivation, blickte ich in den Wettkampf.
-<br>
-Dass das ganze kein Spaziergang werden würde, war mir klar. Ungewiss war mir meine Form, ob das Alternativtraining wirklich die gewünschten Resultate erbrachte, auch wenn es im Training bereits gute Resultate zeigte, aber mit einer 100%-igen Sicherheit auf Erfolg, kann man beim Wettkampf nie an den Start gehen.
-<br>
-Das Rennen ging rasant los. Die erste Runde in 58sek. So schnell bin ich noch nie angelaufen, danach beruhigte sich das Feld etwas und bei 1100m ging ich bei 2:44min durch. Auf der letzten Runde fehlten dann ein wenig die Körner und die Zugpferde, weswegen das Tempo nicht weiter erhöht werden konnte und ich auf den letzten 30m sogar noch abgefangen wurde. 
-<br>
-Dennoch kann ich mich mit einem zweiten Platz und einer Bestzeit von <strong>3:45,31</strong> sehr zufrieden geben, in Anbetracht dessen, dass dieses Rennen erst mein Saisondebüt war! </p>
+Das langersehnte Saisonhighlight stand an. Am 29.06 und 30.06 fanden die Deutschen Meisterschaften in meiner Heimatstadt an. Auf den Start hatte ich lange hingefiebert, man rennt selten genug vor Heimpublikum und noch seltener findet solch ein Start beim Saisonhighlight statt.<br>
+Um möglichst zweimal vor dem Heimischen Publikum performen zu können, musste ich mich am Samstag für das Finale qualifizieren. Dafür musste ich mich in meinem Vorlauf unter den Top 6 Läufern befinden. Die Regel, dass Qualifikationsplätze an die Zeitschnellsten verteilt werden, wurde abgeschafft.<br>
+Mit Begleitung eines Kamerateams des NDR und eines Fotografen, welcher von meinem Sponsor <strong>VWFS</strong> extra für mich beauftragt wurde, trat ich am späten Samstagabend meinen Start an. Das Stadion war bereits etwas leerer als noch zum Nachmittag hin, was im abendlichen Deutschlandspiel begründet lag.<br>
+Der Vorlauf begann gemächlich. Das ist bei Meisterschaftsrennen normal, da es nur um eine gute Platzierung geht und eine schnelle Zeit meistens im Hintergrund steht. 1000m gingen wir gerade einmal bei 2:38min durch. Dafür wurde die letzte Runde umso schneller. In 55sek absolvierte ich diese und konnte mich erfolgreich für das Finale qualifizieren.<br>
+Nachdem ich meinen Finaleinzug mit Freunden und Familie gefeiert hatte stand am nächsten Nachmittag bereits der Finallauf an. Dieser gestaltete sich ganz anders. Marius Probst vom TV Wattenscheid 01 hatte mit seinen Teamkameraden eine Tempojagd begonnen, um wichtige Rankingpunkte für die Olympischen Spiele zu sammeln, ich ging die 400m in 56sek durch und war fast letzter, so schnell ging es los. Für das hohe Tempo zahlte ich die letzte Rennhälfte meinen Tribut und wurde in 3:50,99min 10. Platz. Damit blieb ich unter meinen Erwartungen, die sich nach dem Vortag gebildet hatten. Dennoch war ich stolz über den Finaleinzug und freute mich riesig über das unvergessliche Erlebnis!</div>
 </div>
-</div>
-<hr>
-<article id="video">
-<h2 class="h03_sp">Das Rennen:</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Np-MlO608vc?si=mMB_TvmzJgzrabD6" title="1500m Rennen - B-Lauf Pfungstadt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</article>
-<hr>
+
 <br>
   <h2 class="h03_sp">Bildergalerie</h2>
 <div class="scroll-container">
-  <img src="Bilder\blogpost5\group.jpg" alt="Gruppenbild nach dem Rennen von Moritz Mühlpointner">
-  <img src="Bilder\blogpost5\race1.jpg" alt="Bild, während des Laufes">
-  <img src="Bilder\blogpost5\race2.jpg" alt="Tim, kurz vor der Schlussrunde">
-  <img src="Bilder\blogpost5\race3.jpg" alt="Bild, während des Laufes">
-  <img src="Bilder\blogpost5\postrace.jpg" alt="Bild von Tim nach dem Rennen">
+  <img src="Bilder\blogpost6\finishline.jpg" alt="Kurz vcor der Ziellinie wurde es im Vorlauf nochmal spannend">
+  <img src="Bilder\blogpost6\group.jpg" alt="Nach dem Rennen mit Teamkameraden">
+  <img src="Bilder\blogpost6\portrait.jpg" alt="Im Media-Bereich nach dem Vorlauf, überglücklich">
+  <img src="Bilder\blogpost6\race.jpg" alt="Während des Finallaufs wurde ein hohes Tempo angeschlagen">
+  <img src="Bilder\blogpost6\team.jpg" alt="Mit meiner Fankurve im Zielbereich">
 </div> 
 <!--Ändern-->
-<p class="p01_bp">Veröffentlicht: 25.05.2024</p>
+<p class="p01_bp">Veröffentlicht: 04.07.2024</p>
 <hr>
 <h2 class="h03_sp">Alle Kommentare</h2>
 <article id="show_comments">
 <?php
 include('comments-function.php');
 //Hier ändern!
-displayComments('blogpost5');
+displayComments('blogpost6');
 ?>
 </article>
 

@@ -40,9 +40,8 @@ body {
 #h03_sp {
   color: rgb(30, 59, 138);
 }
-.blogs_oktober,
-.blogs_januar,
-.blogs_märz {
+.blogs_2024,
+.blogs_2023 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -69,9 +68,8 @@ body {
   height: 1vh;
 }
 
-.blogs_oktober a,
-.blogs_januar a,
-.blogs_märz a{
+.blogs_2024 a,
+.blogs_2023 a {
   text-decoration: none;
   color: #000000;
 }
@@ -213,9 +211,8 @@ GALERIE
   #h03_sp {
     color: rgb(30, 58, 138);
   }
-  .blogs_oktober,
-  .blogs_januar,
-  .blogs_märz {
+  .blogs_2024,
+  .blogs_2023 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -268,9 +265,8 @@ GALERIE
     margin-right: 8vw; /*Rest keine Margin-right, deswegen seperat*/
   }
 
-  .blogs_oktober a,
-  .blogs_januar a,
-  .blogs_märz a {
+  .blogs_2024 a,
+  .blogs_2023 a {
     text-decoration: none;
     color: #000000;
   }
