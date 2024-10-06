@@ -1,12 +1,12 @@
 <?php
 //Hier ändern!
-$pageId = 'blogpost5';
+$pageId = 'blogpost7';
 header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese Seite
 ?>
 <!doctype html>
 <html lang="de-DE">
 <head>
-<title>TIM KALIES - Schnelles 1500m Rennen in Pfungstadt</title>
+<title>TIM KALIES - Deutsche U23 Meisterschaft in Mönchengladbach</title>
 <!--Meta Einstellungen-->
 <meta charset="UTF-8">
 <meta name="keywords" content="Radfahren, Braunschweig, Tim Kalies, Jasper Schröder, Hannover">
@@ -48,7 +48,7 @@ header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese
 <!--Links noch ändern-->
 <!-- Navigation -->
 <div class="navigation">
-<a href="#" id="topnav">Artikel - 1500m Lauf Pfungstadt </a>
+<a href="#" id="topnav">Artikel - Deutscher U23 Meister mit 19 Jahren! </a>
   <div id="myLinks">
     <a href="index.html" id="topnav">Startseite</a>
     <a href="blogs.html" class="topnav">Blog</a>
@@ -65,46 +65,49 @@ header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese
 <main>
   <noscript>Bitte aktiviere Javascript um diese Seite nutzen zu können</noscript>
 <div class="blogpost_1">
-<h2 class="h01_bp1">Bestzeit über 1500m bei Laufgala in Pfungstadt</h2>
- <img src="Bilder/blogpost5/race1.jpg" id="startbild" alt="Bild während dem Rennen">
+<h2 class="h01_bp1">Deutscher U23 Meister mit 19 Jahren!</h2>
+ <img src="Bilder/blogpost7/zielfoto.jpg" id="startbild" alt="Bild während dem Rennen">
 <div class="blogpost_2">
-<p style="text-align: left;" id="blogtext_title"><strong>1500m Saisoneinstieg - Zahlt sich die lange Fahrt und schwierige Vorbereitungszeit aus? </strong></p>
-<br>
-<p style="text-align: left;" id="blogtext_article">Nach langer Verletzungspause und einer zähen Vorbereitung in den Wintermonaten plante ich gemeinsam mit meinem Trainer <strong>Niklas Cervinka</strong> am 25. Mai in Pfungstadt über meine Hauptdistanz, die 1500m, in die Saison zu starten.
-<br>
-Pfungstadt ist bekannt als <i>"schnelles Pflaster"</i> innerhalb der Läuferszene. Viele stellen ihre Jahresbestleistung dort auf. Das war auch für mich das Ziel. Mit der A-Norm von 3:46,00, die für die Deutschen Meisterschaften in meiner Heimatstadt Braunschweig benötigt wird, als Motivation, blickte ich in den Wettkampf.
-<br>
-Dass das ganze kein Spaziergang werden würde, war mir klar. Ungewiss war mir meine Form, ob das Alternativtraining wirklich die gewünschten Resultate erbrachte, auch wenn es im Training bereits gute Resultate zeigte, aber mit einer 100%-igen Sicherheit auf Erfolg, kann man beim Wettkampf nie an den Start gehen.
-<br>
-Das Rennen ging rasant los. Die erste Runde in 58sek. So schnell bin ich noch nie angelaufen, danach beruhigte sich das Feld etwas und bei 1100m ging ich bei 2:44min durch. Auf der letzten Runde fehlten dann ein wenig die Körner und die Zugpferde, weswegen das Tempo nicht weiter erhöht werden konnte und ich auf den letzten 30m sogar noch abgefangen wurde. 
-<br>
-Dennoch kann ich mich mit einem zweiten Platz und einer Bestzeit von <strong>3:45,31</strong> sehr zufrieden geben, in Anbetracht dessen, dass dieses Rennen erst mein Saisondebüt war! </p>
-</div>
+<p style="text-align: left;" id="blogtext_title"><strong>Am vergangenen Wochenende standen die Deutschen U23 Meisterschaften in Mönchengladbach an!</strong></p> <br><br>
+<p style="text-align: left;" id="blogtext_article"> Mit noch müden Beinen <a href="blogposts/blogpost6.php">vom vergangenen Wochenende</a> und gerade einmal vier Tagen Pause zwischen den Meisterschaften, startete ich am Freitag in meinen Vorlauf.<br>
+Vor dem Rennen erwartete mich bereits die erste Überraschung: Die vier schnellsten Starter haben allesamt auf ihren Start verzichtet. Ich war somit plötzlich der zweitschnellst gemeldete Starter in meinem ersten Jahr in der U23!<br><br>
+Die Vorläufe fanden in leichtem Regen statt, kein Problem, vergangenes Wochenende erging es mir ja beim Finalstart ähnlich!<br>
+Mit unüblich schnellem Angangstempo durchquerten wir in 2:36min die ersten 1000m. Das Tempo erhöhte sich von da an nicht drastisch und ich konnte die letzten 50m bereits das Tempo runterfahren.
+Im Finale ging es dafür etwas lockerer zu. Keiner traute sich von vorne weg das Rennen schnell zu machen, deswegen griff ich Früh zur Initiative. Bis 800m fürte ich das Feld auf 2:11 an und wurde dann von Felix Friedrich, dem Bronze Medaillist der Erwachsenen-Hallenmeisterschaften über 3000m abgelöst. <br>
+300m vor Schluss ergriff ich erneut die Intiative und konnte nichtmehr eingeholt werden! Nur Hannes Fahl, der Favorit nach Meldezeit, schaffte es auf den letzten Metern mir Nahe zu kommen. <br>
+Die Distanz reichte für ihn jedoch nichtmehr aus.<br><br>
+Mit meinem dritten Deutschen Meistertitel in der Tasche konnte ich die Heimreise antreten. Für mich immer etwas ganz besonderes, besonders nach diesem für mich besonders schwierigen Jahr!
+Nun sind noch einige weitere Rennen geplant, die Bekanntgabe dieser wird auf meinem <a href="instagram.com/tim.kalies">Instagram Account</a> erfolgen.
+</p></div>
 </div>
 <hr>
-<article id="video">
-<h2 class="h03_sp">Das Rennen:</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Np-MlO608vc?si=mMB_TvmzJgzrabD6" title="1500m Rennen - B-Lauf Pfungstadt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</article>
+
+<h2 class="h03_sp">Das Finale:</h2>
+<div style="width: 100%; min-width: 400px; max-width: 800px;">
+<div style="position: relative; width: 100%; overflow: hidden; padding-top: 56,25%;">
+<p> <iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/RtdBewe2v6Y?si=krEW_c9AIDwZEQoZ" width= "560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+</div>
+</div>
 <hr>
 <br>
   <h2 class="h03_sp">Bildergalerie</h2>
 <div class="scroll-container">
-  <img src="Bilder\blogpost5\group.jpg" alt="Gruppenbild nach dem Rennen von Moritz Mühlpointner">
-  <img src="Bilder\blogpost5\race1.jpg" alt="Bild, während des Laufes">
-  <img src="Bilder\blogpost5\race2.jpg" alt="Tim, kurz vor der Schlussrunde">
-  <img src="Bilder\blogpost5\race3.jpg" alt="Bild, während des Laufes">
-  <img src="Bilder\blogpost5\postrace.jpg" alt="Bild von Tim nach dem Rennen">
+  <img src="Bilder\blogpost7\startlinie.jpg" alt="Kurz vorm Start des 1500m Finals war die Spannung hoch">
+  <img src="Bilder\blogpost7\zielfoto.jpg" alt="Ich überquere die Ziellinie als Sieger">
+  <img src="Bilder\blogpost7\sieg.jpg" alt="Siegesschrei">
+  <img src="Bilder\blogpost7\ehrung.jpg" alt="Siegerehrung">
+  <img src="Bilder\blogpost7\vwfs.jpg" alt="Bild mit Medaille und einem Pullover meines Sponsors VWFS">
 </div> 
 <!--Ändern-->
-<p class="p01_bp">Veröffentlicht: 09.07.2024</p>
+<p class="p01_bp">Veröffentlicht: 04.07.2024</p>
 <hr>
 <h2 class="h03_sp">Alle Kommentare</h2>
 <article id="show_comments">
 <?php
 include('comments-function.php');
 //Hier ändern!
-displayComments('blogpost5');
+displayComments('blogpost7');
 ?>
 </article>
 

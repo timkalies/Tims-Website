@@ -1,15 +1,15 @@
 <?php
 //Hier ändern!
-$pageId = 'blogpost5';
+$pageId = 'blogpost8';
 header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese Seite
 ?>
 <!doctype html>
 <html lang="de-DE">
 <head>
-<title>TIM KALIES - Schnelles 1500m Rennen in Pfungstadt</title>
+<title>TIM KALIES - R5K in Berlin</title>
 <!--Meta Einstellungen-->
 <meta charset="UTF-8">
-<meta name="keywords" content="Radfahren, Braunschweig, Tim Kalies, Jasper Schröder, Hannover">
+<meta name="keywords" content="Berlin, R5K, Tim Kalies, R5K Kalies, R5K Berlin">
 <meta name="description" content="Tim Kalies, ein 1500m Läufer und Deutscher Meister, der häufig über seine sportlichen Erlebnisse und Erfolge postet.">
 <meta name="author" content="Tim Kalies">
 <meta http-equiv="refresh" content="90">
@@ -48,7 +48,7 @@ header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese
 <!--Links noch ändern-->
 <!-- Navigation -->
 <div class="navigation">
-<a href="#" id="topnav">Artikel - 1500m Lauf Pfungstadt </a>
+<a href="#" id="topnav">Artikel - Podium über 5km Straße in Berlin </a>
   <div id="myLinks">
     <a href="index.html" id="topnav">Startseite</a>
     <a href="blogs.html" class="topnav">Blog</a>
@@ -65,46 +65,36 @@ header('Content-Type: text/html; charset=UTF-8'); // Setze die pageId für diese
 <main>
   <noscript>Bitte aktiviere Javascript um diese Seite nutzen zu können</noscript>
 <div class="blogpost_1">
-<h2 class="h01_bp1">Bestzeit über 1500m bei Laufgala in Pfungstadt</h2>
- <img src="Bilder/blogpost5/race1.jpg" id="startbild" alt="Bild während dem Rennen">
+<h2 class="h01_bp1">Podium beim R5K Rennen? - Berlin Marathon 2024</h2>
+<img src="Bilder/blogpost8/Start.webp" id="startbild" alt="Am Start des R5K Rennen">
 <div class="blogpost_2">
-<p style="text-align: left;" id="blogtext_title"><strong>1500m Saisoneinstieg - Zahlt sich die lange Fahrt und schwierige Vorbereitungszeit aus? </strong></p>
-<br>
-<p style="text-align: left;" id="blogtext_article">Nach langer Verletzungspause und einer zähen Vorbereitung in den Wintermonaten plante ich gemeinsam mit meinem Trainer <strong>Niklas Cervinka</strong> am 25. Mai in Pfungstadt über meine Hauptdistanz, die 1500m, in die Saison zu starten.
-<br>
-Pfungstadt ist bekannt als <i>"schnelles Pflaster"</i> innerhalb der Läuferszene. Viele stellen ihre Jahresbestleistung dort auf. Das war auch für mich das Ziel. Mit der A-Norm von 3:46,00, die für die Deutschen Meisterschaften in meiner Heimatstadt Braunschweig benötigt wird, als Motivation, blickte ich in den Wettkampf.
-<br>
-Dass das ganze kein Spaziergang werden würde, war mir klar. Ungewiss war mir meine Form, ob das Alternativtraining wirklich die gewünschten Resultate erbrachte, auch wenn es im Training bereits gute Resultate zeigte, aber mit einer 100%-igen Sicherheit auf Erfolg, kann man beim Wettkampf nie an den Start gehen.
-<br>
-Das Rennen ging rasant los. Die erste Runde in 58sek. So schnell bin ich noch nie angelaufen, danach beruhigte sich das Feld etwas und bei 1100m ging ich bei 2:44min durch. Auf der letzten Runde fehlten dann ein wenig die Körner und die Zugpferde, weswegen das Tempo nicht weiter erhöht werden konnte und ich auf den letzten 30m sogar noch abgefangen wurde. 
-<br>
-Dennoch kann ich mich mit einem zweiten Platz und einer Bestzeit von <strong>3:45,31</strong> sehr zufrieden geben, in Anbetracht dessen, dass dieses Rennen erst mein Saisondebüt war! </p>
+<p style="text-align: left;" id="blogtext_article">Zwischen dreiwöchiger Saisonpause im August und dem ersten Höhentrainingslager im Oktober stand noch ein weiterer Zwischenstopp an. Am 28. September stand das Finale der Deutschlandweit stattfindenden "R5k-Tour" statt. Bei dieser nehmen Jugendliche der ALtersklassen U20-U23 an 5km Straßenläufen teil und kämpfen um hohe Preisgelder und Trainingslagerzuschüsse. <br><br>
+Viele national bekannte Nachwuchsathleten nahmen am in Berlin stattfindenden Finale der Tour teil. <br> Ich ging mit den Ambitionen an den Start, meine gute Form der ersten paar Trainingswochen beweisen zu können und weit vorne mitzulaufen. <br>
+Nach einem schnellen Angang (An der Spitze war der erste Kilometer unter 2:50min!), schloss ich nach 2km wieder an die Führung an und übernahm die letzten 1,5km selbst das Tempo. <br><br>
+Auf dem letzten Kilometer wurde es extrem Spannend! Ich konnte mich mit zwei weiteren Konkurrenten vom restlichen Feld lösen. Leider verlor ich durch einen verschätzten Spurt das Rennen und fand mich auf Platz 3 wieder.<br>
+Darauf bin ich sehr Stolz, auch auf meine erste 5km Zeit unter 15min (14:59min war die Zielzeit)! Nun geht es für 3,5 Wochen in's Trainingslager nach Livigno, zur optimalen Vorbereitung der weiteren Saison. </p>
 </div>
 </div>
 <hr>
-<article id="video">
-<h2 class="h03_sp">Das Rennen:</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Np-MlO608vc?si=mMB_TvmzJgzrabD6" title="1500m Rennen - B-Lauf Pfungstadt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</article>
-<hr>
+
 <br>
   <h2 class="h03_sp">Bildergalerie</h2>
 <div class="scroll-container">
-  <img src="Bilder\blogpost5\group.jpg" alt="Gruppenbild nach dem Rennen von Moritz Mühlpointner">
-  <img src="Bilder\blogpost5\race1.jpg" alt="Bild, während des Laufes">
-  <img src="Bilder\blogpost5\race2.jpg" alt="Tim, kurz vor der Schlussrunde">
-  <img src="Bilder\blogpost5\race3.jpg" alt="Bild, während des Laufes">
-  <img src="Bilder\blogpost5\postrace.jpg" alt="Bild von Tim nach dem Rennen">
+  <img src="Bilder\blogpost8\Berlin.webp" alt="Rund um den Berlin-Marathon war die Stadt voll">
+  <img src="Bilder\blogpost8\Ehrung.webp" alt="Siegerehrung der U23-Wertung">
+  <img src="Bilder\blogpost8\Podium.webp" alt="Blick aufs Podium">
+  <img src="Bilder\blogpost8\Team.webp" alt="Unsere Trainingsgruppe versammelt">
+  <img src="Bilder\blogpost8\Tim.webp" alt="Tim vorm Start">
 </div> 
 <!--Ändern-->
-<p class="p01_bp">Veröffentlicht: 09.07.2024</p>
+<p class="p01_bp">Veröffentlicht: 06.10.2024</p>
 <hr>
 <h2 class="h03_sp">Alle Kommentare</h2>
 <article id="show_comments">
 <?php
 include('comments-function.php');
 //Hier ändern!
-displayComments('blogpost5');
+displayComments('blogpost8');
 ?>
 </article>
 
