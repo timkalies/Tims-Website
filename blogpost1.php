@@ -11,7 +11,7 @@ header('Content-Type: text/html; charset=UTF-8');
 <!--Meta Einstellungen-->
 <meta charset="UTF-8">
 <meta name="keywords" content="1500m, Braunschweig, Tim Kalies, Laufen">
-<meta name="description" content="Tim Kalies Lauf Blog">
+<meta name="description" content="Tim Kalies, ein 1500m Läufer und Deutscher Meister, der häufig über seine sportlichen Erlebnisse und Erfolge postet.">
 <meta name="author" content="Tim Kalies">
 <meta http-equiv="refresh" content="90">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,12 +51,11 @@ header('Content-Type: text/html; charset=UTF-8');
 <nav class="navigation">
 <a href="#" class="topnav">Artikel - U20-Europameisterschaft </a>
   <div id="myLinks">
-  <li><a href="index.html" class="downnav">Startseite</a></li>
-<li><a href="blogs.html" class="downnav">Blog</a></li>
-<li><a href="#" class="downnav">Über Mich</a></li>
-<li><a href="sponsors.html" class="downnav">Sponsoren</a></li>
-<li><a href="kontakt.html" class="downnav">Kontakt</a></li>
-<li><a href="impressum.html" class="downnav">Impressum</a></li>
+  <li><a href="index.html" class="topnav">Startseite</a></li>
+<li><a href="blogs.html" class="topnav">Blog</a></li>
+<li><a href="sponsors.html" class="topnav">Sponsoren</a></li>
+<li><a href="kontakt.html" class="topnav">Kontakt</a></li>
+<li><a href="impressum.html" class="topnav">Impressum</a></li>
   </div>
   <a href="javascript:void(0);" id="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -119,7 +118,6 @@ displayComments($pageId);
 <ul>
 <li><a href="#" class="downnav">Startseite</a></li>
     <li><a href="blogs.html" class="downnav">Blog</a></li>
-    <li><a href="#" class="downnav">Über Mich</a></li>
     <li><a href="sponsors.html" class="downnav">Sponsoren</a></li>
     <li><a href="kontakt.html" class="downnav">Kontakt</a></li>
     <li><a href="impressum.html" class="downnav">Impressum</a></li>

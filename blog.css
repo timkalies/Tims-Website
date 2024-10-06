@@ -40,8 +40,8 @@ body {
 #h03_sp {
   color: rgb(30, 59, 138);
 }
-.blogs_oktober,
-.blogs_januar {
+.blogs_2024,
+.blogs_2023 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -68,8 +68,8 @@ body {
   height: 1vh;
 }
 
-.blogs_oktober a,
-.blogs_januar a {
+.blogs_2024 a,
+.blogs_2023 a {
   text-decoration: none;
   color: #000000;
 }
@@ -176,10 +176,11 @@ GALERIE
     background-image: url(Bilder/U20DM.jpg);
   }
   .h01_bp1 {
-    text-align: left;
+    text-align: center;
     padding-top: 15px;
     padding-bottom: 5px;
     color: rgb(30, 58, 138);
+    padding-right: 2vw;
   }
   #blogtext {
     padding-left: 10px;
@@ -210,8 +211,8 @@ GALERIE
   #h03_sp {
     color: rgb(30, 58, 138);
   }
-  .blogs_oktober,
-  .blogs_januar {
+  .blogs_2024,
+  .blogs_2023 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -263,19 +264,9 @@ GALERIE
   #blogtext_article {
     margin-right: 8vw; /*Rest keine Margin-right, deswegen seperat*/
   }
-  .blogs_oktober a:hover,
-  .blogs_januar a:hover {
-    transition: 0.3s;
-    font-size: 1.05em;
-    cursor: pointer;
-  }
-  .blogs_oktober a:not(:hover),
-  .blogs_januar a:not(:hover) {
-    transition: 0.3s;
-    font-size: 1em;
-  }
-  .blogs_oktober a,
-  .blogs_januar a {
+
+  .blogs_2024 a,
+  .blogs_2023 a {
     text-decoration: none;
     color: #000000;
   }
